@@ -1,6 +1,10 @@
 .wrapper {
     font-family: 'Black Han Sans', 'sans-serif' ;
     color: #ffffff;
+}
+
+.intro-section {
+    padding-bottom: 100px;
     margin-left: 0.625rem;
 }
 
@@ -73,4 +77,234 @@
     50% {
         opacity: 0;
     }
+}
+
+/* ========================================
+===========HOME-ABOUT-SECTION==============
+======================================== */
+
+.about-section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'sans-serif';
+    line-height: 1.3rem;
+    color: #434343;
+}
+
+.about-section .section-inner {
+    background-color: white;
+    margin: 0 auto 0 auto;
+    padding: 20px 0;
+}
+
+.section-inner {
+    position: relative;
+    width: 100%;
+}
+
+.section-inner h2 {
+    font-family: 'Black Han sans', 'sans-serif';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.about-section .angle-top {
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../media/angle_top_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+}
+
+.inner-wide {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.about-section .angle-bottom {
+    display: block;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../media/angle_bottom_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+
+/* ========================================
+===========HOME-WORKS-SECTION==============
+======================================== */
+
+.works-section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.work {
+    display: block;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+}
+
+.work01 {
+    background-color: black;
+    background-image: url(../media/jsg-background.png);
+}
+
+.work-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.work-text {
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 100%;
+}
+
+.work-text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-text p {
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+#home-works .work-inner {
+    padding-top: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.work-inner-wide {
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+    max-width: 1240px;
+}
+
+.work02 {
+    background-color: black;
+    background-image: url(../media/md-backgound.png);
+}
+
+/* ========================================
+===========HOME-SKILLS-SECTION==============
+======================================== */
+
+.skill-section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', 'sans-serif';
+    line-height: 1.3rem;
+    color: #434343;
+}
+
+.skill-section .section-inner {
+    background-color: white;
+    margin: 0 auto 0 auto;
+    padding: 20px 0;
+}
+
+.section-inner {
+    position: relative;
+    width: 100%;
+}
+
+/* .skill-section .angle-top {
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../media/angle_top_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+} */
+
+.inner-wide {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.skill-section .angle-bottom {
+    display: block;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url(../media/angle_bottom_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+
+.inner-wide p {
+    margin-top: 0.3rem;
+}
+
+.inner-wide h3 {
+    position: relative;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.inner-wide h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #FF5F40;
 }
