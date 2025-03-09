@@ -18,6 +18,7 @@
     /* Smooth transition */
     background-color: #FF5F40;
     padding-top: 3rem;
+    z-index: 1000; /* Ensure the navigation is on top */
 }
 
 .main-nav.show {

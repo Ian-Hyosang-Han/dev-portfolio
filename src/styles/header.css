@@ -1,8 +1,3 @@
-/* .border{
-    background-color: gray;
-    max-width: 120rem;
-} */
-
 header{
     width: 100%;
     height: auto;
@@ -60,10 +55,5 @@ header{
     align-items: center;
     width: 30px;  /* 햄버거 아이콘 크기 설정 */
     height: 30px; /* 햄버거 아이콘 크기 설정 */
+    z-index: 1003; /* Ensure the navigation is on top */
 }
-
-/* @media (min-width: 48em){
-    header{
-        flex-direction: row;
-    }
-} */

@@ -4,7 +4,7 @@ import Nav from "../components/Navigation.jsx";
 import logo from "../media/logo.png";
 import navOpneImage from "../media/nav-open.png";
 import navCloseImage from "../media/nav-close.png";
-// Importing CSS style
+// Importing CSS style file
 import "../styles/header.css";
 
 function Header() {
