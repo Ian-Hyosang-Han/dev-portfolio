@@ -1,0 +1,69 @@
+/* .border{
+    background-color: gray;
+    max-width: 120rem;
+} */
+
+header{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #B9B9BA;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding-left: 0.5rem;
+}
+
+.btn-main-nav{
+    border: none;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-black);
+    cursor: pointer;
+    padding: 0;
+}
+
+.logo{
+    width: 20px;
+    height: 20px;
+}
+
+/* 햄버거 아이콘과 크로스 아이콘 크기 설정 (30px로 맞추기) */
+.open-icon, .close-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 아이콘 이미지 크기 조정 */
+.open-icon img, .close-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 모바일 메뉴 열렸을 때 스타일 */
+.hamburger-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;  /* 햄버거 아이콘 크기 설정 */
+    height: 30px; /* 햄버거 아이콘 크기 설정 */
+}
+
+/* @media (min-width: 48em){
+    header{
+        flex-direction: row;
+    }
+} */
