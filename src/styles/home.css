@@ -213,7 +213,7 @@
 }
 
 .work-inner-wide {
-    font-size: 1.35rem;
+    font-size: 32px;
     text-transform: uppercase;
     position: relative;
     margin: 0 auto;
@@ -287,6 +287,11 @@
     z-index: 1000;
 }
 
+#home-skills .inner-wide h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .inner-wide p {
     margin-top: 0.3rem;
 }
@@ -295,6 +300,7 @@
     position: relative;
     font-size: 20px;
     text-transform: uppercase;
+    margin-top: 0.3rem;
     margin-bottom: 0;
     padding-left: 10px;
 }

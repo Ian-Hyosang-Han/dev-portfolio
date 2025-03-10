@@ -124,8 +124,8 @@ function Home() {
                     <div className="inner-wide">
                         <h2>skills</h2>
                         <h3>development</h3>
-                        <p>HTML / CSS / JAVASCRIPT / SASS / REACT / PHP / 
-                        Shopify / woocommerce / wordPress</p>
+                        <p>HTML / CSS / JAVASCRIPT / SASS / REACT / PHP /
+                            Shopify / woocommerce / wordPress</p>
                         <h3>design tools</h3>
                         <p>Figma / Adobe XD</p>
                     </div>
