@@ -105,11 +105,11 @@
     width: 100%;
 }
 
-.section-inner h2 {
+/* .section-inner h2 {
     font-family: 'Black Han sans', 'sans-serif';
     font-size: 2rem;
     text-transform: uppercase;
-}
+} */
 
 .about-section .angle-top {
     display: block;
@@ -285,11 +285,6 @@
     background-position: bottom center;
     background-size: 100% 100%;
     z-index: 1000;
-}
-
-#home-skills .inner-wide h2 {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .inner-wide p {
