@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+/* Custom font-family */
+
+.font-blackHan {
+  @apply text-white ;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.font-rajdhani {
+  @apply text-white;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-lato {
+  @apply text-white text-xl;
+  font-family: 'Lato', sans-serif;
+}
+
 /* Colours */
 
 :root {
@@ -26,6 +43,5 @@ h2 {
   font-family: 'Black Han sans', 'sans-serif';
   font-size: 2rem;
   text-transform: uppercase;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  color: white;
 }

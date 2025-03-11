@@ -7,7 +7,7 @@ function Footer() {
     }
 
     return (
-        <footer className="p-4 text-white text-right mt-5">
+        <footer className="p-4 text-white text-right ">
             <p>&copy; {getYear()} Ian's Portfolio</p>
             <p>unspecialty</p>
         </footer>
