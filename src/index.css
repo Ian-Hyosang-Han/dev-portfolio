@@ -17,18 +17,17 @@
   font-family: 'Lato', sans-serif;
 }
 
-/* Colours */
+/* Colour and Font */
 
 :root {
-    --main-bg-color: #e5ecea;
-    --main-font-black: #292726;
-    --main-font-white: #ffffff;
-    --hover-blue: #9be3ef;
-    --hover-brown: #b5936e;
-    --hover-brown-rgb: 165, 132, 115;
-    --heading-font: "Syne", serif;
-    --button-font: "Source Code Pro", serif;
-    --body-font: "Source Code Pro", serif;
+    --navi-bg-color: #FF5F40;
+    --main-font-color: #ffffff;
+    --second-font-color: #434343;
+    --third-font-color: #E8E6D5;
+    --navi-hover-color: #E8E6D5;
+    --heading-font: "Black Han Sans", serif;
+    --button-font: "", serif;
+    --body-font: "Lato", serif;
   }
 
 /* Base style for body */
@@ -43,5 +42,13 @@ h2 {
   font-family: 'Black Han sans', 'sans-serif';
   font-size: 2rem;
   text-transform: uppercase;
-  color: white;
+}
+
+h3 {
+  font-family: 'Rajdhani', 'sans-serif';
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Lato', 'sans-serif';
 }
