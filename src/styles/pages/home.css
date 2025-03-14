@@ -105,12 +105,6 @@
     width: 100%;
 }
 
-/* .section-inner h2 {
-    font-family: 'Black Han sans', 'sans-serif';
-    font-size: 2rem;
-    text-transform: uppercase;
-} */
-
 .about-section .angle-top {
     display: block;
     position: absolute;
@@ -118,7 +112,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../media/angle_top_mobile.png);
+    background-image: url(../../media/angle_top_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
@@ -138,7 +132,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../media/angle_bottom_mobile.png);
+    background-image: url(../../media/angle_bottom_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
@@ -169,8 +163,8 @@
 }
 
 .work01 {
-    background-color: black;
-    background-image: url(../media/jsg-background.png);
+    /* background-color: black; */
+    /* background-image: url(../media/jsg-background.png); */
 }
 
 .work-cover {
@@ -223,8 +217,8 @@
 }
 
 .work02 {
-    background-color: black;
-    background-image: url(../media/md-backgound.png);
+    /* background-color: black; */
+    /* background-image: url(../media/md-backgound.png); */
 }
 
 /* ========================================
@@ -280,7 +274,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../media/angle_bottom_mobile.png);
+    background-image: url(../../media/angle_bottom_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;

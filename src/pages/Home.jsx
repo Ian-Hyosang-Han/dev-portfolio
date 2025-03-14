@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 // Importing CSS style file
-import '../styles/home.css';
+import '../styles/pages/home.css';
 // Importing Icons 
 import linkedInIcon from '../media/linked-in-128.png';
 import githubIcon from '../media/github-96.png';
@@ -72,7 +72,7 @@ function Home() {
                     <div className="inner-wide">
                         <h2>about</h2>
                         <p><strong>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
-                        <p><strong>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong>grow form the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
+                        <p><strong>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong>grow from the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
                     </div>
                 </div>
                 <div className='angle-bottom'></div>
@@ -98,7 +98,7 @@ function Home() {
                 <div className="work work03">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                        <h2>capstone project</h2>
+                        <h2>capstone</h2>
                         <p>capstone project</p>
                     </div>
                 </div>

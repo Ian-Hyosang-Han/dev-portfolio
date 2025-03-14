@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 // Importing CSS style
-import "../styles/navigation.css";
+import "../../styles/components/navigation.css";
 
 const Nav = ({ navOpen, setNavOpen }) => {
     function closeNav(e) {
