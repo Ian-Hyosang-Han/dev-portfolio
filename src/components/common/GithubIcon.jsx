@@ -1,7 +1,7 @@
 import '../../styles/components/githubicon.css';
 import githubIcon from '../../media/github-96.png';
 
-function GithubIcon(url) {
+function GithubIcon({ url }) {
 
     return (
         <a href={url} 

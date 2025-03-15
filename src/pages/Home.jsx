@@ -4,6 +4,7 @@ import '../styles/pages/home.css';
 // Importing Icons 
 import linkedInIcon from '../media/linked-in-128.png';
 import GithubIcon from '../components/common/GitHubIcon';
+import ProjectButton from '../components/common/ProjectButton';
 
 function Home() {
     const phrases = [
@@ -43,19 +44,14 @@ function Home() {
                 </div>
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/ian-hyosang-han"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                    <img 
-                        src={linkedInIcon}
-                        alt="LinkedIn Icon"
-                        className="icon-1" />
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <img
+                            src={linkedInIcon}
+                            alt="LinkedIn Icon"
+                            className="icon-1" />
                     </a>
-                    <a href="https://github.com/Ian-Hyosang-Han"
-                       target="_blank" 
-                       rel="noopener noreferrer" 
-                       className="icon-2" >
-                        <GithubIcon />
-                    </a>
+                    <GithubIcon className="icon-2" url="https://github.com/Ian-Hyosang-Han" />
                 </div>
                 <div className="greeting">
                     <h1>hello, ian han</h1>
@@ -78,11 +74,26 @@ function Home() {
                 <div className='angle-bottom'></div>
             </section>
 
+            <section id='home-skills' className='skill-section'>
+                <div className='angle-top'></div>
+                <div className="section-inner">
+                    <div className="inner-wide">
+                        <h2>skills</h2>
+                        <h3>development</h3>
+                        <p>HTML / CSS / JAVASCRIPT / SASS / REACT / PHP /
+                            Shopify / woocommerce / wordPress</p>
+                        <h3>design tools</h3>
+                        <p>Figma / Adobe XD</p>
+                    </div>
+                </div>
+                <div className='angle-bottom'></div>
+            </section>
+
             <section id='home-works' className='works-section'>
                 <div className="work work01">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                        <h2>astro escape</h2>
+                        <ProjectButton label="astro escape" url="/project/javascriptgame" />
                         <p>javascript-game</p>
                     </div>
                 </div>
@@ -90,7 +101,7 @@ function Home() {
                 <div className="work work02">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                        <h2>movella</h2>
+                    <ProjectButton label="movella" url="/project/moviedatabase" />
                         <p>movie database</p>
                     </div>
                 </div>
@@ -117,22 +128,6 @@ function Home() {
                     </div>
                 </div>
             </section>
-
-            <section id='home-skills' className='skill-section'>
-                <div className='angle-top'></div>
-                <div className="section-inner">
-                    <div className="inner-wide">
-                        <h2>skills</h2>
-                        <h3>development</h3>
-                        <p>HTML / CSS / JAVASCRIPT / SASS / REACT / PHP /
-                            Shopify / woocommerce / wordPress</p>
-                        <h3>design tools</h3>
-                        <p>Figma / Adobe XD</p>
-                    </div>
-                </div>
-                <div className='angle-bottom'></div>
-            </section>
-
         </div>
     );
 }

@@ -1,15 +1,11 @@
 .main-nav {
-    /* font-size: 3rem; */
     justify-items: center;
     align-items: center;
     width: 260px;
-    /* Fixed width */
     height: 100%;
-    /* Full height */
     position: fixed;
     /* Fixed position */
     top: 0;
-    /* Start from the top */
     right: 0;
     /* Align to the right */
     transform: translateX(100%);
@@ -18,17 +14,17 @@
     /* Smooth transition */
     background-color: #FF5F40;
     padding-top: 3rem;
-    z-index: 1000; /* Ensure the navigation is on top */
+    z-index: 1000;
 }
 
 .main-nav.show {
-    transform: translateX(0);
     /* Slide in */
+    transform: translateX(0);
 }
 
 .main-nav.hide {
+     /* Slide out */
     transform: translateX(100%);
-    /* Slide out */
 }
 
 .hamburger-icon {
@@ -39,11 +35,8 @@
     height: 50.96px;
     position: fixed;
     top: 0;
-    /* Position it below the top */
     right: 0;
-    /* Align to the right */
     z-index: 1000;
-    /* Ensure it's on top */
     cursor: pointer;
 }
 
@@ -85,7 +78,7 @@
     padding-bottom: 3rem;
 }
 
-/* 각 박스 스타일 */
+/* Each-box style */
 .nav-home-box,
 .nav-work-box,
 .nav-about-box {
@@ -114,7 +107,7 @@
     background-color: #ccc;
 }
 
-/* 이미지 박스를 동그라미로 설정 */
+/* Round box style */
 .nav-image-box {
     display: flex;
     justify-content: center;
@@ -125,9 +118,7 @@
     width: 100px;
     height: 100px;
     background-color: #FF5F40;
-    /* 원의 색상 */
     border-radius: 50%;
-    /* 동그라미 모양 만들기 */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +126,7 @@
 
 }
 
-/* 링크 스타일 설정 */
+/* Links style */
 a,
 a:visited,
 a:hover,

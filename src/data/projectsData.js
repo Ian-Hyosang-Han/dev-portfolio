@@ -109,6 +109,86 @@ const projectsData = {
             }
         ]
     },
+
+    moviedatabase: {
+        title: 'movella',
+        subtitle: 'movie database',
+        technologies: 'REACT.js / CSS',
+        overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
+        roles: 'UX/UI designer / Developer',
+        launchUrl: 'https://example.com',
+        githubUrl: 'https://github.com/Ian-Hyosang-Han/movella',
+        featured: [
+            {
+                title: '1. Fetching Movie Categories',
+                details: [
+                    'Each function dynamically constructs the API URL.',
+                    'API responses are handled safely with .then() and .catch() to manage errors.'
+                ]
+            },
+            {
+                title: '2. Page Routing (React Router)',
+                details: [
+                    'Uses react-router-dom to create a Single Page Application (SPA) structure.',
+                    'AppRouter.js defines all routes for easy navigation.'
+                ]
+            },
+            {
+                title: '3. Global State Management',
+                details: [
+                    'Uses GlobalContext to manage the Favorites feature.',
+                    'GlobalProvider wraps the entire app, allowing state access across components.'
+                ]
+            },
+            {
+                title: '4. Dynamic Favorites System',
+                details: [
+                    'Users can add/remove movies from their Favorites list.',
+                    'Calls addFavorite() or removeFavorite() based on the movie status.',
+                    'isFavorite checks if a movie is already in favorites.'
+                ]
+            },
+            {
+                title: '5. Responsive Navigation Menu',
+                details: [
+                    'Supports mobile-friendly navigation with a hamburger menu.',
+                    'Uses useState to toggle menu visibility.'
+                ]
+            },
+            {
+                title: '6. Movie Details Page',
+                details: [
+                    'Uses dynamic routing (/movie/:id) to display individual movie details.',
+                    'Extracts the movie id from the URL using useParams().',
+                    'Fetches and displays movie-specific information (title, description, rating, etc.).'
+                ]
+            },
+        ],
+        reflection: [
+            {
+                title: '1. Achievements & Strengths',
+                details: [
+                    'While working on the movie database project, I am proud of several aspects I successfully implemented. I structured the API integration efficiently, which made fetching movie data smooth and reliable. Using React Router allowed me to create seamless navigation between different pages, significantly improving the overall user experience. One of the features I particularly enjoyed implementing was the Favorites feature, as it added a personal touch and made the app more engaging for users. Managing API requests and state through GlobalContext helped me keep the code organized and scalable, which I found very satisfying. Additionally, I ensured the app maintained a clean and intuitive design, enhancing user interaction. These achievements boosted my confidence in building user-centric web applications and strengthened my skills in state management and API handling.'
+                ]
+            },
+            {
+                title: '2. Challenges & Areas for Improvement',
+                details: [
+                    'Despite the successes, I faced several challenges during this project. I overlooked the need for loading indicators, which made the app feel unresponsive when fetching data, affecting the user experience. My error handling could also be improved; I did not display user-friendly messages when errors occurred, which might confuse users. Additionally, while the navigation menu worked, I felt I could have made it more visually refined to enhance usability further. Looking back, I realize the app would benefit from search and filtering options to make movie discovery more interactive and user-friendly. I also aim to implement better error handling with clearer messages to improve reliability. Incorporating animations and lazy loading would enhance performance and make the UI more appealing. These areas for improvement will guide me in building more robust and user-focused applications in the future.'
+                ]
+            },
+        ],
+        relatedProjects: [
+            { 
+                title: 'Movie Database',
+                imageUrl: '/src/media/md-background.png' 
+             },
+            { 
+                title: 'Capstone',
+                imageUrl: '/src/media/wallhaven.png' 
+            }
+        ]
+    },
 };
 
 export default projectsData;
