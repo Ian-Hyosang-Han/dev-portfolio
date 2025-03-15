@@ -98,6 +98,16 @@ const projectsData = {
                 ]
             },
         ],
+        relatedProjects: [
+            { 
+                title: 'Movie Database',
+                imageUrl: '/src/media/md-background.png' 
+             },
+            { 
+                title: 'Capstone',
+                imageUrl: '/src/media/wallhaven.png' 
+            }
+        ]
     },
 };
 

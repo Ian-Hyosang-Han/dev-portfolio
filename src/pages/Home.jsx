@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/pages/home.css';
 // Importing Icons 
 import linkedInIcon from '../media/linked-in-128.png';
-import githubIcon from '../media/github-96.png';
+import GithubIcon from '../components/common/GitHubIcon';
 
 function Home() {
     const phrases = [
@@ -43,22 +43,22 @@ function Home() {
                 </div>
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/ian-hyosang-han"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <img src={linkedInIcon}
-                            alt="LinkedIn Icon"
-                            className="icon-1" />
+                       target="_blank"
+                       rel="noopener noreferrer">
+                    <img 
+                        src={linkedInIcon}
+                        alt="LinkedIn Icon"
+                        className="icon-1" />
                     </a>
                     <a href="https://github.com/Ian-Hyosang-Han"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <img src={githubIcon}
-                            alt="GitHub Icon"
-                            className="icon-2" />
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       className="icon-2" >
+                        <GithubIcon />
                     </a>
                 </div>
                 <div className="greeting">
-                    <h1>Hello, Ian Han</h1>
+                    <h1>hello, ian han</h1>
                 </div>
                 <div className="typing-container">
                     {phrases.map((phrase, index) => (

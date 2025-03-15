@@ -107,7 +107,7 @@
 .project-content {
     display: flex;
     flex-direction: column;
-    margin-top: 22rem;
+    margin-top: 21rem;
 
 }
 
@@ -134,6 +134,7 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 10px 0;
+    padding-top: 0.5rem;
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -182,7 +183,7 @@
     width: 300px;
     display: none;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Additional styles for lists */
@@ -197,10 +198,10 @@
 }
 
 .visible-box h2 {
-    margin-top: 15rem;
+    margin-top: 2rem;
     text-align: center;
 }
 
-.showing-box h2 {
-    margin-bottom: 2rem;
-}
+/* .showing-box h2 {
+    margin-bottom: 1rem;
+} */

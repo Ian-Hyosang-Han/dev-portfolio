@@ -60,17 +60,16 @@ function ProjectDetails({ projectData }) {
                         ))}
                     </div>
                 </div>
-                {/* <div className='showing-box'>
+                <div className='showing-box'>
                     {projectData.relatedProjects.map((relatedProject, index) => (
                         <div key={index} className="visible-box">
-                            <ShowingBox />
-                            <h2>{relatedProject.title}</h2>
+                            <ShowingBox imageUrl={relatedProject.imageUrl} title={relatedProject.title} />
                         </div>
-                    ))} */}
+                    ))}
                     <div className="w-[300px] h-1 bg-white mx-auto "></div>
                 </div>
             </div>
-        // </div>
+        </div>
     );
 }
 
