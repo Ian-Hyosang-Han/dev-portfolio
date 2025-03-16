@@ -4,26 +4,22 @@
     width: 260px;
     height: 100%;
     position: fixed;
-    /* Fixed position */
     top: 0;
-    right: 0;
-    /* Align to the right */
-    transform: translateX(100%);
-    /* Initially hide off-screen */
-    transition: transform 0.3s ease-in-out;
-    /* Smooth transition */
+    right: 0; /* Align to the right */
+    transform: translateX(100%); /* Initially hide off-screen */
+    transition: transform 0.3s ease-in-out;     /* Smooth transition */
     background-color: #FF5F40;
     padding-top: 3rem;
     z-index: 1000;
 }
 
+/* Slide in */
 .main-nav.show {
-    /* Slide in */
     transform: translateX(0);
 }
 
+/* Slide out */
 .main-nav.hide {
-     /* Slide out */
     transform: translateX(100%);
 }
 
@@ -31,8 +27,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50.96px;
-    height: 50.96px;
+    width: 50px;
+    height: 50px;
     position: fixed;
     top: 0;
     right: 0;
@@ -175,4 +171,15 @@ a:focus {
     width: 260px;
     display: none;
     overflow: hidden;
+}
+
+
+/* ==================================================
+==================MEDIA-QUERY-SECTION================
+================================================== */
+
+@media (min-width: 48em) {
+
+    
+
 }

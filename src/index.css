@@ -3,7 +3,7 @@
 /* Custom font-family */
 
 .font-blackHan {
-  @apply text-white ;
+  @apply text-white;
   font-family: 'Black Han Sans', sans-serif;
 }
 
@@ -18,17 +18,17 @@
 }
 
 /* Colour and Font */
-
 :root {
-    --navi-bg-color: #FF5F40;
-    --main-font-color: #ffffff;
-    --second-font-color: #434343;
-    --third-font-color: #E8E6D5;
-    --navi-hover-color: #E8E6D5;
-    --heading-font: "Black Han Sans", serif;
-    --button-font: "", serif;
-    --body-font: "Lato", serif;
-  }
+  --navi-bg-color: #FF5F40;
+  --main-font-color: #ffffff;
+  --second-font-color: #434343;
+  --third-font-color: #E8E6D5;
+  --navi-hover-color: #E8E6D5;
+  --heading-font: "Black Han Sans", serif;
+  --button-font: "", serif;
+  --body-font: "Lato", serif;
+  --second-font: "Rajdhani", serif;
+}
 
 /* Base style for body */
 

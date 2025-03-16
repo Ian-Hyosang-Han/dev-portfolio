@@ -16,6 +16,7 @@ function Home() {
     ];
 
     const typingRefs = useRef([]);
+    const gifRef = useRef(null);
 
     useEffect(() => {
         typingRefs.current.forEach((ref, index) => {
@@ -35,23 +36,42 @@ function Home() {
         });
     }, [phrases]);
 
+
+    const handleMouseOver = (event) => {
+        const gifContainer = gifRef.current;
+        const gifUrl = event.target.getAttribute('data-gif');
+        gifContainer.style.display = 'block';
+        gifContainer.style.backgroundImage = `url(${gifUrl})`;
+    };
+
+    const handleMouseOut = () => {
+        const gifContainer = gifRef.current;
+        gifContainer.style.display = 'none';
+    };
+
+
     return (
         <div className="wrapper">
             <section className="intro-section">
                 <div className="role">
-                    <p className="front-end">Front-End</p>
-                    <p>Developer</p>
+                    <p className="front-end">front-end</p>
+                    <p className="developer">developer</p>
                 </div>
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/ian-hyosang-han"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                    >
                         <img
                             src={linkedInIcon}
                             alt="LinkedIn Icon"
-                            className="icon-1" />
+                            className="icon-1"
+                        />
                     </a>
-                    <GithubIcon className="icon-2" url="https://github.com/Ian-Hyosang-Han" />
+                    <GithubIcon
+                        className="icon-2"
+                        url="https://github.com/Ian-Hyosang-Han"
+                    />
                 </div>
                 <div className="greeting">
                     <h1>hello, ian han</h1>
@@ -66,9 +86,10 @@ function Home() {
                 <div className='angle-top'></div>
                 <div className="section-inner">
                     <div className="inner-wide">
+                        <div ref={gifRef} className="gif-container"></div>
                         <h2>about</h2>
-                        <p><strong>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
-                        <p><strong>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong>grow from the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
+                        <p><strong data-gif="src/media/gif-1.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
+                        <p><strong data-gif="src/media/gif-2.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong data-gif="src/media/gif-3.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>grow from the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
                     </div>
                 </div>
                 <div className='angle-bottom'></div>
@@ -101,7 +122,7 @@ function Home() {
                 <div className="work work02">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                    <ProjectButton label="movella" url="/project/moviedatabase" />
+                        <ProjectButton label="movella" url="/project/moviedatabase" />
                         <p>movie database</p>
                     </div>
                 </div>

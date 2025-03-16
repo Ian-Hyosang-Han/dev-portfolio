@@ -1,4 +1,4 @@
-header{
+/* header{
     width: 100%;
     height: auto;
     padding: 0;
@@ -7,22 +7,20 @@ header{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #B9B9BA;
-}
+} */
 
 .mobile-menu{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
     align-items: center;
+    background-color: #B9B9BA;
     height: 30px;
     padding-left: 0.5rem;
 }
 
 .btn-main-nav{
     border: none;
-    background-color: var(--main-bg-color);
-    color: var(--main-font-black);
     cursor: pointer;
     padding: 0;
 }
@@ -37,9 +35,9 @@ header{
     width: 30px;
     height: 30px;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 /* 아이콘 이미지 크기 조정 */
@@ -53,7 +51,36 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;  /* 햄버거 아이콘 크기 설정 */
-    height: 30px; /* 햄버거 아이콘 크기 설정 */
-    z-index: 1003; /* Ensure the navigation is on top */
+    width: 30px;
+    height: 30px;
+    z-index: 1005;
+    position: absolute;
+    top: 1px;
+}
+
+/* ==================================================
+==================MEDIA-QUERY-SECTION================
+================================================== */
+
+@media (min-width: 48em) {
+
+    .mobile-menu{
+        height: 50px;
+    }
+
+    .logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    .open-icon, .close-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hamburger-icon {
+        width: 50px;
+        height: 50px;
+    }
+
 }
