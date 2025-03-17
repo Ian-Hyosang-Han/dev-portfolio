@@ -10,6 +10,8 @@
 
 .role p {
     font-size: 15px;
+    font-weight: bold;
+    font-family: 'Rajdhani', 'sans-serif';
     text-transform: uppercase;
     padding: 0;
     margin: 0;
@@ -39,7 +41,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 5.8rem;
+    width: 4.3rem;
     height: 2px;
     background-color: #fff;
 }
@@ -81,7 +83,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lato', 'sans-serif';
-    line-height: 1.3rem;
+    line-height: 1.3;
     color: #434343;
 }
 
@@ -94,6 +96,10 @@
 .section-inner {
     position: relative;
     width: 100%;
+}
+.section-inner h2{
+    font-size: 2rem;
+    padding-left: 10px;
 }
 
 .about-section .angle-top {
@@ -127,6 +133,7 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
+    z-index: 1000;
 }
 
 /* ========================================
@@ -241,13 +248,12 @@
     color: #434343;
 }
 
-.skill-section .section-inner {
+.skill-section .skill-section-inner {
     background-color: white;
-    margin: 0 auto 0 auto;
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
-.section-inner {
+.skill-section-inner {
     position: relative;
     width: 100%;
 }
@@ -263,14 +269,18 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
 }
 
-.inner-wide {
+.skill-inner-wide {
     position: relative;
     margin: 0 auto;
     padding: 0 10px;
     text-align: left;
+}
+
+.skill-inner-wide h2 {
+    font-size: 2rem;
 }
 
 .skill-section .angle-bottom {
@@ -284,19 +294,19 @@
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
     z-index: 1;
 }
 
-.inner-wide p {
+/* .inner-wide p {
     margin-top: 0.3rem;
-}
+} */
 
-.inner-wide h2 {
+.skill-inner-wide h2 {
     margin-bottom: 1rem;
 }
 
-.inner-wide h3 {
+.skill-inner-wide h3 {
     position: relative;
     font-size: 20px;
     text-transform: uppercase;
@@ -305,7 +315,7 @@
     padding-left: 10px;
 }
 
-.inner-wide h3::before {
+.skill-inner-wide h3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -328,6 +338,31 @@
         right: 2rem;
     }
 
+    .role p {
+        font-size: 25px;
+    }
+
+    .role .front-end::before {
+        width: 7rem;
+    }
+
+    .greeting {
+        font-size: 1.5rem;
+    }
+
+    .typing-container {
+        font-size: 40px;
+    }
+ 
+    .work-inner {
+        position: relative;
+        width: 100%;
+    }
+
+    .work-inner-wide h2 {
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 64em){
@@ -341,10 +376,12 @@
     .greeting {
         font-size: 2rem;
         margin: 25px 0;
+        margin-left: 10px;
     }
 
     .typing-container {
         font-size: 4rem;
+        margin-left: 10px;
     }
 
     .typing-effect::after {
@@ -355,11 +392,11 @@
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
+        margin-left: 10px;
     }
 
     .role p {
-        font-size: 30px;
-        font-weight: bold;
+        font-size: 40px;
     }
 
     .role .front-end {
@@ -376,20 +413,135 @@
         background-color: #fff;
     }
 
+/* =====MEDIA-QUREY-ABOUT-SECTION======= */
+
+    .about-section .section-inner {
+        padding-bottom: 2rem;
+    }
+
+    .section-inner h2 {
+        font-size: 3rem;
+        margin-left: 10px;
+    }
+
     .inner-wide {
-        padding-left: 300px;
+        padding-left: 320px;
+    }
+
+    .inner-wide p {
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    .gif {
+        cursor: grab;
     }
 
     .gif-container {
         position: absolute;
         top: 0;
         left: 0;
-        width: 300px;
+        width: 280px;
         height: 300px;
         display: none;
         background-size: cover;
         background-position: center;
+        margin-top: 5px;
+        margin-left: 20px;
         z-index: 1000;
+    }
+
+    .about-section .angle-top {
+        background-image: url(../../media/angle_top.png);
+
+    }
+
+    .about-section .angle-bottom {
+        background-image: url(../../media/angle_bottom.png);
+        z-index: 1000;
+    }
+
+/* =====MEDIA-QUREY-SKILL-SECTION======= */
+
+    .skill-section .skill-section-inner {
+        padding: 2rem 0;
+    }
+
+    .skill-section-inner h2 {
+        font-size: 3rem;
+        margin-left: 10px;
+    }
+
+    .skill-section-inner h3 {
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 10px;
+    }
+
+    .skill-section-inner p {
+        font-size: 1.625rem;
+        margin-left: 20px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        line-height: 1.3;
+    }
+
+    .skill-section .angle-top {
+        background-image: url(../../media/angle_top.png);
+    }
+    
+    .skill-section .angle-bottom {
+        background-image: url(../../media/angle_bottom.png);
+    }
+    
+/* =====MEDIA-QUREY-WORK-SECTION======= */
+
+    .work-inner-wide h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #home-works {
+        height: 600px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .work {
+        position: absolute;
+        width: 25%;
+        height: 600px;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .work01 {
+        top: 0;
+        left: 0;
+        background-color: hsl(25, 25, 25, 1);
+    }
+
+    .work02 {
+        top: 0;
+        left: 25%;
+        background-color: hsl(25, 25, 25, 1);
+    }
+
+    .work03 {
+        top: 0;
+        left: 50%;
+        background-color: hsl(25, 25, 25, 1);
+    }
+
+    .work04 {
+        top: 0;
+        left: 75%;
+        background-color: hsl(25, 25, 25, 1);
+    }
+
+    .work-inner {
+        margin: 25px auto 25px auto;
     }
 
 }

@@ -46,7 +46,6 @@ h1 {
 
 h2 {
   font-family: 'Black Han sans', 'sans-serif';
-  font-size: 2rem;
   text-transform: uppercase;
 }
 
@@ -57,4 +56,8 @@ h3 {
 
 p {
   font-family: 'Lato', 'sans-serif';
+}
+
+.impact-text {
+  font-family: 'Alfa Slab One', 'sans-serif';
 }
