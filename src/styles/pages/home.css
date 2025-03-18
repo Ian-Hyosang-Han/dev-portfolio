@@ -210,26 +210,29 @@
 
 .work01 {
     background-color: black;
-    background-image: url(../../media/js-background.png);
-    background-size: contain;
+    background-image: url(../../media/jv-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .work02 {
     background-color: black;
-    background-image: url(../../media/md-background.png);
-    background-size: contain;
+    background-image: url(../../media/mv-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .work03 {
     background-color: black;
     background-image: url(../../media/cap-background.jpg);
-    background-size: contain;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 .work04 {
     background-color: black;
     background-image: url(../../media/wallhaven.png);
-    background-size: ;
+    background-size: cover;
 }
 
 /* ========================================

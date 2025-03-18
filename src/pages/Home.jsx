@@ -95,8 +95,6 @@ function Home() {
                 <div className='angle-bottom'></div>
             </section>
 
-
-
             <section id='home-works' className='works-section'>
                 <div className="work work01">
                     <div className="work-cover"></div>

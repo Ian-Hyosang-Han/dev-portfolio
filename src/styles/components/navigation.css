@@ -1,16 +1,16 @@
 .main-nav {
     justify-items: center;
     align-items: center;
-    width: 260px;
+    width: 320px;
     height: 100%;
     position: fixed;
     top: 0;
     right: 0; /* Align to the right */
     transform: translateX(100%); /* Initially hide off-screen */
-    transition: transform 0.3s ease-in-out;     /* Smooth transition */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
     background-color: #FF5F40;
     padding-top: 3rem;
-    z-index: 1000;
+    z-index: 1010;
 }
 
 /* Slide in */
@@ -32,7 +32,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10010;
     cursor: pointer;
 }
 
@@ -81,8 +81,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #FF5F40;
     padding: 1rem;
     border: 0.4rem solid #D12908;
@@ -111,8 +111,8 @@
 }
 
 .nav-image-box .circle {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: #FF5F40;
     border-radius: 50%;
     display: flex;
@@ -132,7 +132,8 @@ a:focus {
     color: #E8E6D5;
     padding: 0;
     margin: 0;
-    font-size: 20px;
+    font-family: 'Black Han Sans', 'sans serif';
+    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,11 +143,14 @@ a:focus {
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-family: 'Rajdhani', 'sans-serif';
+    font-weight: bold;
+    font-size: 1.5rem;
     background-color: #FF5F40;
     color: #E8E6D5;
     cursor: pointer;
     padding: 0.5rem;
-    width: 260px;
+    width: 320px;
     text-align: left;
     border: none;
     outline: none;
@@ -164,13 +168,15 @@ a:focus {
 }
 
 /* Style the accordion panel. Note: hidden by default */
-.panel {
-    padding: 0 0.5rem;
+.nav-panel {
+    font-family: 'Lato', 'sans-serif';
+    padding: 1rem 0.5rem;
     color: #FF5F40;
     background-color: #E8E6D5;
-    width: 260px;
+    width: 310px;
     display: none;
     overflow: hidden;
+    font-weight: bold;
 }
 
 
