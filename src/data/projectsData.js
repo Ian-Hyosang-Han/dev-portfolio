@@ -2,6 +2,7 @@ const projectsData = {
     javascriptgame: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
+        imageUrls: ['/src/media/js-background-1.png', '/src/media/js-background-2.png'],
         technologies: 'HTML / CSS / JavaScript',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
         roles: 'UX/UI designer / Developer',
@@ -181,11 +182,11 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/src/media/md-background.png' 
+                imageUrl: '/src/media/m-background.png'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/src/media/wallhaven.png' 
+                imageUrl: '/src/media/wallhaven.png'
             }
         ]
     },
