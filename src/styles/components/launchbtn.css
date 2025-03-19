@@ -8,6 +8,7 @@
     line-height: 40px;
     -webkit-perspective: 230px;
     perspective: 230px;
+    cursor: pointer;
 }
 
 .custom-btn02 span {

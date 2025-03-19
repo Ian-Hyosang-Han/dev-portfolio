@@ -87,6 +87,7 @@
     padding: 1rem;
     border: 0.4rem solid #D12908;
     text-align: center;
+    cursor: pointer;
 }
 
 .nav-home-box,
@@ -100,7 +101,7 @@
 .nav-home-box:hover,
 .nav-work-box:hover,
 .nav-about-box:hover{
-    background-color: #ccc;
+    background-color: #D12908;
 }
 
 /* Round box style */
@@ -160,7 +161,7 @@ a:focus {
 }
 
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #D12908;
 }
 
 .last-accordion {

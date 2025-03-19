@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 // Importing CSS style file
 import '../styles/pages/home.css';
 // Importing Icons 
-import linkedInIcon from '../media/linked-in-128.png';
+import { FaLinkedin } from "react-icons/fa6";
 import GithubIcon from '../components/common/GitHubIcon';
 import ProjectButton from '../components/common/ProjectButton';
 
@@ -60,14 +60,11 @@ function Home() {
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/ian-hyosang-han"
                         target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <img
-                            src={linkedInIcon}
-                            alt="LinkedIn Icon"
-                            className="icon-1"
-                        />
+                        rel="noreferrer"
+                        className="icon-1">
+                        <FaLinkedin size={45} className='fill-white' />
                     </a>
+
                     <GithubIcon
                         className="icon-2"
                         url="https://github.com/Ian-Hyosang-Han"
@@ -85,7 +82,7 @@ function Home() {
             <section id='home-about' className='about-section'>
                 <div className='angle-top'></div>
                 <div className="section-inner">
-                        <h2>about</h2>
+                    <h2>about</h2>
                     <div className="inner-wide">
                         <div ref={gifRef} className="gif-container"></div>
                         <p><strong className="gif" data-gif="src/media/gif-1.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
@@ -115,7 +112,7 @@ function Home() {
                 <div className="work work03">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                        <h2>capstone</h2>
+                        <ProjectButton label="capstone" url="/" />
                         <p>capstone project</p>
                     </div>
                 </div>
@@ -123,8 +120,8 @@ function Home() {
                 <div className="work work04">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                        <h2>design</h2>
-                        <p>figma/adobe xd</p>
+                    <ProjectButton label="design" url="/" />
+                    <p>figma/adobe xd</p>
                     </div>
                 </div>
 

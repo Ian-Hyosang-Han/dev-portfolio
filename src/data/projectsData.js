@@ -182,7 +182,7 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/src/media/m-background.png'
+                imageUrl: 'src/media/md-background.png'
              },
             { 
                 title: 'Capstone',

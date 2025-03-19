@@ -14,24 +14,28 @@ function ProjectDetails({ projectData }) {
 
     return (
         <div className="project-wrapper">
-            <div className="project-container">
-                {projectData.imageUrls.map((url, index) => (
-                    <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
-                ))}
-            </div>
-
-            <div className="link-box">
-                <div className="link-to">
-                    <LaunchButton url={projectData.launchUrl} />
-                    <GitHubIcon url={projectData.githubUrl} />
+            <div className="project-page">
+                <div className="project-header">
+                    <h2>{projectData.title}</h2>
+                    <h3>{projectData.subtitle}</h3>
+                    <h4>{projectData.technologies}</h4>
                 </div>
-            </div>
-            <div className="project-content">
-                <h2>{projectData.title}</h2>
-                <h3>{projectData.subtitle}</h3>
-                <h4>{projectData.technologies}</h4>
-                <p><strong>Project-overview:</strong> {projectData.overview}</p>
-                <p><strong>Role(s):</strong> {projectData.roles}</p>
+                <div className="project-container">
+                    {projectData.imageUrls.map((url, index) => (
+                        <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
+                    ))}
+                </div>
+
+                <div className="link-box">
+                    <div className="link-to">
+                        <LaunchButton url={projectData.launchUrl} />
+                        <GitHubIcon url={projectData.githubUrl} />
+                    </div>
+                </div>
+                <div className="project-content">
+                    <p><strong>Project-overview:</strong> {projectData.overview}</p>
+                    <p><strong>Role(s):</strong> {projectData.roles}</p>
+                </div>
             </div>
             <div className="accordion-container">
                 <div className="accordion-box">
@@ -71,10 +75,13 @@ function ProjectDetails({ projectData }) {
                     {projectData.relatedProjects.map((relatedProject, index) => (
                         <div key={index} className="visible-box">
                             <img src={relatedProject.imageUrl} alt={relatedProject.title} className="project-image" />
+                            {console.log("relatedProjects:", projectData.relatedProjects)}
                             <h2>{relatedProject.title}</h2>
                         </div>
                     ))}
-                    <div className="w-[95vw] h-1 bg-white mx-auto mt-5"></div>
+                </div>
+                <div className="divide-bar">
+                    <div className="w-[95vw] h-1 bg-white mx-auto"></div>
                 </div>
             </div>
         </div>

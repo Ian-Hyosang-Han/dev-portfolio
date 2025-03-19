@@ -1,10 +1,16 @@
 .project-wrapper {
     display: flex;
     flex-direction: column;
+    max-width: 100vw;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0 10px;
     color: white;
+}
+
+.project-page {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .project-container {
@@ -12,15 +18,20 @@
     flex-direction: column;
     position: relative;
     align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    /* border: 1px solid rgb(198, 198, 198);
+    background-color: rgb(198, 198, 198); */
 }
 
 .project-header-image {
     max-width: 600px;
+    max-height: 400px;
     width: 100%;
-    height: auto;
+    height: 100%;
     border: 1px solid white;
     border-radius: 5px;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .link-box {
@@ -34,44 +45,42 @@
     flex-direction: row;
 }
 
-.project-content {
+.project-header {
     display: flex;
     flex-direction: column;
 }
 
-.project-content h2 {
+.project-header h2 {
     font-size: 2.3rem;
     margin-top: 2rem;
 }
 
-.project-content h3 {
+.project-header h3 {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0.2rem 0;
+    color: hsl(0, 0%, 90%);
 }
 
-.project-content h4 {
+.project-header h4 {
     font-size: 1rem;
     text-transform: uppercase;
-    margin-bottom: 1rem;
+    color: hsl(0, 0%, 90%);
 }
 
 .project-content p {
     font-size: 15px;
     line-height: 20px;
-    margin: 5px 0;
+    margin-top: 20px;
 }
 
-
-
 /* Style the buttons that are used to open and close the accordion panel */
-
 .accordion-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    align-items: center; /* 가운데 정렬 */
+    align-items: center;
 }
 
 .accordion-box {
@@ -86,7 +95,8 @@
     font-size: 23px;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 10px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding-top: 0.5rem;
 }
 
@@ -106,7 +116,6 @@
     text-align: center;
     transition: 0.4s;
     font-weight: bold;
-    margin: 0 5px; /* 버튼 사이의 간격 추가 */
 }
 
 .accordion-button.active {
@@ -138,7 +147,7 @@
 /* Additional styles for lists */
 .panel ul li {
     list-style-type: disc;
-    margin-left: 20px; 
+    margin-left: 30px; 
 }
 
 .showing-box {
@@ -149,16 +158,96 @@
 
 .visible-box h2 {
     font-size: 2rem;
-    margin-top: 0.5rem;
+    margin: 1rem 0;
     text-align: center;
 }
 
+.project-image {
+    border: 1px solid white;
+}
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
+
+    .link-box {
+        margin-right: 4.6rem;
+    }
+
+    .project-header {
+        margin-left: 5rem;
+    }
+
+    .project-header h2 {
+        font-size: 3rem;
+    }
+    
+    .project-header h3 {
+        font-size: 2rem;
+    }
+
+    .project-header h4 {
+        font-size: 1.3rem;
+    }
+    
+    .project-content p {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 20px 75px 0 75px;
+    }
+
+    .accordion-box h2 {
+        font-size: 2rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+
+    .project-wrapper {
+        
+    }
+
+    .project-header-image {
+        width: 500px;
+        height: 400px;
+    }
+
+    .link-box {
+        margin-right: 5.7rem;
+    }
+
+    .project-header {
+        margin-left: 6rem;
+    }
+
+    .project-content p {
+        font-size: 20px;
+        line-height: 20px;
+        margin: 10px 90px;
+    }
 
     .project-container {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1rem;
     }
 
-} */
+    .accordion-box h2 {
+        font-size: 2.5rem;
+    }
+
+    .showing-box {
+        display: flex;
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .visible-box {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .divide-bar {
+        display: block;
+    }
+
+}
