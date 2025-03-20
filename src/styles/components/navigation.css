@@ -180,6 +180,10 @@ a:focus {
     font-weight: bold;
 }
 
+.accordion span {
+    position: absolute;
+    right: 20px;
+}
 
 /* ==================================================
 ==================MEDIA-QUERY-SECTION================

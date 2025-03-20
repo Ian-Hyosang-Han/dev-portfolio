@@ -60,15 +60,15 @@ const Nav = ({ navOpen, setNavOpen }) => {
                     </div>
                 </div>
             </ul>
-            <button className={`accordion ${activePanel === 0 ? 'active' : ''}`} onClick={(e) => togglePanel(0, e)}>Contact</button>
+            <button className={`accordion ${activePanel === 0 ? 'active' : ''}`} onClick={(e) => togglePanel(0, e)}>Contact<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 0 ? 'block' : 'none' }}>
                 <p>Ian.han7540@gmail.com</p>
             </div>
-            <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>Linked In</button>
+            <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>Linked In<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 1 ? 'block' : 'none' }}>
                 <p>http://linkedin.com/in/ian-han-7540</p>
             </div>
-            <button className={`accordion last-accordion ${activePanel === 2 ? 'active' : ''}`} onClick={(e) => togglePanel(2, e)}>GitHub</button>
+            <button className={`accordion last-accordion ${activePanel === 2 ? 'active' : ''}`} onClick={(e) => togglePanel(2, e)}>GitHub<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 2 ? 'block' : 'none' }}>
                 <p>https://github.com/Ian-Hyosang-Han</p>
             </div>

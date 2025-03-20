@@ -114,6 +114,7 @@ const projectsData = {
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
+        imageUrls: ['/src/media/md-background.png', '/src/media/md-background-1.png'],
         technologies: 'REACT.js / CSS',
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
         roles: 'UX/UI designer / Developer',
@@ -181,8 +182,8 @@ const projectsData = {
         ],
         relatedProjects: [
             { 
-                title: 'Movie Database',
-                imageUrl: 'src/media/md-background.png'
+                title: 'JVASCRIPT GAME',
+                imageUrl: '/src/media/js-background-1.png'
              },
             { 
                 title: 'Capstone',

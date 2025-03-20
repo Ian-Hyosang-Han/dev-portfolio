@@ -20,10 +20,10 @@ function ProjectDetails({ projectData }) {
                     <h3>{projectData.subtitle}</h3>
                     <h4>{projectData.technologies}</h4>
                 </div>
-                <div className="project-container">
-                    {projectData.imageUrls.map((url, index) => (
-                        <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
-                    ))}
+
+                <div className="project-content">
+                    <p><strong>Project-overview:</strong> {projectData.overview}</p>
+                    <p><strong>Role(s):</strong> {projectData.roles}</p>
                 </div>
 
                 <div className="link-box">
@@ -32,10 +32,13 @@ function ProjectDetails({ projectData }) {
                         <GitHubIcon url={projectData.githubUrl} />
                     </div>
                 </div>
-                <div className="project-content">
-                    <p><strong>Project-overview:</strong> {projectData.overview}</p>
-                    <p><strong>Role(s):</strong> {projectData.roles}</p>
+
+                <div className="project-container">
+                    {projectData.imageUrls.map((url, index) => (
+                        <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
+                    ))}
                 </div>
+
             </div>
             <div className="accordion-container">
                 <div className="accordion-box">
@@ -75,7 +78,6 @@ function ProjectDetails({ projectData }) {
                     {projectData.relatedProjects.map((relatedProject, index) => (
                         <div key={index} className="visible-box">
                             <img src={relatedProject.imageUrl} alt={relatedProject.title} className="project-image" />
-                            {console.log("relatedProjects:", projectData.relatedProjects)}
                             <h2>{relatedProject.title}</h2>
                         </div>
                     ))}
