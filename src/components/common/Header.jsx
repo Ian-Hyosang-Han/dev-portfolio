@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "../common/Navigation.jsx";
-import logo from "../../media/logo.png";
-import navOpneImage from "../../media/nav-open.png";
-import navCloseImage from "../../media/nav-close.png";
+import logo from "/logo.png";
+import navOpneImage from "/nav-open.png";
+import navCloseImage from "/nav-close.png";
 // Importing CSS style file
 import "../../styles/components/header.css";
 

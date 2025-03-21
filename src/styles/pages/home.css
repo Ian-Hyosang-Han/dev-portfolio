@@ -25,6 +25,31 @@
     align-items: center;
 }
 
+.float-image img {
+    position: absolute;
+    top: 11.5rem;
+    left: 13rem;
+    width: 100px;
+    height: 60px;
+    animation: rocking 3s infinite ease-in-out;
+    transform-origin: center top;
+}
+
+@keyframes rocking {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    75% {
+        transform: rotate(-5deg);
+    }
+}
+
 .role .front-end {
     margin-top: 2rem;
     position: relative;
@@ -104,7 +129,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../media/angle_top_mobile.png);
+    background-image: url(/angle_top_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
@@ -124,11 +149,30 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../media/angle_bottom_mobile.png);
+    background-image: url(/angle_bottom_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
     z-index: 1000;
+}
+
+.about-link-container {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.about-link {
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-link:hover {
+    color: #FF5F40;
 }
 
 /* ========================================
@@ -161,7 +205,7 @@
     width: 100%;
     height: 100%;
     background-color: black;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .work-text {
@@ -187,46 +231,45 @@
 }
 
 #home-works .work-inner {
-    padding-top: 25px;
+    padding-top: 35px;
     position: absolute;
     top: 0;
     left: 0;
 }
 
 .work-inner-wide {
-    font-size: 32px;
+    font-size: 2rem;
     text-transform: uppercase;
     position: relative;
     margin: 0 auto;
     padding: 0 10px;
-    text-align: left;
     max-width: 1240px;
 }
 
 .work01 {
     background-color: black;
-    background-image: url(../../media/jv-background.png);
+    background-image: url(/jv-background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .work02 {
     background-color: black;
-    background-image: url(../../media/mv-background.jpg);
+    background-image: url(/mv-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .work03 {
     background-color: black;
-    background-image: url(../../media/cap-background.jpg);
+    background-image: url(/cap-background.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
 }
 
 .work04 {
     background-color: black;
-    background-image: url(../../media/wallhaven.png);
+    background-image: url(/wallhaven.png);
     background-size: cover;
 }
 
@@ -238,7 +281,7 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-bottom: 1rem;
     padding: 0;
     font-family: 'Lato', 'sans-serif';
@@ -248,7 +291,7 @@
 
 .skill-section .skill-section-inner {
     background-color: white;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 
 .skill-section-inner {
@@ -263,7 +306,7 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../media/angle_top_mobile.png);
+    background-image: url(/angle_top_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
@@ -287,17 +330,13 @@
     left: 0;
     width: 100%;
     height: 30px;
-    background-image: url(../../media/angle_bottom_mobile.png);
+    background-image: url(/angle_bottom_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
     /* transform: scaleX(-1); */
     z-index: 1;
 }
-
-/* .inner-wide p {
-    margin-top: 0.3rem;
-} */
 
 .skill-inner-wide h2 {
     margin-bottom: 1rem;
@@ -321,7 +360,6 @@
     height: 100%;
     background-color: #FF5F40;
 }
-
 
 /* ==================================================
 ==================MEDIA-QUERY-SECTION================
@@ -347,17 +385,33 @@
         font-size: 1.5rem;
     }
 
+    .float-image img {
+        top: 17rem;
+        left: 32rem;
+        width: 210px;
+        height: 120px;
+    }
+
     .typing-container {
         font-size: 40px;
     }
  
+    .typing-effect::after {
+        height: 1.9rem;
+    }
+
     .work-inner {
         position: relative;
         width: 100%;
     }
 
     .work-inner-wide h2 {
+        font-size: 2.5rem;
         text-align: center;
+    }
+
+    .about-link-container {
+        margin-right: 10px;
     }
 
 }
@@ -374,6 +428,13 @@
         font-size: 2rem;
         margin: 25px 0;
         margin-left: 10px;
+    }
+
+    .float-image img {
+        top: 23rem;
+        left: 45rem;
+        width: 230px;
+        height: 140px;
     }
 
     .typing-container {
@@ -449,19 +510,27 @@
     }
 
     .about-section .angle-top {
-        background-image: url(../../media/angle_top.png);
-
+        background-image: url(/angle_top.png);
     }
 
     .about-section .angle-bottom {
-        background-image: url(../../media/angle_bottom.png);
+        background-image: url(/angle_bottom.png);
         z-index: 1000;
+    }
+
+    .about-link-container {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    .about-link {
+        font-size: 1.5rem;
     }
 
 /* =====MEDIA-QUREY-SKILL-SECTION======= */
 
     .skill-section .skill-section-inner {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
     .skill-section-inner h2 {
@@ -485,11 +554,11 @@
     }
 
     .skill-section .angle-top {
-        background-image: url(../../media/angle_top.png);
+        background-image: url(/angle_top.png);
     }
     
     .skill-section .angle-bottom {
-        background-image: url(../../media/angle_bottom.png);
+        background-image: url(/angle_bottom.png);
     }
     
 /* =====MEDIA-QUREY-WORK-SECTION======= */
@@ -540,5 +609,17 @@
     .work-inner {
         margin: 25px auto 25px auto;
     }
+
+}
+
+@media (min-width: 1200px){
+
+    .float-image img {
+        top: 25rem;
+        left: 64rem;
+        width: 330px;
+        height: 170px;
+    }
+
 
 }

@@ -2,7 +2,7 @@ const projectsData = {
     javascriptgame: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
-        imageUrls: ['/src/media/js-background-1.png', '/src/media/js-background-2.png'],
+        imageUrls: ['/js-background-1.png', '/js-background-2.png'],
         technologies: 'HTML / CSS / JavaScript',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
         roles: 'UX/UI designer / Developer',
@@ -102,11 +102,11 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/src/media/md-background.png' 
+                imageUrl: '/md-background.png'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/src/media/wallhaven.png' 
+                imageUrl: '/wallhaven.png'
             }
         ]
     },
@@ -114,7 +114,7 @@ const projectsData = {
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
-        imageUrls: ['/src/media/md-background.png', '/src/media/md-background-1.png'],
+        imageUrls: ['/md-background.png', '/md-background-1.png'],
         technologies: 'REACT.js / CSS',
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
         roles: 'UX/UI designer / Developer',
@@ -183,11 +183,11 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'JVASCRIPT GAME',
-                imageUrl: '/src/media/js-background-1.png'
+                imageUrl: '/js-background-1.png'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/src/media/wallhaven.png'
+                imageUrl: '/wallhaven.png'
             }
         ]
     },

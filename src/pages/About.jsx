@@ -10,7 +10,7 @@ function About() {
                 <div
                     className="bg-cover bg-right bg-no-repeat text-transparent bg-clip-text flex-1 lg:order-2"
                     style={{
-                        backgroundImage: "url('src/media/font-background-1.png')",
+                        backgroundImage: "url('font-background.jpg')",
                         backgroundSize: "100%",
                         backgroundPosition: "right center"
                     }}

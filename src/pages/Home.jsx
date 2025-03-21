@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useEffect, useRef } from 'react';
 // Importing CSS style file
 import '../styles/pages/home.css';
@@ -70,6 +71,9 @@ function Home() {
                         url="https://github.com/Ian-Hyosang-Han"
                     />
                 </div>
+                <div className="float-image">
+                    <img src="/main_notebook.webp" alt="notebook" />
+                </div>
                 <div className="greeting">
                     <h1>hello, ian han</h1>
                 </div>
@@ -85,8 +89,11 @@ function Home() {
                     <h2>about</h2>
                     <div className="inner-wide">
                         <div ref={gifRef} className="gif-container"></div>
-                        <p><strong className="gif" data-gif="src/media/gif-1.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
-                        <p><strong className="gif" data-gif="src/media/gif-2.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong className="gif" data-gif="src/media/gif-3.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>grow from the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
+                        <p><strong className="gif" data-gif="gif-1.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>Driven by limitless ideas and imagination.</strong> I will be a developer who constantly strives  for endless development and problem-solving. With the skills I have learned, I will maintain an attitude of continuous growth by staying updated with the latest trends ans tools</p>
+                        <p><strong className="gif" data-gif="gif-2.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>If you're not making mistakes, you're not doing anything.</strong> I believe that challenging moments are inevitable for everyone. However, the ultimate  purpose of these challenges is to learn and <strong className="gif" data-gif="gif-3.gif" onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>grow from the experience.</strong> By approaching even the smallest problems with patience and resilience, fostering communication with those around me, and turning each experience into an opportunity for personal growth, I strive to maintain a healthy work-life balance while continually progressing in my journey.</p>
+                        <div className="about-link-container">
+                            <Link to="/about" className="about-link">more about me</Link>
+                        </div>
                     </div>
                 </div>
                 <div className='angle-bottom'></div>
@@ -120,8 +127,8 @@ function Home() {
                 <div className="work work04">
                     <div className="work-cover"></div>
                     <div className="work-text">
-                    <ProjectButton label="design" url="/" />
-                    <p>figma/adobe xd</p>
+                        <ProjectButton label="design" url="/" />
+                        <p>figma/adobe xd</p>
                     </div>
                 </div>
 
@@ -137,6 +144,8 @@ function Home() {
                 <div className="skill-section-inner">
                     <div className="skill-inner-wide">
                         <h2>skills</h2>
+                        <p>I utilize HTML, CSS, JavaScript, SASS, React, and Tailwind CSS to create intuitive UI and seamless UX in my development work. Additionally, I work with PHP, Shopify, WooCommerce, and WordPress to build scalable and efficient web solutions.<br />
+                            I believe in the harmony between design and development, and I strive to create engaging interfaces using Figma and Adobe XD. I also focus on optimizing user experience and continuously improving web environments to maximize performance.</p>
                         <h3>development</h3>
                         <p>HTML / CSS / JAVASCRIPT / SASS / REACT / TAILWIND CSS / PHP /
                             SHOPIFY / WOOCOMMERCE / WORDPRESS</p>

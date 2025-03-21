@@ -123,21 +123,18 @@
 
 }
 
-/* Links style */
-a,
-a:visited,
-a:hover,
-a:active,
-a:focus {
+/* Links style - 박스 안의 a 태그만 적용 */
+.nav-home-box a,
+.nav-work-box a,
+.nav-about-box a {
     text-decoration: none;
     color: #E8E6D5;
-    padding: 0;
-    margin: 0;
-    font-family: 'Black Han Sans', 'sans serif';
+    font-family: 'Black Han Sans', 'sans-serif';
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center; /* 텍스트 정렬 추가 */
     width: 100%;
     height: 100%;
 }
