@@ -1,10 +1,10 @@
 .wrapper {
-    font-family: 'Black Han Sans', 'sans-serif' ;
+    font-family: 'Black Han Sans', 'sans-serif';
     color: #ffffff;
 }
 
 .intro-section {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     margin-left: 0.625rem;
 }
 
@@ -19,35 +19,10 @@
 
 .icons {
     position: absolute;
-    top: 3.5rem;
+    top: 3.8rem;
     right: 1rem;
     display: flex;
     align-items: center;
-}
-
-.float-image img {
-    position: absolute;
-    top: 11.5rem;
-    left: 13rem;
-    width: 100px;
-    height: 60px;
-    animation: rocking 3s infinite ease-in-out;
-    transform-origin: center top;
-}
-
-@keyframes rocking {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    75% {
-        transform: rotate(-5deg);
-    }
 }
 
 .role .front-end {
@@ -66,31 +41,115 @@
     background-color: #fff;
 }
 
+.typing-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.3rem;
+}
+
 .typing-container {
-    font-size: 1.5rem;
+    width: 100%;
+    line-height: 1.1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.5rem;
 }
 
-.typing-effect::after {
+.typing-group-one {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.typing-effect-first {
+    margin-bottom: 0.5rem;
+}
+
+.typing-effect-second {
+    margin-left: 0.5rem;
+}
+
+.typing-effect02 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.typing-group-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+.typing-effect-fourth {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.typing-effect-fifth {
+    margin-left: 2rem;
+}
+
+.book-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-image img {
+    width: 70px;
+    height: 80px;
+    animation: rocking 3s infinite ease-in-out;
+    transform-origin: center top;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.notebook-image img {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+    animation: rocking 3s infinite ease-in-out;
+    transform-origin: center top;
+    margin-left: 0.5rem;
+}
+
+@keyframes rocking {
+    0%,
+    100% {transform: rotate(0deg);}
+    25% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    75% {transform: rotate(-5deg);}
+}
+
+.typing-effect::after,
+.typing-effect-first::after,
+.typing-effect-second::after,
+.typing-effect-third::after,
+.typing-effect-fourth::after,
+.typing-effect-fifth::after {
     content: '';
     display: inline-block;
     width: 5px;
-    height: 1.5rem;
+    height: 1.2rem;
     background-color: #ffffff;
     animation: blink 1s infinite;
     margin-left: 0.3rem;
 }
 
 @keyframes blink {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
+    0%,
+    100% {opacity: 1;}
+    50% {opacity: 0;}
 }
+
 
 /* ========================================
 ===========HOME-ABOUT-SECTION==============
@@ -117,7 +176,8 @@
     position: relative;
     width: 100%;
 }
-.section-inner h2{
+
+.section-inner h2 {
     font-size: 2rem;
     padding-left: 10px;
 }
@@ -213,10 +273,10 @@
     top: 75%;
     left: 0;
     width: 100%;
+    text-align: center;
 }
 
 .work-text h2 {
-    text-align: center;
     text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -263,7 +323,7 @@
 .work03 {
     background-color: black;
     background-image: url(/cap-background.jpg);
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -281,7 +341,6 @@
     display: inline-block;
     position: relative;
     width: 100%;
-    /* margin-top: 2rem; */
     margin-bottom: 1rem;
     padding: 0;
     font-family: 'Lato', 'sans-serif';
@@ -291,7 +350,6 @@
 
 .skill-section .skill-section-inner {
     background-color: white;
-    /* padding: 1rem 0; */
 }
 
 .skill-section-inner {
@@ -351,6 +409,12 @@
     padding-left: 10px;
 }
 
+.skill-inner-wide p {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
 .skill-inner-wide h3::before {
     content: '';
     position: absolute;
@@ -365,11 +429,11 @@
 ==================MEDIA-QUERY-SECTION================
 ================================================== */
 
-@media (min-width: 48em){
+@media (min-width: 48em) {
 
     .icons {
         position: absolute;
-        top: 4.5rem;
+        top: 5rem;
         right: 2rem;
     }
 
@@ -385,19 +449,58 @@
         font-size: 1.5rem;
     }
 
-    .float-image img {
-        top: 17rem;
-        left: 32rem;
-        width: 210px;
-        height: 120px;
+    .intro-section {
+        padding-bottom: 100px;
     }
 
     .typing-container {
-        font-size: 40px;
+        font-size: 3rem;
     }
- 
-    .typing-effect::after {
-        height: 1.9rem;
+
+    .typing-text01 {
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .notebook-image img {
+        max-width: 160px;
+        margin-left: 70px;
+    }
+
+    .book-image img {
+        width: 160px;
+        height: 180px;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .typing-effect-second {
+        margin-left: 6.25rem;
+    }
+
+    .typing-effect-third {
+        margin-left: 6rem;
+    }
+
+    .typing-effect-fourth {
+        margin-left: 3rem;
+    }
+
+    .typing-effect-fifth {
+        margin-left: 7rem;
+    }
+
+    .typing-effect::after,
+    .typing-effect-first::after,
+    .typing-effect-second::after,
+    .typing-effect-third::after,
+    .typing-effect-fourth::after,
+    .typing-effect-fifth::after {
+        height: 2.4rem;
+    }
+    
+    .about-link-container {
+        margin-right: 10px;
     }
 
     .work-inner {
@@ -409,14 +512,9 @@
         font-size: 2.5rem;
         text-align: center;
     }
-
-    .about-link-container {
-        margin-right: 10px;
-    }
-
 }
 
-@media (min-width: 64em){
+@media (min-width: 64rem) {
 
     .icons {
         position: absolute;
@@ -430,20 +528,46 @@
         margin-left: 10px;
     }
 
-    .float-image img {
-        top: 23rem;
-        left: 45rem;
-        width: 230px;
-        height: 140px;
+    .notebook-image img {
+        max-width: 230px;
+        margin-left: 150px;
     }
 
     .typing-container {
         font-size: 4rem;
-        margin-left: 10px;
     }
 
-    .typing-effect::after {
+    .notebook-image img {
+        max-width: 220px;
+        margin-left: 90px;
+    }
+
+    .book-image img {
+        width: 250px;
+        height: 230px;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .typing-effect::after,
+    .typing-effect-first::after,
+    .typing-effect-second::after,
+    .typing-effect-third::after,
+    .typing-effect-fourth::after,
+    .typing-effect-fifth::after {
         height: 3.1rem;
+    }
+
+    .typing-effect-third {
+        margin-left: 6rem;
+    }
+
+    .typing-effect-fourth {
+        margin-left: 5rem;
+    }
+
+    .typing-effect-fifth {
+        margin-left: 10rem;
     }
 
     .role {
@@ -471,7 +595,7 @@
         background-color: #fff;
     }
 
-/* =====MEDIA-QUREY-ABOUT-SECTION======= */
+    /* =====MEDIA-QUREY-ABOUT-SECTION======= */
 
     .about-section .section-inner {
         padding-bottom: 2rem;
@@ -527,7 +651,7 @@
         font-size: 1.5rem;
     }
 
-/* =====MEDIA-QUREY-SKILL-SECTION======= */
+    /* =====MEDIA-QUREY-SKILL-SECTION======= */
 
     .skill-section .skill-section-inner {
         padding: 1rem 0;
@@ -556,12 +680,12 @@
     .skill-section .angle-top {
         background-image: url(/angle_top.png);
     }
-    
+
     .skill-section .angle-bottom {
         background-image: url(/angle_bottom.png);
     }
-    
-/* =====MEDIA-QUREY-WORK-SECTION======= */
+
+    /* =====MEDIA-QUREY-WORK-SECTION======= */
 
     .work-inner-wide h2 {
         font-size: 3rem;
@@ -612,14 +736,38 @@
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 87.5rem) {
 
-    .float-image img {
-        top: 25rem;
-        left: 64rem;
-        width: 330px;
-        height: 170px;
+    .typing-container {
+        font-size: 5rem;
     }
 
+    .typing-effect::after,
+    .typing-effect-first::after,
+    .typing-effect-second::after,
+    .typing-effect-third::after,
+    .typing-effect-fourth::after,
+    .typing-effect-fifth::after {
+        height: 3.8rem;
+    }
+}
+
+@media (min-width: 100rem) {
+
+    .typing-container {
+        margin: 0 5rem;
+    }
+
+    .notebook-image img {
+        width: 300px;
+        height: auto;
+    }
+
+    .typing-effect-first,
+    .typing-effect-second,
+    .typing-effect-third,
+    .typing-effect-fourth {
+        margin-bottom: 1.5rem;
+    }
 
 }

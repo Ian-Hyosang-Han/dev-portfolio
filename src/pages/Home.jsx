@@ -56,7 +56,7 @@ function Home() {
             <section className="intro-section">
                 <div className="role">
                     <p className="front-end">front-end</p>
-                    <p className="developer">developer</p>
+                    <p className="developer">Developer</p>
                 </div>
                 <div className="icons">
                     <a href="https://www.linkedin.com/in/ian-hyosang-han"
@@ -71,18 +71,54 @@ function Home() {
                         url="https://github.com/Ian-Hyosang-Han"
                     />
                 </div>
-                <div className="float-image">
-                    <img src="/main_notebook.webp" alt="notebook" />
-                </div>
+
+                {/* <div className="logo-image2">
+                    <img src="/title_logo.png" alt="logo" />
+                </div> */}
+
                 <div className="greeting">
                     <h1>hello, ian han</h1>
                 </div>
-                <div className="typing-container">
-                    {phrases.map((phrase, index) => (
-                        <div key={index} className="typing-effect" ref={(el) => (typingRefs.current[index] = el)}></div>
-                    ))}
+                <div className="typing-section">
+                    <div className="typing-container">
+                        {/* Group 1: INTUITIVE UI and SEAMLESS UX */}
+                        <div className="typing-group-one">
+                            <div className="typing-effect01">
+                                <div className="typing-text01">
+                                    <div className="typing-effect-first" ref={(el) => (typingRefs.current[0] = el)}></div>
+                                </div>
+                                <div className="typing-ext02">
+                                    <div className="typing-effect-second" ref={(el) => (typingRefs.current[1] = el)}></div>
+                                </div>
+                            </div>
+                            <div className="notebook-image">
+                                <img src="/main_notebook.webp" alt="notebook" />
+                            </div>
+                        </div>
+
+                        {/* Group 2: ENGAGING INTERFACES */}
+                        <div className="typing-effect02">
+                            <div className="typing-text03">
+                                <div className="typing-effect-third" ref={(el) => (typingRefs.current[2] = el)}></div>
+                            </div>
+                        </div>
+
+                        {/* Group 3: OPTIMIZED PERFORMANCE and CONTINUOUS GROWTH */}
+                        <div className="typing-group-two">
+                            <div className="typing-effect03">
+                                <div className="book-image">
+                                    <img src="/about_book.webp" alt="book" />
+                                    <div className="typing-text04">
+                                        <div className="typing-effect-fourth" ref={(el) => (typingRefs.current[3] = el)}></div>
+                                        <div className="typing-effect-fifth" ref={(el) => (typingRefs.current[4] = el)}></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </section >
+
             <section id='home-about' className='about-section'>
                 <div className='angle-top'></div>
                 <div className="section-inner">
@@ -155,7 +191,7 @@ function Home() {
                 </div>
                 <div className='angle-bottom'></div>
             </section>
-        </div>
+        </div >
     );
 }
 
