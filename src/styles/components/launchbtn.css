@@ -9,6 +9,8 @@
     -webkit-perspective: 230px;
     perspective: 230px;
     cursor: pointer;
+    font-family: 'Alfa Slab One', sans-serif;
+    font-size: 1.5rem;
 }
 
 .custom-btn02 span {

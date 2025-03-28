@@ -1,3 +1,7 @@
+/* ==================================================
+===================NAVIGATION-SECTION================
+=================================================== */
+
 .main-nav {
     justify-items: center;
     align-items: center;
@@ -5,10 +9,10 @@
     height: 100%;
     position: fixed;
     top: 0;
-    right: 0; /* Align to the right */
-    transform: translateX(100%); /* Initially hide off-screen */
-    transition: transform 0.3s ease-in-out; /* Smooth transition */
-    background-color: #FF5F40;
+    right: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--navi-bg-color);
     padding-top: 3rem;
     z-index: 1010;
 }
@@ -32,7 +36,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 10010;
+    z-index: 1010;
     cursor: pointer;
 }
 
@@ -46,19 +50,13 @@
     flex-direction: column;
     row-gap: 0.25rem;
     width: 100%;
-    height: auto;
-    visibility: visible;
 }
 
 .main-nav li {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #E8E6D5;
+    color: var(--third-font-color);
 }
 
 .nav-container {
@@ -68,13 +66,11 @@
     justify-items: center;
     align-items: center;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem 3rem;
     row-gap: 0.7rem;
-    padding-bottom: 3rem;
 }
 
-/* Each-box style */
+/* Navigation Boxes */
 .nav-home-box,
 .nav-work-box,
 .nav-about-box {
@@ -83,94 +79,77 @@
     align-items: center;
     width: 120px;
     height: 120px;
-    background-color: #FF5F40;
+    background-color: var(--navi-bg-color);
     padding: 1rem;
-    border: 0.4rem solid #D12908;
+    border: 0.4rem solid var(--hover-color);
     text-align: center;
     cursor: pointer;
 }
 
-.nav-home-box,
-.nav-work-box,
-.nav-about-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .nav-home-box:hover,
 .nav-work-box:hover,
-.nav-about-box:hover{
-    background-color: #D12908;
+.nav-about-box:hover {
+    background-color: var(--hover-color);
 }
 
 /* Round box style */
-.nav-image-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .nav-image-box .circle {
     width: 120px;
     height: 120px;
-    background-color: #FF5F40;
+    background-color: var(--navi-bg-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0.4rem solid #D12908;
+    border: 0.4rem solid var(--hover-color);
 
 }
 
-/* Links style - 박스 안의 a 태그만 적용 */
+/* Links inside box */
 .nav-home-box a,
 .nav-work-box a,
 .nav-about-box a {
-    text-decoration: none;
-    color: #E8E6D5;
-    font-family: 'Black Han Sans', 'sans-serif';
+    color: var(--third-font-color);
+    font-family: var(--heading-font);
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center; /* 텍스트 정렬 추가 */
+    text-align: center;
     width: 100%;
     height: 100%;
 }
 
-/* Style the buttons that are used to open and close the accordion panel */
+/* Accordion Menu */
 .accordion {
-    font-family: 'Rajdhani', 'sans-serif';
+    font-family: var(--body-font);
     font-weight: bold;
     font-size: 1.5rem;
-    background-color: #FF5F40;
-    color: #E8E6D5;
+    background-color: var(--navi-bg-color);
+    color: var(--third-font-color);
     cursor: pointer;
     padding: 0.5rem;
     width: 320px;
     text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    border: 0.3rem solid #D12908;
+    border: 0.3rem solid var(--hover-color);
     border-bottom: none;
+    transition: 0.4s;
 }
 
 .accordion:hover {
-    background-color: #D12908;
+    background-color: var(--hover-color);
 }
 
 .last-accordion {
-    border-bottom: 0.3rem solid #D12908;
+    border-bottom: 0.3rem solid var(--hover-color);
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* Accordion Panel */
 .nav-panel {
-    font-family: 'Lato', 'sans-serif';
+    font-family: var(--second-font);
     padding: 1rem 0.5rem;
-    color: #FF5F40;
-    background-color: #E8E6D5;
+    color: var(--navi-bg-color);
+    background-color: var(--third-font-color);
     width: 310px;
     display: none;
     overflow: hidden;
@@ -180,14 +159,4 @@
 .accordion span {
     position: absolute;
     right: 20px;
-}
-
-/* ==================================================
-==================MEDIA-QUERY-SECTION================
-================================================== */
-
-@media (min-width: 48em) {
-
-    
-
 }

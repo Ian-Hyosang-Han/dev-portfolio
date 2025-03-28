@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import ProjectDetails from '../components/projects/ProjectDetails';
+import ProjectDetails from '../components/forms/ProjectDetails';
 import projectsData from '../data/projectsData';
 
 function ProjectPage() {

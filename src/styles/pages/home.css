@@ -1,20 +1,24 @@
+/* ========================================
+============= INTRO SECTION ===============
+======================================== */
+
 .wrapper {
-    font-family: 'Black Han Sans', 'sans-serif';
-    color: #ffffff;
+    font-family: 'Black Han Sans', sans-serif;
+    color: var(--main-font-color);
 }
 
 .intro-section {
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
     margin-left: 0.625rem;
 }
 
 .role p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: bold;
-    font-family: 'Rajdhani', 'sans-serif';
     text-transform: uppercase;
     padding: 0;
     margin: 0;
+    font-family: var(--body-font);
 }
 
 .icons {
@@ -37,8 +41,8 @@
     top: 0;
     left: 0;
     width: 4.3rem;
-    height: 2px;
-    background-color: #fff;
+    height: 0.125rem;
+    background-color: var(--home-bg-color);
 }
 
 .typing-section {
@@ -67,6 +71,13 @@
     z-index: 1;
 }
 
+.typing-group-two {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
 .typing-effect-first {
     margin-bottom: 0.5rem;
 }
@@ -82,53 +93,6 @@
     z-index: 1;
 }
 
-.typing-group-two {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    z-index: 1;
-}
-
-.typing-effect-fourth {
-    margin-left: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.typing-effect-fifth {
-    margin-left: 2rem;
-}
-
-.book-image {
-    display: flex;
-    flex-direction: row;
-}
-
-.book-image img {
-    width: 70px;
-    height: 80px;
-    animation: rocking 3s infinite ease-in-out;
-    transform-origin: center top;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-}
-
-.notebook-image img {
-    width: 100%;
-    max-width: 90px;
-    height: auto;
-    animation: rocking 3s infinite ease-in-out;
-    transform-origin: center top;
-    margin-left: 0.5rem;
-}
-
-@keyframes rocking {
-    0%,
-    100% {transform: rotate(0deg);}
-    25% {transform: rotate(-5deg);}
-    50% {transform: rotate(5deg);}
-    75% {transform: rotate(-5deg);}
-}
-
 .typing-effect::after,
 .typing-effect-first::after,
 .typing-effect-second::after,
@@ -137,22 +101,53 @@
 .typing-effect-fifth::after {
     content: '';
     display: inline-block;
-    width: 5px;
+    width: 0.3125rem;
     height: 1.2rem;
-    background-color: #ffffff;
+    background-color: var(--home-bg-color);
     animation: blink 1s infinite;
     margin-left: 0.3rem;
 }
 
 @keyframes blink {
-    0%,
-    100% {opacity: 1;}
-    50% {opacity: 0;}
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
 
+.book-image,
+.notebook-image {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-image img,
+.notebook-image img {
+    animation: rocking 3s infinite ease-in-out;
+    transform-origin: center top;
+}
+
+.book-image img {
+    width: 4.375rem;
+    height: 5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.notebook-image img {
+    width: 100%;
+    max-width: 5.625rem;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+@keyframes rocking {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+  }
 
 /* ========================================
-===========HOME-ABOUT-SECTION==============
+========== HOME-ABOUT-SECTION =============
 ======================================== */
 
 .about-section {
@@ -161,15 +156,15 @@
     width: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'sans-serif';
+    font-family: var(--body-font);
     line-height: 1.3;
-    color: #434343;
+    color: var(--second-font-color);
 }
 
 .about-section .section-inner {
-    background-color: white;
+    background-color: var(--home-bg-color);
     margin: 0 auto 0 auto;
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .section-inner {
@@ -179,46 +174,41 @@
 
 .section-inner h2 {
     font-size: 2rem;
-    padding-left: 10px;
+    padding-left: 0.625rem;
 }
 
-.about-section .angle-top {
+.about-section .angle-top, .about-section .angle-bottom {
     display: block;
     position: absolute;
-    top: -29px;
     left: 0;
     width: 100%;
-    height: 30px;
-    background-image: url(/angle_top_mobile.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 100% 100%;
-}
-
-.inner-wide {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 10px;
-    text-align: left;
-}
-
-.about-section .angle-bottom {
-    display: block;
-    position: absolute;
-    bottom: -29px;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background-image: url(/angle_bottom_mobile.png);
+    height: 1.875rem;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
     z-index: 1000;
+  }
+  
+  .about-section .angle-top {
+    top: -1.8125rem;
+    background-image: url(/angle_top_mobile.png);
+  }
+  
+  .about-section .angle-bottom {
+    bottom: -1.8125rem;
+    background-image: url(/angle_bottom_mobile.png);
+  }
+
+.inner-wide {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0.625rem;
+    text-align: left;
 }
 
 .about-link-container {
     text-align: right;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .about-link {
@@ -232,11 +222,11 @@
 }
 
 .about-link:hover {
-    color: #FF5F40;
+    color: var(--navi-bg-color);
 }
 
 /* ========================================
-===========HOME-WORKS-SECTION==============
+========== HOME-WORKS-SECTION =============
 ======================================== */
 
 .works-section {
@@ -250,10 +240,10 @@
 .work {
     display: block;
     position: relative;
-    top: auto;
-    left: auto;
+    /* top: auto;
+    left: auto; */
     width: 100%;
-    height: 400px;
+    height: 25rem;
     background-position: top center;
     background-size: cover;
 }
@@ -283,15 +273,15 @@
 }
 
 .work-text p {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: var(--body-font);
     text-align: center;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     font-weight: bold;
 }
 
 #home-works .work-inner {
-    padding-top: 35px;
+    padding-top: 2.1875rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -302,39 +292,35 @@
     text-transform: uppercase;
     position: relative;
     margin: 0 auto;
-    padding: 0 10px;
-    max-width: 1240px;
+    padding: 0 0.625rem;
+    max-width: 77.5rem;
 }
 
 .work01 {
-    background-color: black;
     background-image: url(/jv-background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .work02 {
-    background-color: black;
     background-image: url(/mv-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .work03 {
-    background-color: black;
     background-image: url(/cap-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .work04 {
-    background-color: black;
     background-image: url(/wallhaven.png);
     background-size: cover;
 }
 
 /* ========================================
-===========HOME-SKILLS-SECTION==============
+========== HOME-SKILLS-SECTION ============
 ======================================== */
 
 .skill-section {
@@ -343,18 +329,14 @@
     width: 100%;
     margin-bottom: 1rem;
     padding: 0;
-    font-family: 'Lato', 'sans-serif';
     line-height: 1.3rem;
-    color: #434343;
-}
-
-.skill-section .skill-section-inner {
-    background-color: white;
+    color: var(--second-font-color);
 }
 
 .skill-section-inner {
     position: relative;
     width: 100%;
+    background-color: var(--home-bg-color);
 }
 
 .skill-section .angle-top {
@@ -363,17 +345,16 @@
     top: -29px;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
     background-image: url(/angle_top_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
-    /* transform: scaleX(-1); */
 }
 
 .skill-inner-wide {
     position: relative;
-    padding: 0 10px;
+    padding: 0 0.625rem;
     text-align: left;
 }
 
@@ -387,12 +368,11 @@
     bottom: -29px;
     left: 0;
     width: 100%;
-    height: 30px;
+    height: 1.875rem;
     background-image: url(/angle_bottom_mobile.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: 100% 100%;
-    /* transform: scaleX(-1); */
     z-index: 1;
 }
 
@@ -402,7 +382,7 @@
 
 .skill-inner-wide h3 {
     position: relative;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-transform: uppercase;
     margin-top: 0.3rem;
     margin-bottom: 0;
@@ -422,23 +402,22 @@
     left: 0;
     width: 5px;
     height: 100%;
-    background-color: #FF5F40;
+    background-color: var(--navi-bg-color);
 }
 
 /* ==================================================
-==================MEDIA-QUERY-SECTION================
-================================================== */
+================= MEDIA-QUERY-SECTION ===============
+=====================  768px  ==================== */
 
 @media (min-width: 48em) {
 
     .icons {
-        position: absolute;
         top: 5rem;
         right: 2rem;
     }
 
     .role p {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     .role .front-end::before {
@@ -450,7 +429,7 @@
     }
 
     .intro-section {
-        padding-bottom: 100px;
+        padding-bottom: 6.25rem;
     }
 
     .typing-container {
@@ -458,18 +437,18 @@
     }
 
     .typing-text01 {
-        margin-left: 50px;
-        margin-bottom: 10px;
+        margin-left: 3.125rem;
+        margin-bottom: 0.625rem;
     }
 
     .notebook-image img {
-        max-width: 160px;
-        margin-left: 70px;
+        max-width: 10rem;
+        margin-left: 4.375rem;
     }
 
     .book-image img {
-        width: 160px;
-        height: 180px;
+        width: 10rem;
+        height: 11.25rem;
         margin-left: 3rem;
         margin-top: 2rem;
     }
@@ -498,9 +477,9 @@
     .typing-effect-fifth::after {
         height: 2.4rem;
     }
-    
+
     .about-link-container {
-        margin-right: 10px;
+        margin-right: 0.625rem;
     }
 
     .work-inner {
@@ -514,6 +493,10 @@
     }
 }
 
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1024px  =================== */
+
 @media (min-width: 64rem) {
 
     .icons {
@@ -524,13 +507,12 @@
 
     .greeting {
         font-size: 2rem;
-        margin: 25px 0;
-        margin-left: 10px;
+        margin: 1.5625rem 0 1.5625rem 0.625rem;
     }
 
     .notebook-image img {
-        max-width: 230px;
-        margin-left: 150px;
+        max-width: 14.375rem;
+        margin-left: 9.375rem;
     }
 
     .typing-container {
@@ -538,13 +520,13 @@
     }
 
     .notebook-image img {
-        max-width: 220px;
-        margin-left: 90px;
+        max-width: 13.75rem;
+        margin-left: 5.625rem;
     }
 
     .book-image img {
-        width: 250px;
-        height: 230px;
+        width: 15.625rem;
+        height: 14.375rem;
         margin-left: 3rem;
         margin-top: 2rem;
     }
@@ -574,11 +556,11 @@
         display: flex;
         flex-direction: column;
         margin-top: 3rem;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     .role p {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .role .front-end {
@@ -591,11 +573,11 @@
         top: 0;
         left: 0;
         width: 11rem;
-        height: 2px;
-        background-color: #fff;
+        height: 0.125rem;
+        background-color: var(--home-bg-color);
     }
 
-    /* =====MEDIA-QUREY-ABOUT-SECTION======= */
+    /* ===== MEDIA-QUREY-ABOUT-SECTION ====== */
 
     .about-section .section-inner {
         padding-bottom: 2rem;
@@ -603,15 +585,15 @@
 
     .section-inner h2 {
         font-size: 3rem;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     .inner-wide {
-        padding-left: 320px;
+        padding-left: 20rem;
     }
 
     .inner-wide p {
-        font-size: 26px;
+        font-size: 1.625rem;
         line-height: 1.5;
     }
 
@@ -623,13 +605,13 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 280px;
-        height: 300px;
+        width: 17.5rem;
+        height: 18.75rem;
         display: none;
         background-size: cover;
         background-position: center;
-        margin-top: 5px;
-        margin-left: 20px;
+        margin-top: 0.3125rem;
+        margin-left: 1.25rem;
         z-index: 1000;
     }
 
@@ -639,12 +621,11 @@
 
     .about-section .angle-bottom {
         background-image: url(/angle_bottom.png);
-        z-index: 1000;
     }
 
     .about-link-container {
-        margin-top: 10px;
-        margin-right: 10px;
+        margin-top: 0.625rem;
+        margin-right: 0.625rem;
     }
 
     .about-link {
@@ -659,19 +640,19 @@
 
     .skill-section-inner h2 {
         font-size: 3rem;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     .skill-section-inner h3 {
         font-size: 2rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-        margin-left: 10px;
+        margin-left: 0.625rem;
     }
 
     .skill-section-inner p {
         font-size: 1.625rem;
-        margin-left: 20px;
+        margin-left: 1.25rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         line-height: 1.3;
@@ -693,7 +674,7 @@
     }
 
     #home-works {
-        height: 600px;
+        height: 37.5rem;
         margin: 0;
         text-align: center;
     }
@@ -701,7 +682,7 @@
     .work {
         position: absolute;
         width: 25%;
-        height: 600px;
+        height: 37.5rem;
         background-position: center center;
         background-size: cover;
     }
@@ -731,10 +712,14 @@
     }
 
     .work-inner {
-        margin: 25px auto 25px auto;
+        margin: 1.5625rem auto;
     }
 
 }
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1400px  =================== */
 
 @media (min-width: 87.5rem) {
 
@@ -752,6 +737,10 @@
     }
 }
 
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1600px  =================== */
+
 @media (min-width: 100rem) {
 
     .typing-container {
@@ -759,7 +748,7 @@
     }
 
     .notebook-image img {
-        width: 300px;
+        width: 18.75rem;
         height: auto;
     }
 
@@ -769,5 +758,4 @@
     .typing-effect-fourth {
         margin-bottom: 1.5rem;
     }
-
 }

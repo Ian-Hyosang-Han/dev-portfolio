@@ -10,11 +10,9 @@ function ProjectButton({ label, url }) {
     }
 
     return (
-        <a href={url}
-           target='blank'
-           rel="noreferrer">
-            <button className="custom-btn project-btn" onClick={handleClick}><span>{label}</span></button>
-        </a>
+        <button className="custom-btn project-btn" onClick={handleClick}>
+            <span>{label}</span>
+        </button>
     );
 }
 

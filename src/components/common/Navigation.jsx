@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 // Importing CSS style
 import "../../styles/components/navigation.css";
@@ -28,7 +28,15 @@ const Nav = ({ navOpen, setNavOpen }) => {
         };
     }, [navOpen, setNavOpen]);
 
-    const handleNavLinkClick = () => {
+    const handleNavLinkClick = (event) => {
+        const targetId = event.target.getAttribute('href')?.substring(1);
+        if (targetId) {
+            event.preventDefault();
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
         setNavOpen(false);
     };
 
@@ -38,24 +46,24 @@ const Nav = ({ navOpen, setNavOpen }) => {
                 <div className="nav-container">
                     <div className="nav-home-box">
                         <li>
-                            <NavLink to="/" onClick={handleNavLinkClick} >HOME</NavLink>
+                            <Link to="/" onClick={() => setNavOpen(false)}>HOME</Link>
                         </li>
                     </div>
                     <div className="nav-work-box">
                         <li>
-                            <NavLink to="/works" onClick={handleNavLinkClick} >WORKS</NavLink>
+                            <a href="#home-works" onClick={handleNavLinkClick}>WORK</a>
                         </li>
                     </div>
                     <div className="nav-image-box">
                         <li>
-                            <NavLink to="/" onClick={handleNavLinkClick} >
+                            <Link to="/" onClick={() => setNavOpen(false)}>
                                 <div className="circle"></div>
-                            </NavLink>
+                            </Link>
                         </li>
                     </div>
                     <div className="nav-about-box">
                         <li>
-                            <NavLink to="/about" onClick={handleNavLinkClick} >ABOUT</NavLink>
+                            <Link to="/about" onClick={() => setNavOpen(false)}>ABOUT</Link>
                         </li>
                     </div>
                 </div>
@@ -66,7 +74,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
             </div>
             <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>Linked In<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 1 ? 'block' : 'none' }}>
-                <p>http://linkedin.com/in/ian-han-7540</p>
+                <p>http://linkedin.com/in/ian-han-hyosang</p>
             </div>
             <button className={`accordion last-accordion ${activePanel === 2 ? 'active' : ''}`} onClick={(e) => togglePanel(2, e)}>GitHub<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 2 ? 'block' : 'none' }}>
@@ -74,6 +82,6 @@ const Nav = ({ navOpen, setNavOpen }) => {
             </div>
         </nav>
     );
-};
+}
 
 export default Nav;

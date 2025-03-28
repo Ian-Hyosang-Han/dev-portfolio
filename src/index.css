@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-/* Custom font-family */
+/* ========================================
+=============== FONT STYLES ===============
+======================================== */
 
 .font-blackHan {
   @apply text-white;
@@ -17,47 +19,49 @@
   font-family: 'Lato', sans-serif;
 }
 
-/* Colour and Font */
+/* ========================================
+=========== COLOR VARIABLES ===============
+======================================== */
+
 :root {
+  --home-bg-color: #ffffff;
   --navi-bg-color: #FF5F40;
+  --hover-color: #D12908;
   --main-font-color: #ffffff;
   --second-font-color: #434343;
   --third-font-color: #E8E6D5;
-  --navi-hover-color: #E8E6D5;
-  --heading-font: "Black Han Sans", serif;
-  --button-font: "", serif;
-  --body-font: "Lato", serif;
-  --second-font: "Rajdhani", serif;
+  --heading-font: 'Black Han Sans', serif;
+  --second-font: 'Lato', serif;
+  --body-font: 'Rajdhani', serif;
+  --button-font: 'Alfa Slab One', serif;
 }
 
-/* Base style for body */
+/* ========================================
+============= GLOBAL STYLES ===============
+======================================== */
 
 body {
   background-image: url('/noise-background.jpg');
   background-size: cover;
   margin: 0;
   padding: 0;
+  font-family: var(--body-font);
+  color: var(--main-font-color);
 }
 
 h1 {
-  font-family: 'Black Han sans', 'sans-serif';
+  font-family: var(--heading-font);
   font-size: 3rem;
   text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Black Han sans', 'sans-serif';
+  font-family: var(--heading-font);
   text-transform: uppercase;
 }
 
-h3, h4 {
-  font-family: 'Rajdhani', 'sans-serif';
-  font-weight: bold;
-}
-
-p {
-  /* font-family: 'Lato', 'sans-serif'; */
-  font-family: 'Rajdhani', 'sans-serif';
+h3, h4, p {
+  font-family: var(--body-font);
   font-weight: 500;
 }
 
@@ -65,10 +69,4 @@ p {
   font-family: 'Alfa Slab One', 'sans-serif';
 }
 
-a,
-a:visited,
-a:hover,
-a:active,
-a:focus {
-    text-decoration: none;
-}
+a { text-decoration: none; }

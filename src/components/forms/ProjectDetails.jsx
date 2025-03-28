@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LaunchButton from '../common/LaunchButton';
-import GitHubIcon from '../common/GitHubIcon';
+import { FaGithubSquare } from 'react-icons/fa';
+import LaunchButton from '../ui/LaunchButton';
 import '../../styles/components/project.css';
 
 function ProjectDetails({ projectData }) {
@@ -29,7 +29,11 @@ function ProjectDetails({ projectData }) {
                 <div className="link-box">
                     <div className="link-to">
                         <LaunchButton url={projectData.launchUrl} />
-                        <GitHubIcon url={projectData.githubUrl} />
+                        <a href="https://github.com/Ian-Hyosang-Han"
+                            target="_blank"
+                            rel="noreferrer">
+                            <FaGithubSquare size={45} className='fill-white' />
+                        </a>
                     </div>
                 </div>
 

@@ -4,8 +4,8 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/pages/home.css';
 // Importing Icons 
 import { FaLinkedin } from "react-icons/fa6";
-import GithubIcon from '../components/common/GitHubIcon';
-import ProjectButton from '../components/common/ProjectButton';
+import { FaGithubSquare } from "react-icons/fa";
+import ProjectButton from '../components/ui/ProjectButton';
 
 function Home() {
     const phrases = [
@@ -59,22 +59,19 @@ function Home() {
                     <p className="developer">Developer</p>
                 </div>
                 <div className="icons">
-                    <a href="https://www.linkedin.com/in/ian-hyosang-han"
+                    <a href="https://www.linkedin.com/in/ian-han-hyosang"
                         target="_blank"
                         rel="noreferrer"
                         className="icon-1">
                         <FaLinkedin size={45} className='fill-white' />
                     </a>
-
-                    <GithubIcon
-                        className="icon-2"
-                        url="https://github.com/Ian-Hyosang-Han"
-                    />
+                    <a href="https://github.com/Ian-Hyosang-Han"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="icon-2">
+                        <FaGithubSquare size={45} className='fill-white' />
+                    </a>
                 </div>
-
-                {/* <div className="logo-image2">
-                    <img src="/title_logo.png" alt="logo" />
-                </div> */}
 
                 <div className="greeting">
                     <h1>hello, ian han</h1>
@@ -87,7 +84,7 @@ function Home() {
                                 <div className="typing-text01">
                                     <div className="typing-effect-first" ref={(el) => (typingRefs.current[0] = el)}></div>
                                 </div>
-                                <div className="typing-ext02">
+                                <div className="typing-text02">
                                     <div className="typing-effect-second" ref={(el) => (typingRefs.current[1] = el)}></div>
                                 </div>
                             </div>
@@ -170,7 +167,7 @@ function Home() {
 
                 <div className="work-inner">
                     <div className="work-inner-wide">
-                        <h2>works</h2>
+                        <h2>work</h2>
                     </div>
                 </div>
             </section>
