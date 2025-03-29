@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* ========================================
-=============== FONT STYLES ===============
+=============== FONT-STYLES ===============
 ======================================== */
 
 .font-blackHan {
@@ -20,12 +20,13 @@
 }
 
 /* ========================================
-=========== COLOR VARIABLES ===============
+=========== COLOR-VARIABLES ===============
 ======================================== */
 
 :root {
   --home-bg-color: #ffffff;
   --navi-bg-color: #FF5F40;
+  --hd-bg-color: #B9B9BA;
   --hover-color: #D12908;
   --main-font-color: #ffffff;
   --second-font-color: #434343;
@@ -37,7 +38,7 @@
 }
 
 /* ========================================
-============= GLOBAL STYLES ===============
+============= GLOBAL-STYLES ===============
 ======================================== */
 
 body {
@@ -66,7 +67,7 @@ h3, h4, p {
 }
 
 .impact-text {
-  font-family: 'Alfa Slab One', 'sans-serif';
+  font-family: var(--button-font);
 }
 
 a { text-decoration: none; }

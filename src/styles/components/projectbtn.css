@@ -1,3 +1,7 @@
+/* ========================================
+========== PROJECTS-BUTTON-STYLE ==========
+======================================== */
+
 .custom-btn span {
     font-family: 'Black Han sans', 'sans-serif';
     font-size: 2rem;
@@ -11,8 +15,8 @@
 .custom-btn {
     width: auto;
     height: auto;
-    padding: 10px 25px;
-    border: 2px solid #000;
+    padding: 0.625rem 1.5625rem;
+    border: 0.125rem solid #000;
     font-family: 'Lato', sans-serif;
     background: transparent;
     cursor: pointer;
@@ -23,24 +27,24 @@
 
 .project-btn {
   background: #000;
-  color: #fff;
-  line-height: 42px;
+  color: var(--main-font-color);
+  line-height: 2.625rem;
   padding: 0;
   border: none;
 }
 .project-btn:hover {
   background: transparent;
-  color: white;
+  color: var(--main-font-color);
 }
 .project-btn:before,
 .project-btn:after{
   content:'';
   position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: white;
+  top: 0;
+  right: 0;
+  height: 0.125rem;
+  width: 0;
+  background: var(--home-bg-color);
   transition:400ms ease all;
 }
 .project-btn:after{

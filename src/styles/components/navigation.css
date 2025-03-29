@@ -1,11 +1,11 @@
 /* ==================================================
-===================NAVIGATION-SECTION================
+================= NAVIGATION-SECTION ================
 =================================================== */
 
 .main-nav {
     justify-items: center;
     align-items: center;
-    width: 320px;
+    width: 20rem;
     height: 100%;
     position: fixed;
     top: 0;
@@ -31,8 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 3.125rem;
+    height: 3.125rem;
     position: fixed;
     top: 0;
     right: 0;
@@ -77,8 +77,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     background-color: var(--navi-bg-color);
     padding: 1rem;
     border: 0.4rem solid var(--hover-color);
@@ -94,8 +94,8 @@
 
 /* Round box style */
 .nav-image-box .circle {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     background-color: var(--navi-bg-color);
     border-radius: 50%;
     display: flex;
@@ -111,7 +111,7 @@
 .nav-about-box a {
     color: var(--third-font-color);
     font-family: var(--heading-font);
-    font-size: 25px;
+    font-size: 1.5625rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,7 +129,7 @@
     color: var(--third-font-color);
     cursor: pointer;
     padding: 0.5rem;
-    width: 320px;
+    width: 20rem;
     text-align: left;
     border: 0.3rem solid var(--hover-color);
     border-bottom: none;
@@ -150,7 +150,7 @@
     padding: 1rem 0.5rem;
     color: var(--navi-bg-color);
     background-color: var(--third-font-color);
-    width: 310px;
+    width: 19.375rem;
     display: none;
     overflow: hidden;
     font-weight: bold;
@@ -158,5 +158,5 @@
 
 .accordion span {
     position: absolute;
-    right: 20px;
+    right: 1.25rem;
 }

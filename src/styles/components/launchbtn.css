@@ -1,13 +1,17 @@
+/* ========================================
+============= BUTTON-STYLE ===============
+======================================== */
+
 .custom-btn02 {
     position: relative;
-    right: 20px;
-    bottom: 20px;
+    right: 1.25rem;
+    bottom: 1.25rem;
     border: none;
-    width: 130px;
-    height: 40px;
-    line-height: 40px;
-    -webkit-perspective: 230px;
-    perspective: 230px;
+    width: 8.125rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    -webkit-perspective: 14.375rem;
+    perspective: 14.375rem;
     cursor: pointer;
     font-family: 'Alfa Slab One', sans-serif;
     font-size: 1.5rem;
@@ -19,9 +23,9 @@
     background-color: #434343;
     color: white;
     text-transform: uppercase;
-    width: 130px;
-    height: 40px;
-    border: 2px solid #D9D9D9;
+    width: 8.125rem;
+    height: 2.5rem;
+    border: 0.125rem solid #D9D9D9;
     margin: 0;
     text-align: center;
     -webkit-box-sizing: border-box;

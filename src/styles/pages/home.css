@@ -1,9 +1,9 @@
 /* ========================================
-============= INTRO SECTION ===============
+============= INTRO-SECTION ===============
 ======================================== */
 
 .wrapper {
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: var(--heading-font);
     color: var(--main-font-color);
 }
 
@@ -30,7 +30,7 @@
 }
 
 .role .front-end {
-    margin-top: 2rem;
+    margin-top: 4rem;
     position: relative;
     padding-top: 0.5rem;
 }
@@ -420,6 +420,10 @@
         font-size: 1.5625rem;
     }
 
+    .role .front-end {
+        margin-top: 5.2rem;
+    }
+
     .role .front-end::before {
         width: 7rem;
     }
@@ -497,7 +501,7 @@
 ================= MEDIA-QUERY-SECTION ===============
 =====================  1024px  =================== */
 
-@media (min-width: 64rem) {
+@media (min-width: 64em) {
 
     .icons {
         position: absolute;
@@ -564,7 +568,7 @@
     }
 
     .role .front-end {
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .role .front-end::before {

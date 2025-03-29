@@ -1,43 +1,56 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 // Importing CSS style
 import "../../styles/components/navigation.css";
 
 const Nav = ({ navOpen, setNavOpen }) => {
-
-    // State to manage accordion panels
     const [activePanel, setActivePanel] = useState(null);
+    const location = useLocation();
+    const navigate = useNavigate();
 
-    // Function to toggle accordion panel
     const togglePanel = (panelIndex, e) => {
-        e.stopPropagation(); // Prevent the navigation from closing
+        e.stopPropagation();
         setActivePanel(activePanel === panelIndex ? null : panelIndex);
     };
 
-    // Close navigation when clicking outside of it
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (navOpen && !e.target.closest(".main-nav") && !e.target.closest(".hamburger-icon")) {
                 setNavOpen(false);
             }
         };
-
         document.addEventListener("click", handleClickOutside);
         return () => {
             document.removeEventListener("click", handleClickOutside);
         };
     }, [navOpen, setNavOpen]);
 
-    const handleNavLinkClick = (event) => {
-        const targetId = event.target.getAttribute('href')?.substring(1);
-        if (targetId) {
-            event.preventDefault();
-            const targetElement = document.getElementById(targetId);
+    // 📌 페이지 이동 후 home-works 섹션으로 스크롤 이동
+    useEffect(() => {
+        if (location.hash === "#home-works") {
+            const targetElement = document.getElementById("home-works");
             if (targetElement) {
-                targetElement.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(() => {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }, 100); // 페이지가 로드된 후 실행되도록 지연시간 추가
             }
         }
+    }, [location]);
+
+    const handleNavLinkClick = (event, targetPath) => {
+        event.preventDefault();
         setNavOpen(false);
+
+        if (location.pathname === "/") {
+            // 현재 페이지가 홈일 때 바로 스크롤 이동
+            const targetElement = document.getElementById("home-works");
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
+        } else {
+            // 다른 페이지에서 클릭 시 홈으로 이동 후 스크롤 이동
+            navigate(targetPath);
+        }
     };
 
     return (
@@ -51,7 +64,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
                     </div>
                     <div className="nav-work-box">
                         <li>
-                            <a href="#home-works" onClick={handleNavLinkClick}>WORK</a>
+                            <a href="/#home-works" onClick={(e) => handleNavLinkClick(e, "/#home-works")}>WORK</a>
                         </li>
                     </div>
                     <div className="nav-image-box">

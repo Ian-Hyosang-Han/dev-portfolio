@@ -50,7 +50,6 @@ function Home() {
         gifContainer.style.display = 'none';
     };
 
-
     return (
         <div className="wrapper">
             <section className="intro-section">
