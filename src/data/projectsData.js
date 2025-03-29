@@ -102,11 +102,13 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/md-background.png'
+                imageUrl: '/md-background.png',
+                url: '/project/moviedatabase'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/wallhaven.png'
+                imageUrl: '/wallhaven.png',
+                url: '/project/capstone'
             }
         ]
     },
@@ -183,14 +185,16 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'JVASCRIPT GAME',
-                imageUrl: '/js-background-1.png'
+                imageUrl: '/js-background-1.png',
+                url: '/project/javascriptgame'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/wallhaven.png'
+                imageUrl: '/wallhaven.png',
+                url: '/project/capstone'
             }
         ]
     },
-};
+}
 
 export default projectsData;

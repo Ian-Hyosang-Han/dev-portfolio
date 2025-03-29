@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
 import LaunchButton from '../ui/LaunchButton';
-import '../../styles/components/project.css';
+import '../../styles/pages/project.css';
 
 function ProjectDetails({ projectData }) {
     const [activePanel, setActivePanel] = useState('left');
@@ -37,7 +37,7 @@ function ProjectDetails({ projectData }) {
                     </div>
                 </div>
 
-                <div className="project-container">
+                <div className="project-images">
                     {projectData.imageUrls.map((url, index) => (
                         <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
                     ))}
@@ -80,9 +80,20 @@ function ProjectDetails({ projectData }) {
                 </div>
                 <div className='showing-box'>
                     {projectData.relatedProjects.map((relatedProject, index) => (
-                        <div key={index} className="visible-box">
-                            <img src={relatedProject.imageUrl} alt={relatedProject.title} className="project-image" />
-                            <h2>{relatedProject.title}</h2>
+                        <div
+                            key={index}
+                            className="visible-box"
+                            onClick={() => window.location.href = relatedProject.url}
+                        >
+                            <img
+                                src={relatedProject.imageUrl}
+                                alt={relatedProject.title} 
+                                className="project-image"
+                            />
+                            <div className="content">
+                                <h2>{relatedProject.title}</h2>
+                                <p>You are about to enter this content.<br /> Click when you're ready! 🚀</p>
+                            </div>
                         </div>
                     ))}
                 </div>

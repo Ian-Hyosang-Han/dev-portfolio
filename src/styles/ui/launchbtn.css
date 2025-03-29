@@ -13,8 +13,9 @@
     -webkit-perspective: 14.375rem;
     perspective: 14.375rem;
     cursor: pointer;
-    font-family: 'Alfa Slab One', sans-serif;
+    font-family: var(--heading-font);
     font-size: 1.5rem;
+    letter-spacing: 1.5px;
 }
 
 .custom-btn02 span {

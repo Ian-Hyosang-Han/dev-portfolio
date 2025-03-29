@@ -42,7 +42,7 @@
     font-size: 1rem;
 }
 
-.project-container {
+.project-images {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -51,13 +51,13 @@
     width: 100%;
 }
 
-.project-header-image {
-    max-width: 37.5rem;
-    max-height: 18.75rem;
+.project-images img {
+    max-width: 31rem;
+    max-height: 20rem;
     width: 100%;
     height: 11rem;
     border: 0.0625rem solid white;
-    border-radius: 0.3125rem;
+    border-radius: 0.5rem;
     margin-top: 1rem;
 }
 
@@ -82,6 +82,10 @@
     font-size: 0.9375rem;
     line-height: 1.25rem;
     margin-top: 0.625rem;
+}
+
+.content p {
+    font-family: var(--second-font);
 }
 
 /* ========================================
@@ -162,20 +166,85 @@
     margin-left: 1.875rem;
 }
 
+/* ========================================
+========= IMAGES / HOVER-EFFECT ===========
+======================================== */
+
+.project-header-image {
+    transition: transform 1s, filter 2s ease-in-out;
+    filter: blur(2px);
+    transform: scale(1);
+  }
+
+.project-header-image:hover {
+    filter: blur(0);
+    transform: scale(0.9);
+}
+
+
 .showing-box {
     display: flex;
-    position: relative;
     flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
 
-.visible-box h2 {
-    font-size: 2rem;
-    margin: 1rem 0;
-    text-align: center;
+.showing-box .visible-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: relative;
+    cursor: pointer;
 }
 
-.project-image {
-    border: 0.0625rem solid white;
+.showing-box .visible-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.4s ease-in-out;
+    border: 1px double white;
+}
+
+.visible-box:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.visible-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.visible-box:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.content {
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.visible-box:hover .content {
+    opacity: 1;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
 }
 
 /* ==================================================
@@ -213,7 +282,7 @@
         line-height: 1.5625rem;
     }
 
-    .project-header-image {
+    .project-images img {
         width: 100%;
         height: auto;
     }
@@ -254,10 +323,14 @@
         line-height: 1.5625rem;
     }
 
-    .project-container {
+    .project-images {
         flex-direction: row;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .project-images img {
+        height: 18rem;
     }
 
     .accordion-box h2 {

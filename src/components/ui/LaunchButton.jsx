@@ -1,4 +1,4 @@
-import '../../styles/components/launchbtn.css';
+import '../../styles/ui/launchbtn.css';
 
 function LaunchButton( {url, label = 'launch'} ) {
 

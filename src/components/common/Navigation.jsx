@@ -25,14 +25,13 @@ const Nav = ({ navOpen, setNavOpen }) => {
         };
     }, [navOpen, setNavOpen]);
 
-    // 📌 페이지 이동 후 home-works 섹션으로 스크롤 이동
     useEffect(() => {
         if (location.hash === "#home-works") {
             const targetElement = document.getElementById("home-works");
             if (targetElement) {
                 setTimeout(() => {
                     targetElement.scrollIntoView({ behavior: "smooth" });
-                }, 100); // 페이지가 로드된 후 실행되도록 지연시간 추가
+                }, 100);
             }
         }
     }, [location]);
@@ -42,13 +41,15 @@ const Nav = ({ navOpen, setNavOpen }) => {
         setNavOpen(false);
 
         if (location.pathname === "/") {
-            // 현재 페이지가 홈일 때 바로 스크롤 이동
-            const targetElement = document.getElementById("home-works");
-            if (targetElement) {
-                targetElement.scrollIntoView({ behavior: "smooth" });
+            if (targetPath === "/#home-works") {
+                const targetElement = document.getElementById("home-works");
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         } else {
-            // 다른 페이지에서 클릭 시 홈으로 이동 후 스크롤 이동
             navigate(targetPath);
         }
     };
@@ -59,7 +60,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
                 <div className="nav-container">
                     <div className="nav-home-box">
                         <li>
-                            <Link to="/" onClick={() => setNavOpen(false)}>HOME</Link>
+                        <Link to="/" onClick={(e) => handleNavLinkClick(e, "/")}>HOME</Link>
                         </li>
                     </div>
                     <div className="nav-work-box">
@@ -70,7 +71,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
                     <div className="nav-image-box">
                         <li>
                             <Link to="/" onClick={() => setNavOpen(false)}>
-                                <div className="circle"></div>
+                                <div className="round"></div>
                             </Link>
                         </li>
                     </div>

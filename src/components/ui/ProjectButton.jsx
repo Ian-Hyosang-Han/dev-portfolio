@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import '../../styles/components/projectbtn.css';
+import '../../styles/ui/projectbtn.css';
 
 function ProjectButton({ label, url }) {
 

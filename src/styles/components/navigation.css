@@ -93,7 +93,7 @@
 }
 
 /* Round box style */
-.nav-image-box .circle {
+.nav-image-box .round {
     width: 7.5rem;
     height: 7.5rem;
     background-color: var(--navi-bg-color);
@@ -102,7 +102,7 @@
     justify-content: center;
     align-items: center;
     border: 0.4rem solid var(--hover-color);
-
+    z-index: 1200;
 }
 
 /* Links inside box */
