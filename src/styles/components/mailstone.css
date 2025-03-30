@@ -1,0 +1,181 @@
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .timeline {
+        display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .timeline {
+        width: 500px;
+        margin-bottom: 2rem;
+        position: relative;
+    }
+    .timeline::after{
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        border-radius: 50px;
+        animation: LineAnimated 5s linear forwards;
+        z-index: -1;
+    }
+    @keyframes LineAnimated {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+    
+    .container {
+        width: 50%;
+        position: relative;
+        padding: 10px 30px;
+        animation: Animate-Container 1s linear forwards;
+        opacity: 0;
+    }
+    @keyframes Animate-Container {
+        0%{
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY( 0px);
+        }
+    }
+    
+    .container:nth-child(even){
+        right: -50%;
+    }
+    .container:nth-child(odd)::before{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        top: 0;
+        right: -7px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    .container:nth-child(even)::before{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        top: 0;
+        left: -12.5px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    .text-content {
+        padding: 20px 30px;
+        box-shadow: 0 5px 10px #191919;
+        border-radius: 10px;
+    }
+    
+    .text-content h2 {
+        font-size: 23px;
+    }
+    .text-content p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .timeline {
+        width: 900px;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        position: relative;
+    }
+    .timeline::after{
+        content: "";
+        position: absolute;
+        right: 50%;
+        top: 0;
+        height: 100%;
+        width: 5px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        border-radius: 50px;
+        animation: LineAnimated 5s linear forwards;
+        z-index: -1;
+    }
+    @keyframes LineAnimated {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+    
+    .container {
+        width: 50%;
+        position: relative;
+        padding: 10px 130px;
+        animation: Animate-Container 1s linear forwards;
+        opacity: 0;
+    }
+    @keyframes Animate-Container {
+        0%{
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY( 0px);
+        }
+    }
+    
+    .container:nth-child(even){
+        right: -50%;
+    }
+    .container:nth-child(odd)::before{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        top: 0;
+        right: -7px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    .container:nth-child(even)::before{
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        background: linear-gradient(#ff00e1, #ddff00);
+        top: 0;
+        left: -12.5px;
+        border-radius: 50%;
+        z-index: 10;
+    }
+    
+    .text-content {
+        padding: 20px 30px;
+        box-shadow: 0 5px 10px #191919;
+        border-radius: 10px;
+    }
+    
+    .text-content h2 {
+        font-size: 23px;
+    }
+    .text-content p {
+        font-size: 13px;
+        margin-top: 10px;
+    }
+}
