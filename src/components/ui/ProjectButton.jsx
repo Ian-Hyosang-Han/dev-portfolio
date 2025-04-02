@@ -7,6 +7,7 @@ function ProjectButton({ label, url }) {
 
     const handleClick = () => {
         navigate(url);
+        window.scrollTo(0, 0);
     }
 
     return (

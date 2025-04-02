@@ -33,6 +33,8 @@ const Nav = ({ navOpen, setNavOpen }) => {
                     targetElement.scrollIntoView({ behavior: "smooth" });
                 }, 100);
             }
+        } else {
+            window.scrollTo(0, 0);
         }
     }, [location]);
 
@@ -51,6 +53,9 @@ const Nav = ({ navOpen, setNavOpen }) => {
             }
         } else {
             navigate(targetPath);
+            setTimeout(() => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 100);
         }
     };
 
