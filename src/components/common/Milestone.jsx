@@ -1,3 +1,5 @@
+import React from 'react';
+// Importing CSS style
 import "../../styles/components/mailstone.css";
 
 const MilestoneTimeline = () => {

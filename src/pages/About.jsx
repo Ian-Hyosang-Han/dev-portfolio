@@ -1,3 +1,5 @@
+import React from 'react';
+// Importing component
 import MilestoneTimeline from "../components/common/Milestone";
 
 function About() {

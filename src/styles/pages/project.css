@@ -225,7 +225,7 @@
 
 .visible-box:hover::after {
     opacity: 1;
-    inset: 20px;
+    inset: 1.25rem;
 }
 
 .content {

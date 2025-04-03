@@ -1,3 +1,5 @@
+import React from 'react';
+// Importing CSS style
 import '../../styles/ui/launchbtn.css';
 
 function LaunchButton( {url, label = 'launch'} ) {

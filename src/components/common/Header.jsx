@@ -1,14 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 // Importing component
 import Nav from "../common/Navigation.jsx";
-
 // Importing Images
 import logo from "/logo.png";
 import navOpneImage from "/nav-open.png";
 import navCloseImage from "/nav-close.png";
-
 // Importing CSS style
 import "../../styles/components/header.css";
 

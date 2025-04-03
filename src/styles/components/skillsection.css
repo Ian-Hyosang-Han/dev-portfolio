@@ -1,0 +1,125 @@
+/* ========================================
+============== SKILLS-SECTION =============
+======================================== */
+
+.skill-section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0;
+    line-height: 1.3rem;
+    color: var(--second-font-color);
+}
+
+.skill-section-inner {
+    position: relative;
+    width: 100%;
+    background-color: var(--home-bg-color);
+}
+
+.skill-section .angle-top {
+    display: block;
+    position: absolute;
+    top: -29px;
+    left: 0;
+    width: 100%;
+    height: 1.875rem;
+    background-image: url(/angle_top_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+}
+
+.skill-inner-wide {
+    position: relative;
+    padding: 0 0.625rem;
+    text-align: left;
+}
+
+.skill-inner-wide h2 {
+    font-size: 2rem;
+}
+
+.skill-section .angle-bottom {
+    display: block;
+    position: absolute;
+    bottom: -29px;
+    left: 0;
+    width: 100%;
+    height: 1.875rem;
+    background-image: url(/angle_bottom_mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+    z-index: 1;
+}
+
+.skill-inner-wide h2 {
+    margin-bottom: 1rem;
+}
+
+.skill-inner-wide h3 {
+    position: relative;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.skill-inner-wide p {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+.skill-inner-wide h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--navi-bg-color);
+}
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1024px  =================== */
+
+@media (min-width: 64em) {
+
+    .skill-section .skill-section-inner {
+        padding: 1rem 0;
+    }
+
+    .skill-section-inner h2 {
+        font-size: 3rem;
+        margin-left: 0.625rem;
+    }
+
+    .skill-section-inner h3 {
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        margin-left: 0.625rem;
+    }
+
+    .skill-section-inner p {
+        font-size: 1.625rem;
+        margin-left: 1.25rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        line-height: 1.3;
+    }
+
+    .skill-section .angle-top {
+        background-image: url(/angle_top.png);
+    }
+
+    .skill-section .angle-bottom {
+        background-image: url(/angle_bottom.png);
+    }
+
+}

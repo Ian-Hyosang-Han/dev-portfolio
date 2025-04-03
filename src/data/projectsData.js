@@ -107,7 +107,7 @@ const projectsData = {
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/wallhaven.png',
+                imageUrl: '/cp-image01.png',
                 url: '/project/capstone'
             }
         ]
@@ -184,17 +184,99 @@ const projectsData = {
         ],
         relatedProjects: [
             { 
-                title: 'JVASCRIPT GAME',
+                title: 'JavaScript Game',
                 imageUrl: '/js-background-1.png',
                 url: '/project/javascriptgame'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/wallhaven.png',
+                imageUrl: '/cp-image01.png',
                 url: '/project/capstone'
             }
         ]
     },
+
+    capstone: {
+        title: 'Paws & Relax',
+        subtitle: 'Capstone Project',
+        imageUrls: ['/cp-image01.png', '/cp-image02.png'],
+        technologies: 'WordPress / Woocommerce / Figma',
+        overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
+        roles: 'WordPress Developer',
+        launchUrl: 'https://example.com',
+        githubUrl: 'https://github.com/htpwebdesign/paws-relax-theme',
+        featured: [
+            {
+                title: '1. Custom Branding',
+                details: [
+                    'Conceptualized and designed the Paws & Relax brand, including its name, logo, and visual identity, ensuring a cohesive and engaging experience.'
+                ]
+            },
+            {
+                title: '2. Custom WordPress Theme Development',
+                details: [
+                    'Designed and developed a fully custom WooCommerce theme with CPTs (Custom Post Types) and custom blocks, ensuring flexibility and maintainability.'
+                ]
+            },
+            {
+                title: '3. End-to-End Booking System',
+                details: [
+                    'Implemented the WooCommerce Booking Plugin, allowing customers to schedule appointments in real-time and choose from different therapists based on their specialties and times.'
+                ]
+            },
+            {
+                title: '4. Specialized Therapist Profiles',
+                details: [
+                    'Created individual therapist pages, each highlighting their unique skills and experience, helping pet owners make informed choices.'
+                ]
+            },
+            {
+                title: '5. WooCommerce & ACF Integration',
+                details: [
+                    'Used WooCommerce Booking Plugin and Advanced Custom Fields (ACF) to enhance customization, making the platform dynamic and scalable.'
+                ]
+            },
+            {
+                title: '6. Secure Payment Processing',
+                details: [
+                    'Integrated Stripe for smooth, secure online payments, offering customers a hassle-free checkout experience'
+                ]
+            },
+            {
+                title: '7. Mobile-Responsive Design',
+                details: [
+                    'Ensured the entire platform is fully responsive, providing a seamless experience across desktop, tablet, and mobile devices.'
+                ]
+            },
+            {
+                title: '8. Scalable & Maintainable Architecture',
+                details: [
+                    'Designed the platform for long-term growth, enabling effortless updates, new service integrations, and seamless business scalability.'
+                ]
+            },
+        ],
+        reflection: [
+            {
+                title: 'Building Paws & Relax: A Real-World WooCommerce Experience in Team Collaboration',
+                details: [
+                    'Developing Paws & Relax strengthened my ability to build custom WordPress solutions from scratch, integrating WooCommerce, booking functionality, and payment processing into a seamless user experience. Creating CPTs and custom blocks deepened my understanding of WordPress extensibility, while implementing Stripe payments and a shipping system expanded my e-commerce expertise. Our team of four worked exceptionally well together, holding daily stand-up meetings to align our tasks, communicate progress, and troubleshoot challenges—just like in a real-world project. We maintained a healthy work balance, ensuring that no one felt pressured by giving each other the flexibility to rest on weekends, which ultimately led to better productivity and a high-quality final product. Whenever we encountered complex issues, we scheduled meetings with our instructor, simulating a real client-consultation environment to refine our approach and improve our problem-solving skills.'
+                ]
+            },
+        ],
+        relatedProjects: [
+            { 
+                title: 'Movie Database',
+                imageUrl: '/md-background.png',
+                url: '/project/moviedatabase'
+             },
+            { 
+                title: 'JavaScript Game',
+                imageUrl: '/js-background-1.png',
+                url: '/project/javascriptgame'
+            }
+        ]
+    },
+
 }
 
 export default projectsData;

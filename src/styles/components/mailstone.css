@@ -1,14 +1,17 @@
+/* ==================================================
+================== MAILSTONE-SECTION ================
+================================================== */
 
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 20em) and (max-width: 64em) {
     .timeline {
         display: none;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
 
     .timeline {
-        width: 500px;
+        width: 31.25rem;
         margin-bottom: 2rem;
         position: relative;
     }
@@ -18,9 +21,9 @@
         right: 50%;
         top: 0;
         height: 100%;
-        width: 5px;
+        width: 0.3125rem;
         background: linear-gradient(#ff00e1, #ddff00);
-        border-radius: 50px;
+        border-radius: 3.125rem;
         animation: LineAnimated 5s linear forwards;
         z-index: -1;
     }
@@ -36,7 +39,7 @@
     .container {
         width: 50%;
         position: relative;
-        padding: 10px 30px;
+        padding: 0.625rem 1.875rem;
         animation: Animate-Container 1s linear forwards;
         opacity: 0;
     }
@@ -57,8 +60,8 @@
     .container:nth-child(odd)::before{
         content: "";
         position: absolute;
-        height: 20px;
-        width: 20px;
+        height: 1.25rem;
+        width: 1.25rem;
         background: linear-gradient(#ff00e1, #ddff00);
         top: 0;
         right: -7px;
@@ -68,8 +71,8 @@
     .container:nth-child(even)::before{
         content: "";
         position: absolute;
-        height: 20px;
-        width: 20px;
+        height: 1.25rem;
+        width: 1.25rem;
         background: linear-gradient(#ff00e1, #ddff00);
         top: 0;
         left: -12.5px;
@@ -78,24 +81,24 @@
     }
     
     .text-content {
-        padding: 20px 30px;
-        box-shadow: 0 5px 10px #191919;
-        border-radius: 10px;
+        padding: 1.25rem 1.875rem;
+        box-shadow: 0 5px 0.625rem #191919;
+        border-radius: 0.625rem;
     }
     
     .text-content h2 {
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
     .text-content p {
-        font-size: 13px;
-        margin-top: 10px;
+        font-size: 0.8125rem;
+        margin-top: 0.625rem;
     }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 87.5em) {
 
     .timeline {
-        width: 900px;
+        width: 56.25rem;
         margin-top: 2rem;
         margin-bottom: 4rem;
         position: relative;
@@ -108,7 +111,7 @@
         height: 100%;
         width: 5px;
         background: linear-gradient(#ff00e1, #ddff00);
-        border-radius: 50px;
+        border-radius: 3.125rem;
         animation: LineAnimated 5s linear forwards;
         z-index: -1;
     }
@@ -124,7 +127,7 @@
     .container {
         width: 50%;
         position: relative;
-        padding: 10px 130px;
+        padding: 0.625rem 8.125rem;
         animation: Animate-Container 1s linear forwards;
         opacity: 0;
     }
@@ -145,8 +148,8 @@
     .container:nth-child(odd)::before{
         content: "";
         position: absolute;
-        height: 20px;
-        width: 20px;
+        height: 1.25rem;
+        width: 1.25rem;
         background: linear-gradient(#ff00e1, #ddff00);
         top: 0;
         right: -7px;
@@ -156,8 +159,8 @@
     .container:nth-child(even)::before{
         content: "";
         position: absolute;
-        height: 20px;
-        width: 20px;
+        height: 1.25rem;
+        width: 1.25rem;
         background: linear-gradient(#ff00e1, #ddff00);
         top: 0;
         left: -12.5px;
@@ -166,16 +169,16 @@
     }
     
     .text-content {
-        padding: 20px 30px;
+        padding: 1.25rem 1.875rem;
         box-shadow: 0 5px 10px #191919;
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
     
     .text-content h2 {
-        font-size: 23px;
+        font-size: 1.4375rem;
     }
     .text-content p {
-        font-size: 13px;
-        margin-top: 10px;
+        font-size: 0.8125rem;
+        margin-top: 0.625rem;
     }
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FaGithubSquare } from 'react-icons/fa';
+// Importing UI
 import LaunchButton from '../ui/LaunchButton';
+// Importing CSS style
 import '../../styles/pages/project.css';
 
 function ProjectDetails({ projectData }) {
