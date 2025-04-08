@@ -9,7 +9,7 @@ import Cursor from "../components/ui/Cursor";
 function AppRouter() {
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/">
             <Cursor />
             <Header />
             <Routes>
