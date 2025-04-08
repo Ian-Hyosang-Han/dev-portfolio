@@ -2,7 +2,7 @@
 ============= INTRO-SECTION ===============
 ======================================== */
 
-.wrapper {
+.home-wrapper {
     font-family: var(--heading-font);
     color: var(--main-font-color);
 }
@@ -20,7 +20,15 @@
     font-family: var(--body-font);
 }
 
-.icons {
+#greeting {
+    font-size: 1.5rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    padding: 0.5rem 0;
+    font-weight: 700;
+
+}
+
+.social-icons {
     position: absolute;
     top: 3.8rem;
     right: 1rem;
@@ -30,8 +38,8 @@
 
 .role .front-end {
     margin-top: 4rem;
+    padding-top: 0.25rem;
     position: relative;
-    padding-top: 0.5rem;
 }
 
 .role .front-end::before {
@@ -49,8 +57,7 @@
 =====================  768px  ==================== */
 
 @media (min-width: 48em) {
-
-    .icons {
+    .social-icons {
         top: 5rem;
         right: 2rem;
     }
@@ -67,10 +74,9 @@
         width: 7rem;
     }
 
-    .greeting {
-        font-size: 1.5rem;
+    #greeting {
+        font-size: 2.5rem;
     }
-
 }
 
 /* ==================================================
@@ -78,16 +84,15 @@
 =====================  1024px  =================== */
 
 @media (min-width: 64em) {
-
-    .icons {
+    .social-icons {
         position: absolute;
         top: 6.8rem;
         right: 2.5rem;
     }
 
-    .greeting {
-        font-size: 2rem;
-        margin: 1.5625rem 0 1.5625rem 0.625rem;
+    #greeting {
+        font-size: 5rem;
+        margin: 1.5625rem 0 1.5625rem 10rem;
     }
 
     .role {
@@ -106,13 +111,6 @@
     }
 
     .role .front-end::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 11rem;
-        height: 0.125rem;
-        background-color: var(--home-bg-color);
     }
-
 }

@@ -28,10 +28,10 @@ function ProjectDetails({ projectData }) {
                     <p><strong>Role(s):</strong> {projectData.roles}</p>
                 </div>
 
-                <div className="link-box">
+                <div className="external-links">
                     <div className="link-to">
                         <LaunchButton url={projectData.launchUrl} />
-                        <a href="https://github.com/Ian-Hyosang-Han"
+                        <a href={projectData.githubUrl}
                             target="_blank"
                             rel="noreferrer">
                             <FaGithubSquare size={45} className='fill-white' />
@@ -84,24 +84,22 @@ function ProjectDetails({ projectData }) {
                     {projectData.relatedProjects.map((relatedProject, index) => (
                         <div
                             key={index}
-                            className="visible-box"
+                            className="related-project-card"
                             onClick={() => window.location.href = relatedProject.url}
                         >
                             <img
                                 src={relatedProject.imageUrl}
-                                alt={relatedProject.title} 
+                                alt={relatedProject.title}
                                 className="project-image"
                             />
-                            <div className="content">
+                            <div className="card-content">
                                 <h2>{relatedProject.title}</h2>
                                 <p>You are about to enter this content.<br /> Click when you're ready! 🚀</p>
                             </div>
                         </div>
                     ))}
                 </div>
-                <div className="divide-bar">
-                    <div className="w-[95vw] h-1 bg-white mx-auto"></div>
-                </div>
+                <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
             </div>
         </div>
     );

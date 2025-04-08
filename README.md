@@ -1,13 +1,64 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🧑‍💻 Ian's Portfolio
 
-Currently, two official plugins are available:
+Welcome! This is my personal portfolio site showcasing selected web development projects, UI/UX designs, and creative work — built with clean code, interactive animations, and purposeful storytelling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🔗 Live Site
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# dev-portfolio
+🌐 [hyosanghan.com](https://hyosanghan.com)
+
+---
+
+## 📁 Featured Projects
+
+### 🚀 [Astro Escape](https://hyosanghan.com/astro-escape)
+A real-time JavaScript game built with the Canvas API. The player controls a spaceship to dodge meteors with dynamic collisions, randomized behavior, and a time-based scoring system.  
+**Tech:** HTML, CSS, JavaScript  
+**Roles:** UX/UI Designer, Developer  
+
+### 🎬 [Movella](https://hyosanghan.com/project/moviedatabase)
+A React-based movie database using The Movie Database (TMDB) API. Search, view details, and watch trailers with a smooth UI.  
+**Tech:** React, SCSS, TMDB API  
+**Roles:** Frontend Developer, Data Fetching Logic  
+
+### 🐶 [Paws & Relax](https://hyosanghan.com/project/capstone)
+Team capstone project for a dog massage booking service. Built using WordPress + WooCommerce with custom booking logic, CPTs, and Stripe integration.  
+**Tech:** WordPress, WooCommerce, ACF, Stripe
+**Roles:** Branding, Custom Theme Dev, Shipping System
+
+---
+
+## 🛠 Technologies Used
+
+- React / JavaScript
+- HTML / CSS / Sass
+- WordPress / WooCommerce / ACF
+- Git / GitHub
+- Figma / Adobe XD
+- Responsive Web Design
+- REST APIs
+
+---
+
+## 🧠 What I Value
+
+- **Creativity meets functionality**: Clean, minimal layouts with intuitive UX.
+- **Curiosity-driven learning**: Always building, refining, and iterating.
+- **Persistence with personality**: I believe in getting things done, and having fun doing it.
+
+---
+
+## 📫 Contact
+
+Feel free to reach out or connect with me:
+
+- ✉️  Ian.han7540@gmail.com
+- 🌐 [hyosanghan.com](https://hyosanghan.com)  
+- 💼 [LinkedIn](https://linkedin.com/in/hyosanghan)  
+- 💻 [GitHub](https://github.com/Ian-Hyosang-Han)
+
+---
+
+> “Unspecialty” — My design philosophy is about creating something extraordinary from the ordinary.

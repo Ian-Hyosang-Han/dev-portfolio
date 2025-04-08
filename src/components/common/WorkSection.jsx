@@ -35,7 +35,7 @@ const WorkSection = () => {
                 <div className="work-cover"></div>
                 <div className="work-text">
                     <ProjectButton label="design" url="/" />
-                    <p>figma/adobe xd</p>
+                    <p>coming soon!</p>
                 </div>
             </div>
 

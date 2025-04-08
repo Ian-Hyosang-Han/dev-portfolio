@@ -20,22 +20,25 @@
 .project-header {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
 }
 
 .project-header h2 {
     font-size: 2.3rem;
+    font-family: var(--sub-heading-font);
+    font-weight: 800;
     margin-top: 3rem;
 }
 
 .project-header h3,
 .project-header h4 {
-    text-transform: uppercase;
     color: hsl(0, 0%, 90%);
 }
 
 .project-header h3 {
     font-size: 1.5rem;
     margin: 0.2rem 0;
+    text-transform: uppercase;
 }
 
 .project-header h4 {
@@ -45,7 +48,6 @@
 .project-images {
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
     margin: 0 auto;
     width: 100%;
@@ -53,15 +55,15 @@
 
 .project-images img {
     max-width: 31rem;
-    max-height: 20rem;
     width: 100%;
     height: 11rem;
-    border: 0.0625rem solid white;
+    border: 1px solid white;
     border-radius: 0.5rem;
     margin-top: 1rem;
+    object-fit: cover;
 }
 
-.link-box {
+.external-links {
     display: flex;
     justify-content: flex-end;
     margin-top: 10px;
@@ -69,7 +71,6 @@
 
 .link-to {
     display: flex;
-    flex-direction: row;
     align-items: center;
 }
 
@@ -84,7 +85,7 @@
     margin-top: 0.625rem;
 }
 
-.content p {
+.card-content p {
     font-family: var(--second-font);
 }
 
@@ -95,9 +96,8 @@
 .accordion-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
     align-items: center;
+    width: 100%;
 }
 
 .accordion-box {
@@ -110,8 +110,7 @@
 .accordion-box h2 {
     font-size: 1.4375rem;
     font-weight: bold;
-    margin-top: 1.25rem;
-    margin-bottom: 0.8rem;
+    margin: 1.25rem 0 0.8rem;
     padding-top: 0.5rem;
 }
 
@@ -143,11 +142,11 @@
 .accordion-content {
     width: 100%;
     max-width: 62.5rem;
-    margin-top: 0;
 }
 
 .accordion-content p {
-    padding-top: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 0;
 }
 
 .panel {
@@ -162,8 +161,10 @@
 }
 
 .panel ul li {
+    font-size: 1.3rem;
     list-style-type: disc;
     margin-left: 1.875rem;
+    line-height: 1.5rem;
 }
 
 /* ========================================
@@ -174,13 +175,12 @@
     transition: transform 1s, filter 2s ease-in-out;
     filter: blur(2px);
     transform: scale(1);
-  }
+}
 
 .project-header-image:hover {
     filter: blur(0);
     transform: scale(0.9);
 }
-
 
 .showing-box {
     display: flex;
@@ -191,7 +191,7 @@
     margin-bottom: 2rem;
 }
 
-.showing-box .visible-box {
+.related-project-card {
     width: 100%;
     height: 100%;
     border-radius: inherit;
@@ -199,7 +199,7 @@
     cursor: pointer;
 }
 
-.showing-box .visible-box img {
+.related-project-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -209,11 +209,11 @@
     border: 1px double white;
 }
 
-.visible-box:hover img {
+.related-project-card:hover img {
     filter: grayscale(1) brightness(0.4);
 }
 
-.visible-box::after {
+.related-project-card::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -223,12 +223,12 @@
     transition: 0.4s ease-in-out;
 }
 
-.visible-box:hover::after {
+.related-project-card:hover::after {
     opacity: 1;
     inset: 1.25rem;
 }
 
-.content {
+.card-content {
     color: white;
     width: 80%;
     position: absolute;
@@ -239,11 +239,11 @@
     transition: 0.4s ease-in-out;
 }
 
-.visible-box:hover .content {
+.related-project-card:hover .card-content {
     opacity: 1;
 }
 
-.content h2 {
+.card-content h2 {
     margin-bottom: 1rem;
 }
 
@@ -253,7 +253,7 @@
 
 @media (min-width: 48em) {
 
-    .link-box {
+    .external-links {
         margin-right: 4.6rem;
         margin-top: 0;
     }
@@ -266,7 +266,7 @@
         font-size: 3rem;
         margin-top: 5rem;
     }
-    
+
     .project-header h3 {
         font-size: 2rem;
     }
@@ -274,16 +274,14 @@
     .project-header h4 {
         font-size: 1.3rem;
     }
-    
+
     .project-content p {
         font-size: 1.25rem;
-        line-height: 1.25rem;
-        margin: 0.625rem 4.6875rem 0 4.6875rem;
         line-height: 1.5625rem;
+        margin: 0.625rem 4.6875rem 0;
     }
 
     .project-images img {
-        width: 100%;
         height: auto;
     }
 
@@ -294,7 +292,6 @@
     .accordion-button {
         font-size: 1.5rem;
     }
-
 }
 
 /* ==================================================
@@ -308,19 +305,16 @@
         height: 25rem;
     }
 
-    .link-box {
+    .external-links {
         margin-right: 5.7rem;
     }
 
     .project-header {
-        margin-left: 6rem;
+        margin-left: 5.8rem;
     }
 
     .project-content p {
-        font-size: 1.25rem;
-        line-height: 1.25rem;
         margin: 0.625rem 5.625rem;
-        line-height: 1.5625rem;
     }
 
     .project-images {
@@ -342,13 +336,12 @@
         gap: 5rem;
     }
 
-    .visible-box {
+    .related-project-card {
         max-width: 25rem;
         max-height: 25rem;
     }
 
-    .divide-bar {
+    hr {
         display: block;
     }
-
 }

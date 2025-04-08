@@ -3,7 +3,7 @@
 ======================================== */
 
 .custom-btn span {
-    font-family: 'Black Han sans', 'sans-serif';
+    font-family: var(--heading-font);
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
@@ -17,7 +17,7 @@
     height: auto;
     padding: 0.625rem 1.5625rem;
     border: 0.125rem solid #000;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--second-font);
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;

@@ -109,7 +109,6 @@
 =====================  768px  ==================== */
 
 @media (min-width: 48em) {
-
     .typing-container {
         font-size: 3rem;
     }
@@ -162,7 +161,6 @@
 =====================  1024px  =================== */
 
 @media (min-width: 64em) {
-
     .notebook-image img {
         max-width: 14.375rem;
         margin-left: 9.375rem;
@@ -170,11 +168,6 @@
 
     .typing-container {
         font-size: 4rem;
-    }
-
-    .notebook-image img {
-        max-width: 13.75rem;
-        margin-left: 5.625rem;
     }
 
     .book-image img {
@@ -211,7 +204,6 @@
 =====================  1400px  =================== */
 
 @media (min-width: 87.5rem) {
-
     .typing-container {
         font-size: 5rem;
     }
@@ -231,7 +223,6 @@
 =====================  1600px  =================== */
 
 @media (min-width: 100rem) {
-
     .typing-container {
         margin: 0 5rem;
     }

@@ -63,12 +63,12 @@ const Nav = ({ navOpen, setNavOpen }) => {
         <nav className={`main-nav ${navOpen ? "show" : "hide"}`}>
             <ul className={navOpen ? "show" : "hide"}>
                 <div className="nav-container">
-                    <div className="nav-home-box">
+                    <div className="nav-box">
                         <li>
                         <Link to="/" onClick={(e) => handleNavLinkClick(e, "/")}>HOME</Link>
                         </li>
                     </div>
-                    <div className="nav-work-box">
+                    <div className="nav-box">
                         <li>
                             <a href="/#home-works" onClick={(e) => handleNavLinkClick(e, "/#home-works")}>WORK</a>
                         </li>
@@ -80,7 +80,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
                             </Link>
                         </li>
                     </div>
-                    <div className="nav-about-box">
+                    <div className="nav-box">
                         <li>
                             <Link to="/about" onClick={() => setNavOpen(false)}>ABOUT</Link>
                         </li>

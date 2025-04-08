@@ -10,31 +10,32 @@ import '../styles/pages/home.css';
 
 function Home() {
     return (
-        <div className="wrapper">
+        <div className="home-wrapper">
+            {/* Hero Section */}
             <section className="intro-section">
                 <div className="role">
-                    <p className="front-end">front-end</p>
+                    <p className="front-end">Front-End</p>
                     <p className="developer">Developer</p>
                 </div>
-                <div className="icons">
+                <div className="social-icons">
                     <a href="https://www.linkedin.com/in/ian-han-hyosang"
                         target="_blank"
                         rel="noreferrer"
-                        className="icon-1">
+                        className="social-icon--linkedin">
                         <FaLinkedin size={45} className='fill-white' />
                     </a>
                     <a href="https://github.com/Ian-Hyosang-Han"
                         target="_blank"
                         rel="noreferrer"
-                        className="icon-2">
+                        className="social-icon--github">
                         <FaGithubSquare size={45} className='fill-white' />
                     </a>
                 </div>
 
-                <div className="greeting">
-                    <h1>hello, ian han</h1>
-                </div>
+                <h1 id="greeting" className="greeting">Hi! I AM IAN, HAN</h1>
             </section>
+
+            {/* Main Sections */}
             <TypingEffect />
             <AboutSection />
             <WorkSection />

@@ -6,8 +6,8 @@ const projectsData = {
         technologies: 'HTML / CSS / JavaScript',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
         roles: 'UX/UI designer / Developer',
-        launchUrl: 'https://example.com',
-        githubUrl: 'https://github.com/Ian-Hyosang-Han/Astro-escape',
+        launchUrl: 'https://hyosanghan.com/astro-escape',
+        githubUrl: 'https://github.com/Ian-Hyosang-Han/astro-escape',
         featured: [
             {
                 title: '1. Canvas API Usage',
@@ -102,7 +102,7 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/md-background.png',
+                imageUrl: '/md-background.webp',
                 url: '/project/moviedatabase'
              },
             { 
@@ -116,12 +116,12 @@ const projectsData = {
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
-        imageUrls: ['/md-background.png', '/md-background-1.png'],
-        technologies: 'REACT.js / CSS',
+        imageUrls: ['/md-background.webp', '/md-background-1.webp'],
+        technologies: 'React / CSS',
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
         roles: 'UX/UI designer / Developer',
-        launchUrl: 'https://example.com',
-        githubUrl: 'https://github.com/Ian-Hyosang-Han/movella',
+        launchUrl: 'https://hyosanghan.com/movella',
+        githubUrl: 'https://github.com/Ian-Hyosang-Han/movella-moviedatabase',
         featured: [
             {
                 title: '1. Fetching Movie Categories',
@@ -203,7 +203,7 @@ const projectsData = {
         technologies: 'WordPress / Woocommerce / Figma',
         overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
         roles: 'WordPress Developer',
-        launchUrl: 'https://example.com',
+        launchUrl: 'https://pawsandrelax.bcitwebdeveloper.ca/',
         githubUrl: 'https://github.com/htpwebdesign/paws-relax-theme',
         featured: [
             {
@@ -266,7 +266,7 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'Movie Database',
-                imageUrl: '/md-background.png',
+                imageUrl: '/md-background-1.webp',
                 url: '/project/moviedatabase'
              },
             { 
