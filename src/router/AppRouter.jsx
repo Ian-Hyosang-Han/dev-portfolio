@@ -4,13 +4,11 @@ import Footer from "../components/common/Footer";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ProjectPage from "../pages/ProjectPage";
-// import Cursor from "../components/ui/Cursor";
 
 function AppRouter() {
 
     return (
         <BrowserRouter basename="/">
-            {/* <Cursor /> */}
             <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
