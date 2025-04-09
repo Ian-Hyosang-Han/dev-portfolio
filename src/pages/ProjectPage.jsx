@@ -29,7 +29,9 @@ function ProjectPage() {
                 content={`Ian Han, ${projectData.title}, ${projectData.technologies}, front-end project, web development, React, portfolio project, developer showcase`}
             />
 
-            <ProjectDetails projectData={projectData} />
+            <main id="main-content">
+                <ProjectDetails projectData={projectData} />
+            </main>
         </>
     );
 }

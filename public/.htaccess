@@ -3,10 +3,10 @@
 # Replace the word SUBDIRECTORY on lines 6 and 11 with the subdirectory/folder name
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteBase /SUBDIRECTORY/
+  RewriteBase /
   RewriteRule ^index\.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /SUBDIRECTORY/index.html [L]
+  RewriteRule . /index.html [L]
 </IfModule>
