@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+// Importing CSS style
 import "../../styles/ui/cursor.css";
 
 const Cursor = () => {
