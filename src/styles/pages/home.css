@@ -1,0 +1,116 @@
+/* ========================================
+============= INTRO-SECTION ===============
+======================================== */
+
+.home-wrapper {
+    font-family: var(--heading-font);
+    color: var(--main-font-color);
+}
+
+.intro-section {
+    margin-left: 0.625rem;
+}
+
+.role p {
+    font-size: 0.9375rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+}
+
+#greeting {
+    font-size: 1.5rem;
+    font-family:'Montserrat Alternates', sans-serif;
+    padding: 0.5rem 0;
+    font-weight: 700;
+
+}
+
+.social-icons {
+    position: absolute;
+    top: 3.8rem;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.role .front-end {
+    margin-top: 4rem;
+    padding-top: 0.25rem;
+    position: relative;
+}
+
+.role .front-end::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.3rem;
+    height: 0.125rem;
+    background-color: var(--home-bg-color);
+}
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  768px  ==================== */
+
+@media (min-width: 48em) {
+    .social-icons {
+        top: 5rem;
+        right: 2rem;
+    }
+
+    .role p {
+        font-size: 1.5625rem;
+    }
+
+    .role .front-end {
+        margin-top: 5.2rem;
+    }
+
+    .role .front-end::before {
+        width: 7rem;
+    }
+
+    #greeting {
+        font-size: 2.5rem;
+    }
+}
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1024px  =================== */
+
+@media (min-width: 64em) {
+    .social-icons {
+        position: absolute;
+        top: 6.8rem;
+        right: 2.5rem;
+    }
+
+    #greeting {
+        font-size: 5rem;
+        margin: 1.5625rem 0 1.5625rem 10rem;
+    }
+
+    .role {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: 0.625rem;
+    }
+
+    .role p {
+        font-size: 2.5rem;
+    }
+
+    .role .front-end {
+        margin-top: 4rem;
+    }
+
+    .role .front-end::before {
+        width: 11rem;
+    }
+}

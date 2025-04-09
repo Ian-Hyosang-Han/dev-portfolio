@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+/* ========================================
+======== FONT-STYLES FOR TAILWIND =========
+======================================== */
+
+.font-blackHan {
+  @apply text-white;
+  font-family: 'Black Han Sans', sans-serif;
+}
+
+.font-rajdhani {
+  @apply text-white;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-lato {
+  @apply text-white text-xl;
+  font-family: 'Lato', sans-serif;
+}
+
+.font-Montserrat {
+  @apply text-white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* ========================================
+=========== COLOR-VARIABLES ===============
+======================================== */
+
+:root {
+  --home-bg-color: #ffffff;
+  --navi-bg-color: #FF5F40;
+  --hd-bg-color: #B9B9BA;
+  --hover-color: #D12908;
+  --main-font-color: #ffffff;
+  --second-font-color: #434343;
+  --third-font-color: #E8E6D5;
+  --heading-font: 'Black Han Sans', serif;
+  --sub-heading-font: 'Montserrat Alternates', serif;
+  --second-font: 'Lato', serif;
+  --body-font: 'Rajdhani', serif;
+  --button-font: 'Alfa Slab One', serif;
+}
+
+/* ========================================
+============= GLOBAL-STYLES ===============
+======================================== */
+
+body {
+  background-image: url('/noise-background.jpg');
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  color: var(--main-font-color);
+}
+
+h1 {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+}
+
+h3, h4, p {
+  font-family: var(--body-font);
+  font-weight: 500;
+}
+
+.impact-text {
+  font-family: var(--button-font);
+}
+
+a { text-decoration: none; }

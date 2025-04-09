@@ -1,0 +1,60 @@
+/* ========================================
+========== PROJECTS-BUTTON-STYLE ==========
+======================================== */
+
+.custom-btn span {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.custom-btn {
+    width: auto;
+    height: auto;
+    padding: 0.625rem 1.5625rem;
+    border: 0.125rem solid #000;
+    font-family: var(--second-font);
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.project-btn {
+  background: #000;
+  color: var(--main-font-color);
+  line-height: 2.625rem;
+  padding: 0;
+  border: none;
+}
+.project-btn:hover {
+  background: transparent;
+  color: var(--main-font-color);
+}
+.project-btn:before,
+.project-btn:after{
+  content:'';
+  position:absolute;
+  top: 0;
+  right: 0;
+  height: 0.125rem;
+  width: 0;
+  background: var(--home-bg-color);
+  transition:400ms ease all;
+}
+.project-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.project-btn:hover:before,
+.project-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

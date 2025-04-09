@@ -1,0 +1,154 @@
+/* ========================================
+=========== NAVIGATION-SECTION ============
+======================================== */
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    height: 100%;
+    background-color: var(--navi-bg-color);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    padding-top: 3rem;
+    z-index: 1010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Slide in */
+.main-nav.show {
+    transform: translateX(0);
+}
+
+.hamburger-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 3.125rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1010;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-nav li {
+    display: flex;
+    justify-content: center;
+    color: var(--third-font-color);
+}
+
+/* Navigation Button Grid */
+.nav-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem 3rem;
+    row-gap: 0.7rem;
+}
+
+/* Reusable Nav Box */
+.nav-box {
+    width: 7.5rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navi-bg-color);
+    padding: 1rem;
+    border: 0.4rem solid var(--hover-color);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-box:hover {
+    background-color: var(--hover-color);
+}
+
+.nav-box a {
+    color: var(--third-font-color);
+    font-family: var(--heading-font);
+    font-size: 1.5625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Circular Image Box */
+.nav-image-box .round {
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    background-color: var(--navi-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.4rem solid var(--hover-color);
+    z-index: 1200;
+}
+
+/* Accordion Button */
+.accordion {
+    position: relative;
+    width: 20rem;
+    padding: 0.5rem;
+    background-color: var(--navi-bg-color);
+    color: var(--third-font-color);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    border: 0.3rem solid var(--hover-color);
+    border-bottom: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion:hover {
+    background-color: var(--hover-color);
+}
+
+.accordion span {
+    position: absolute;
+    right: 1.25rem;
+}
+
+/* Accordion Final Border */
+.last-accordion {
+    border-bottom: 0.3rem solid var(--hover-color);
+}
+
+/* Accordion Panel Content */
+.nav-panel {
+    width: 19.375rem;
+    padding: 1rem 0.5rem;
+    font-family: var(--second-font);
+    font-weight: bold;
+    color: var(--navi-bg-color);
+    background-color: var(--third-font-color);
+    display: none;
+    overflow: hidden;
+}

@@ -1,0 +1,145 @@
+/* ========================================
+============== ABOUT-SECTION ==============
+======================================== */
+
+.about-section {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    font-family: var(--body-font);
+    line-height: 1.3;
+    color: var(--second-font-color);
+}
+
+.section-inner {
+    position: relative;
+    width: 100%;
+    background-color: var(--home-bg-color);
+    margin: 0 auto;
+    padding: 1.25rem 0;
+}
+
+.section-inner h2 {
+    font-size: 2rem;
+    font-family: var(--sub-heading-font);
+    font-weight: 800;
+    padding-left: 0.625rem;
+}
+
+.angle-top,
+.angle-bottom {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1.875rem;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100% 100%;
+    z-index: 1000;
+}
+
+.angle-top {
+    top: -1.8125rem;
+    background-image: url(/angle_top_mobile.png);
+}
+
+.angle-bottom {
+    bottom: -1.8125rem;
+    background-image: url(/angle_bottom_mobile.png);
+}
+
+.inner-wide {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0.625rem;
+    text-align: left;
+}
+
+.about-link-container {
+    text-align: right;
+    margin-top: 0.625rem;
+}
+
+.about-link {
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about-link:hover {
+    color: var(--navi-bg-color);
+}
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  768px  ==================== */
+
+@media (min-width: 48em) {
+    .about-link-container {
+        margin-right: 0.625rem;
+    }
+}
+
+/* ==================================================
+================= MEDIA-QUERY-SECTION ===============
+=====================  1024px  ==================== */
+
+@media (min-width: 64em) {
+    .section-inner {
+        padding-bottom: 2rem;
+    }
+
+    .section-inner h2 {
+        font-size: 3rem;
+        margin-left: 0.625rem;
+    }
+
+    .inner-wide {
+        padding-left: 20rem;
+    }
+
+    .inner-wide p {
+        font-size: 1.625rem;
+        line-height: 1.5;
+    }
+
+    .gif {
+        cursor: grab;
+    }
+
+    .gif-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 17.5rem;
+        height: 18.75rem;
+        display: none;
+        background-size: cover;
+        background-position: center;
+        margin-top: 0.3125rem;
+        margin-left: 1.25rem;
+        z-index: 1000;
+    }
+
+    .angle-top {
+        background-image: url(/angle_top.png);
+    }
+
+    .angle-bottom {
+        background-image: url(/angle_bottom.png);
+    }
+
+    .about-link-container {
+        margin-right: 0.625rem;
+    }
+
+    .about-link {
+        font-size: 1.5rem;
+    }
+}
