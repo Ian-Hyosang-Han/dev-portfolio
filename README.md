@@ -61,4 +61,12 @@ Feel free to reach out or connect with me:
 
 ---
 
+## Personal note
+- This portfolio project wasn’t always easy — there were moments I felt stuck, frustrated, and uncertain.
+But with the support of peers, thoughtful advice from friends, and even the help of AI tools, I was able to push through and complete it.
+I took this opportunity not just to showcase my projects, but to challenge myself to grow.
+I intentionally used Tailwind CSS in sections like the About page to explore its utility and improve my styling speed and scalability.
+Along the way, I developed a stronger sense of structure in CSS, embraced component-based thinking in React, and gained confidence in applying design systems.
+This project is more than a collection of work — it's a snapshot of the progress I've made, and a foundation I’m excited to keep building on. I’m genuinely excited and full of anticipation for the projects I’ll take on in the future.
+
 > “Unspecialty” — My design philosophy is about creating something extraordinary from the ordinary.
