@@ -3,21 +3,20 @@
 ======================================== */
 
 .cursor {
-    pointer-events: none;
     position: fixed;
-    display: block;
-    border-radius: 0;
+    pointer-events: none;
     mix-blend-mode: difference;
     top: 0;
     left: 0;
-    z-index: 10000;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 .circle {
-    position: absolute;
-    display: block;
+    position: fixed;
     width: 2.5rem;
     height: 2.5rem;
-    border-radius: 1.25rem;
-    background-color: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: background-color 0.2s;
 }

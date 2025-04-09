@@ -2,7 +2,7 @@ const projectsData = {
     javascriptgame: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
-        imageUrls: ['/js-background-1.png', '/js-background-2.png'],
+        imageUrls: ['/js-background-1.webp', '/js-background-2.webp'],
         technologies: 'HTML / CSS / JavaScript',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
         roles: 'UX/UI designer / Developer',
@@ -107,7 +107,7 @@ const projectsData = {
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/cp-image01.png',
+                imageUrl: '/cp-image01.webp',
                 url: '/project/capstone'
             }
         ]
@@ -185,12 +185,12 @@ const projectsData = {
         relatedProjects: [
             { 
                 title: 'JavaScript Game',
-                imageUrl: '/js-background-1.png',
+                imageUrl: '/js-background-1.webp',
                 url: '/project/javascriptgame'
              },
             { 
                 title: 'Capstone',
-                imageUrl: '/cp-image01.png',
+                imageUrl: '/cp-image01.webp',
                 url: '/project/capstone'
             }
         ]
@@ -199,7 +199,7 @@ const projectsData = {
     capstone: {
         title: 'Paws & Relax',
         subtitle: 'Capstone Project',
-        imageUrls: ['/cp-image01.png', '/cp-image02.png'],
+        imageUrls: ['/cp-image01.webp', '/cp-image02.webp'],
         technologies: 'WordPress / Woocommerce / Figma',
         overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
         roles: 'WordPress Developer',
@@ -271,7 +271,7 @@ const projectsData = {
              },
             { 
                 title: 'JavaScript Game',
-                imageUrl: '/js-background-1.png',
+                imageUrl: '/js-background-1.webp',
                 url: '/project/javascriptgame'
             }
         ]
