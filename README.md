@@ -54,10 +54,9 @@ Team capstone project for a dog massage booking service. Built using WordPress +
 
 Feel free to reach out or connect with me:
 
-- Ian.han7540@gmail.com
+- ian.han7540@gmail.com
 - [hyosanghan.com](https://hyosanghan.com)
-- [LinkedIn](https://linkedin.com/in/hyosanghan)
-- [GitHub](https://github.com/Ian-Hyosang-Han)
+- [LinkedIn](https://www.linkedin.com/in/ian-han-hyosang/)
 
 ---
 
