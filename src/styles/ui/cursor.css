@@ -20,3 +20,13 @@
     pointer-events: none;
     transition: background-color 0.2s;
 }
+
+/* =====================================================
+================= MEDIA-QUERY-SECTION ==================
+=====================  max-768px  ==================== */
+
+@media (max-width: 768px) {
+    .cursor {
+        display: none !important;
+    }
+}
