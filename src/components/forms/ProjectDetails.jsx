@@ -50,8 +50,24 @@ function ProjectDetails({ projectData }) {
                 <div className="accordion-box">
                     <h2>Inside of the project</h2>
                     <div className="accordion-buttons">
-                        <button className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`} onClick={() => togglePanel('left')}>Featured</button>
-                        <button className={`accordion-button ${activePanel === 'right' ? 'active' : ''}`} onClick={() => togglePanel('right')}>Reflection</button>
+                        <button 
+                            className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`} 
+                            onClick={() => togglePanel('left')}
+                            aria-expanded={activePanel === 'left'}
+                            aria-controls="panel-featured"
+                            aria-selected={activePanel === 'left'}
+                            role="tab"
+                            id="tab-featured"
+                            >Featured</button>
+                        <button 
+                            className={`accordion-button ${activePanel === 'right' ? 'active' : ''}`} 
+                            onClick={() => togglePanel('right')}
+                            aria-expanded={activePanel === 'left'}
+                            aria-controls="panel-featured"
+                            aria-selected={activePanel === 'left'}
+                            role="tab"
+                            id="tab-featured"
+                            >Reflection</button>
                     </div>
                     <div className="accordion-content">
                         <div className="panel" style={{ display: activePanel === 'left' ? 'block' : 'none' }}>

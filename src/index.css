@@ -15,7 +15,7 @@
 }
 
 .font-lato {
-  @apply text-white text-xl;
+  @apply text-white;
   font-family: 'Lato', sans-serif;
 }
 
@@ -68,7 +68,6 @@ h2 {
 
 h3, h4, p {
   font-family: var(--body-font);
-  font-weight: 500;
 }
 
 .impact-text {

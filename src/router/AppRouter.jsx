@@ -6,15 +6,21 @@ import About from "../pages/About";
 import ProjectPage from "../pages/ProjectPage";
 
 function AppRouter() {
-
     return (
-        <BrowserRouter basename="/">
+        <BrowserRouter>
+            {/* ✅ Skip to content */}
+            <a href="#main-content" className="screen-reader-text">
+                Skip to main content
+            </a>
+
             <Header />
+
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/project/:projectId" element={<ProjectPage />} />
             </Routes>
+
             <Footer />
         </BrowserRouter>
     );
