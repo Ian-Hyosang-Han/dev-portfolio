@@ -91,7 +91,7 @@ const Nav = ({ navOpen, setNavOpen }) => {
             <div className="nav-panel" style={{ display: activePanel === 0 ? 'block' : 'none' }}>
                 <p>Ian.han7540@gmail.com</p>
             </div>
-            <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>Linked In<span>+</span></button>
+            <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>LinkedIn<span>+</span></button>
             <div className="nav-panel" style={{ display: activePanel === 1 ? 'block' : 'none' }}>
                 <p>http://linkedin.com/in/ian-han-hyosang</p>
             </div>
