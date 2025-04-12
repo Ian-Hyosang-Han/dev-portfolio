@@ -2,10 +2,10 @@ const projectsData = {
     javascriptgame: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
-        imageUrls: ['/js-background-1.webp', '/js-background-2.webp'],
-        technologies: 'HTML / CSS / JavaScript',
+        imageUrls: ['/jg-image01.webp', '/jg-image02.webp'],
+        technologies: 'HTML / CSS / JavaScript / Github',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
-        roles: 'UX/UI designer / Developer',
+        roles: 'Front-End Developer / Designer',
         launchUrl: 'https://hyosanghan.com/astro-escape',
         githubUrl: 'https://github.com/Ian-Hyosang-Han/astro-escape',
         featured: [
@@ -100,12 +100,12 @@ const projectsData = {
             },
         ],
         relatedProjects: [
-            { 
+            {
                 title: 'Movie Database',
-                imageUrl: '/md-background.webp',
+                imageUrl: '/md-image01.webp',
                 url: '/project/moviedatabase'
-             },
-            { 
+            },
+            {
                 title: 'Capstone',
                 imageUrl: '/cp-image01.webp',
                 url: '/project/capstone'
@@ -116,8 +116,8 @@ const projectsData = {
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
-        imageUrls: ['/md-background.webp', '/md-background-1.webp'],
-        technologies: 'React / CSS',
+        imageUrls: ['/md-image01.webp', '/md-image02.webp'],
+        technologies: 'React / SASS / Github',
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
         roles: 'UX/UI designer / Developer',
         launchUrl: 'https://hyosanghan.com/movella',
@@ -170,25 +170,25 @@ const projectsData = {
         ],
         reflection: [
             {
-                title: '1. Achievements & Strengths',
+                title: 'Achievements & Strengths',
                 details: [
                     'While working on the movie database project, I am proud of several aspects I successfully implemented. I structured the API integration efficiently, which made fetching movie data smooth and reliable. Using React Router allowed me to create seamless navigation between different pages, significantly improving the overall user experience. One of the features I particularly enjoyed implementing was the Favorites feature, as it added a personal touch and made the app more engaging for users. Managing API requests and state through GlobalContext helped me keep the code organized and scalable, which I found very satisfying. Additionally, I ensured the app maintained a clean and intuitive design, enhancing user interaction. These achievements boosted my confidence in building user-centric web applications and strengthened my skills in state management and API handling.'
                 ]
             },
             {
-                title: '2. Challenges & Areas for Improvement',
+                title: 'Challenges & Areas for Improvement',
                 details: [
                     'Despite the successes, I faced several challenges during this project. I overlooked the need for loading indicators, which made the app feel unresponsive when fetching data, affecting the user experience. My error handling could also be improved; I did not display user-friendly messages when errors occurred, which might confuse users. Additionally, while the navigation menu worked, I felt I could have made it more visually refined to enhance usability further. Looking back, I realize the app would benefit from search and filtering options to make movie discovery more interactive and user-friendly. I also aim to implement better error handling with clearer messages to improve reliability. Incorporating animations and lazy loading would enhance performance and make the UI more appealing. These areas for improvement will guide me in building more robust and user-focused applications in the future.'
                 ]
             },
         ],
         relatedProjects: [
-            { 
+            {
                 title: 'JavaScript Game',
-                imageUrl: '/js-background-1.webp',
+                imageUrl: '/jg-image01.webp',
                 url: '/project/javascriptgame'
-             },
-            { 
+            },
+            {
                 title: 'Capstone',
                 imageUrl: '/cp-image01.webp',
                 url: '/project/capstone'
@@ -200,7 +200,7 @@ const projectsData = {
         title: 'Paws & Relax',
         subtitle: 'Capstone Project',
         imageUrls: ['/cp-image01.webp', '/cp-image02.webp'],
-        technologies: 'WordPress / Woocommerce / Figma',
+        technologies: 'WordPress / Woocommerce / Github',
         overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
         roles: 'WordPress Developer',
         launchUrl: 'https://pawsandrelax.bcitwebdeveloper.ca/',
@@ -264,15 +264,94 @@ const projectsData = {
             },
         ],
         relatedProjects: [
-            { 
+            {
                 title: 'Movie Database',
-                imageUrl: '/md-background-1.webp',
+                imageUrl: '/md-image01.webp',
                 url: '/project/moviedatabase'
-             },
-            { 
+            },
+            {
                 title: 'JavaScript Game',
-                imageUrl: '/js-background-1.webp',
+                imageUrl: '/jg-image01.webp',
                 url: '/project/javascriptgame'
+            }
+        ]
+    },
+
+    portfolio: {
+        title: 'Unspecialty',
+        subtitle: 'Portfolio Project',
+        imageUrls: ['/pf-image01.webp', '/pf-image02.webp'],
+        technologies: 'React / CSS / Tailwind CSS / Github',
+        overview: 'My design philosophy is about creating something extraordinary from the ordinary. I built this portfolio with a strong focus on clean layout, mobile- first design, and intuitive user experiences. As seen in the home banner—INTUITIVE UI, SEAMLESS UX, ENGAGING INTERFACES, OPTIMIZED PERFORMANCE, and CONTINUOUS GROWTH—these principles guided every design and development decision. It features a diverse collection of projects I have built or contributed to, and reflects not only my technical skills but also my professional journey, past experiences, and personal passions. At its core, this portfolio is more than just a showcase—it is a story about where I have been, what I have created, and the kind of developer and person I aspire to become.',
+        roles: 'Front-End Developer / Designer',
+        launchUrl: '/',
+        githubUrl: 'https://github.com/Ian-Hyosang-Han/dev-portfolio',
+        featured: [
+            {
+                title: '1. Component-Driven Architecture',
+                details: [
+                    'Built using React Router and reusable component structures to dynamically load project pages from a centralized projectData file.',
+                    'Eliminated the need for multiple hardcoded pages by designing a single dynamic route component that populates content based on project data.'
+                ]
+            },
+            {
+                title: '2. UI/UX Enhancements',
+                details: [
+                    'Utilized React Icons for scalable, consistent visual cues across the site.',
+                    'Implemented advanced CSS animations and hover effects to create engaging interactions.',
+                    'Incorporated smooth transitions and micro-interactions to elevate the user experience.'
+                ]
+            },
+            {
+                title: '3. Styling Strategy',
+                details: [
+                    'Applied Tailwind CSS selectively for rapid styling on simpler component and page.',
+                    'Organized style logic by separating global styles, UI styles, and form styles into clearly defined folders and files.',
+                    'Created a root-level style system with CSS variables to maintain design consistency.'
+                ]
+            },
+            {
+                title: '4. Performance Optimization',
+                details: [
+                    'Optimized all images and rendering-sensitive assets for faster load times and smoother performance.',
+                    'Maintained a clean and modular codebase for readability and scalability.'
+                ]
+            },
+        ],
+        reflection: [
+            {
+                title: 'Tailwind Integration',
+                details: [
+                    'Realized the potential of using Tailwind CSS throughout the entire project to improve styling efficiency and maintainability.',
+                    'Plan to refactor future projects with full Tailwind adoption for more consistent design tokens and utility-driven workflow.'
+                ]
+            },
+            {
+                title: 'Advanced Responsive Design',
+                details: [
+                    'Gained a deeper understanding of responsive UI patterns and their impact on user experience.',
+                    'In future iterations, I aim to enhance responsiveness by leveraging more advanced CSS techniques such as container queries and fluid scaling strategies.'
+                ]
+            },
+            {
+                title: 'Project Takeaways',
+                details: [
+                    'This portfolio served as a sandbox to explore architectural decisions, styling systems, and animation techniques.',
+                    'I learned the value of balancing simplicity with scalability, and will continue refining how structure, aesthetics, and performance come together in my work.'
+                ]
+            }
+        ],
+        relatedProjects: [
+            {
+                title: 'JavaScript Game',
+                imageUrl: '/jg-image01.webp',
+                url: '/project/javascriptgame'
+
+            },
+            {
+                title: 'Movie Database',
+                imageUrl: '/md-image01.webp',
+                url: '/project/moviedatabase'
             }
         ]
     },

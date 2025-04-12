@@ -35,7 +35,7 @@
     right: 50%;
     top: 0;
     height: 100%;
-    background: linear-gradient(#ff00e1, #ddff00);
+    background: linear-gradient(#0055ff, #00e5ff);
     border-radius: 3.125rem;
     animation: LineAnimated 5s linear forwards;
     z-index: -1;
@@ -60,7 +60,7 @@
     position: absolute;
     height: 1.25rem;
     width: 1.25rem;
-    background: linear-gradient(#ff00e1, #ddff00);
+    background: linear-gradient(#0055ff, #00e5ff);
     top: 0;
     border-radius: 50%;
     z-index: 10;
