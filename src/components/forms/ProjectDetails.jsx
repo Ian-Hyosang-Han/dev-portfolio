@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FaGithubSquare } from 'react-icons/fa';
 // Importing UI
 import LaunchButton from '../ui/LaunchButton';
@@ -50,24 +51,24 @@ function ProjectDetails({ projectData }) {
                 <div className="accordion-box">
                     <h2>Inside of the project</h2>
                     <div className="accordion-buttons">
-                        <button 
-                            className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`} 
+                        <button
+                            className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`}
                             onClick={() => togglePanel('left')}
                             aria-expanded={activePanel === 'left'}
                             aria-controls="panel-featured"
                             aria-selected={activePanel === 'left'}
                             role="tab"
                             id="tab-featured"
-                            >Featured</button>
-                        <button 
-                            className={`accordion-button ${activePanel === 'right' ? 'active' : ''}`} 
+                        >Featured</button>
+                        <button
+                            className={`accordion-button ${activePanel === 'right' ? 'active' : ''}`}
                             onClick={() => togglePanel('right')}
                             aria-expanded={activePanel === 'left'}
                             aria-controls="panel-featured"
                             aria-selected={activePanel === 'left'}
                             role="tab"
                             id="tab-featured"
-                            >Reflection</button>
+                        >Reflection</button>
                     </div>
                     <div className="accordion-content">
                         <div className="panel" style={{ display: activePanel === 'left' ? 'block' : 'none' }}>
@@ -96,25 +97,31 @@ function ProjectDetails({ projectData }) {
                         </div>
                     </div>
                 </div>
-                <div className='showing-box'>
-                    {projectData.relatedProjects.map((relatedProject, index) => (
-                        <div
-                            key={index}
-                            className="related-project-card"
-                            onClick={() => window.location.href = relatedProject.url}
-                        >
-                            <img
-                                src={relatedProject.imageUrl}
-                                alt={relatedProject.title}
-                                className="project-image"
-                            />
-                            <div className="card-content">
-                                <h2>{relatedProject.title}</h2>
-                                <p>You are about to enter this content.<br /> Click when you're ready! 🚀</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+
+                <section className="showing-container">
+                    <div className="showing-box-header">
+                        <h2>Explore additional projects</h2>
+                    </div>
+                    <div className='showing-box'>
+                        {projectData.relatedProjects.map((relatedProject, index) => (
+                            <Link
+                                key={index}
+                                to={relatedProject.url}
+                                className="related-project-card"
+                            >
+                                <img
+                                    src={relatedProject.imageUrl}
+                                    alt={relatedProject.title}
+                                    className="project-image"
+                                />
+                                <div className="card-content">
+                                    <h2>{relatedProject.title}</h2>
+                                    <p>You are about to enter this content.<br /> Click when you're ready! 🚀</p>
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
                 <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
             </div>
         </div>
