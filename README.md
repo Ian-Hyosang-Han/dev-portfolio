@@ -31,14 +31,7 @@ Team capstone project for a dog massage booking service. Built using WordPress +
 ---
 
 ## Technologies Used
-
-- React / JavaScript
-- HTML / CSS / Sass / TAILWIND CSS
-- WordPress / WooCommerce
-- GitHub
-- Figma / Adobe XD
-- Responsive Web Design
-- REST APIs
+<img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" /><img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" /><img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" /><img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" /><img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" /><img alt="Responsive Web Design" src="https://img.shields.io/badge/-Responsive%20Web%20Design-4AB197?style=flat-square" />
 
 ---
 
