@@ -2,6 +2,9 @@ const projectsData = {
     javascriptgame: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
+        category: 'personal',
+        description: 'Built with JavaScript and Canvas',
+        gifUrls: '',
         imageUrls: ['/jg-image01.webp', '/jg-image02.webp'],
         technologies: 'HTML / CSS / JavaScript / Github',
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',

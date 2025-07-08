@@ -18,7 +18,8 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/project/:projectId" element={<ProjectPage />} />
+                {/* <Route path="/project/:projectId" element={<ProjectPage />} /> */}
+                <Route path="/project" element={<ProjectPage />} />
             </Routes>
 
             <Footer />

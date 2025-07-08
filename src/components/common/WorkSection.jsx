@@ -10,7 +10,7 @@ const WorkSection = () => {
             <div className="work work01">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="astro escape" url="/project/javascriptgame" />
+                    <ProjectButton label="astro escape" url="/project" />
                     <p>space, survival — in JavaScript</p>
                 </div>
             </div>
@@ -18,7 +18,7 @@ const WorkSection = () => {
             <div className="work work02">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="movella" url="/project/moviedatabase" />
+                    <ProjectButton label="movella" url="/project" />
                     <p>blockbusters meet react hooks</p>
                 </div>
             </div>
@@ -26,7 +26,7 @@ const WorkSection = () => {
             <div className="work work03">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="capstone" url="/project/capstone" />
+                    <ProjectButton label="capstone" url="/project" />
                     <p>a paw-sitive ending</p>
                 </div>
             </div>
@@ -34,7 +34,7 @@ const WorkSection = () => {
             <div className="work work04">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="Unspecialty" url="/project/portfolio" />
+                    <ProjectButton label="Unspecialty" url="/project" />
                     <p>from code to craft</p>
                 </div>
             </div>
