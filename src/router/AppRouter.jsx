@@ -4,6 +4,7 @@ import Footer from "../components/common/Footer";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ProjectPage from "../pages/ProjectPage";
+import ProjectDetailsPage from "../pages/ ProjectDetailsPage";
 
 function AppRouter() {
     return (
@@ -18,9 +19,9 @@ function AppRouter() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                {/* <Route path="/project/:projectId" element={<ProjectPage />} /> */}
                 <Route path="/project" element={<ProjectPage />} />
-            </Routes>
+                <Route path="/project/:projectId" element={<ProjectDetailsPage />} />
+                </Routes>
 
             <Footer />
         </BrowserRouter>

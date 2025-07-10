@@ -29,27 +29,29 @@ function ProjectDetails({ projectData }) {
                     <p><strong>Role(s):</strong> {projectData.roles}</p>
                 </div>
 
-                <div className="external-links">
-                    <div className="link-to">
-                        <LaunchButton url={projectData.launchUrl} />
-                        <a href={projectData.githubUrl}
-                            target="_blank"
-                            rel="noreferrer">
-                            <FaGithubSquare size={45} className='fill-white' />
-                        </a>
-                    </div>
-                </div>
 
-                <div className="project-images">
+
+                {/* <div className="project-images">
                     {projectData.imageUrls.map((url, index) => (
                         <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
                     ))}
-                </div>
+                </div> */}
 
-            </div>
-            <div className="accordion-container">
                 <div className="accordion-box">
                     <h2>Inside of the project</h2>
+                    <div className="external-links">
+                        <div className="link-to">
+                            <LaunchButton url={projectData.launchUrl} />
+                            <a href={projectData.githubUrl}
+                                target="_blank"
+                                rel="noreferrer">
+                                <FaGithubSquare size={45} className='fill-white' />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="accordion-container">
                     <div className="accordion-buttons">
                         <button
                             className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`}
@@ -122,8 +124,8 @@ function ProjectDetails({ projectData }) {
                         ))}
                     </div>
                 </section>
-                <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
             </div>
+            <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
         </div>
     );
 }

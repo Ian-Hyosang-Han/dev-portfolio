@@ -119,6 +119,9 @@ const projectsData = {
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
+        category: 'personal',
+        description: 'Movie Database',
+        gifUrls: '',
         imageUrls: ['/md-image01.webp', '/md-image02.webp'],
         technologies: 'React / SASS / Github',
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
@@ -202,6 +205,9 @@ const projectsData = {
     capstone: {
         title: 'Paws & Relax',
         subtitle: 'Capstone Project',
+        category: 'team',
+        description: 'Capstone Project',
+        gifUrls: '',
         imageUrls: ['/cp-image01.webp', '/cp-image02.webp'],
         technologies: 'WordPress / Woocommerce / Github',
         overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
@@ -283,6 +289,9 @@ const projectsData = {
     portfolio: {
         title: 'Unspecialty',
         subtitle: 'Portfolio Project',
+        category: 'personal',
+        description: 'Portfolio',
+        gifUrls: '',
         imageUrls: ['/pf-image01.webp', '/pf-image02.webp'],
         technologies: 'React / CSS / Tailwind CSS / Github',
         overview: 'My design philosophy is about creating something extraordinary from the ordinary. I built this portfolio with a strong focus on clean layout, mobile- first design, and intuitive user experiences. As seen in the home banner—INTUITIVE UI, SEAMLESS UX, ENGAGING INTERFACES, OPTIMIZED PERFORMANCE, and CONTINUOUS GROWTH—these principles guided every design and development decision. It features a diverse collection of projects I have built or contributed to, and reflects not only my technical skills but also my professional journey, past experiences, and personal passions. At its core, this portfolio is more than just a showcase—it is a story about where I have been, what I have created, and the kind of developer and person I aspire to become.',
