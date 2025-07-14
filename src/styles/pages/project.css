@@ -48,7 +48,7 @@
   font-size: 1rem;
 }
 
-.project-images {
+/* .project-images {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +64,7 @@
   border-radius: 0.5rem;
   margin-top: 1rem;
   object-fit: contain;
-}
+} */
 
 .external-links {
   display: flex;
@@ -287,9 +287,9 @@
     line-height: 1.5625rem;
   }
 
-  .project-images img {
+  /* .project-images img {
     height: auto;
-  }
+  } */
 
   .accordion-box {
     flex-direction: row;

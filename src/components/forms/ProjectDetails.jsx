@@ -21,15 +21,13 @@ function ProjectDetails({ projectData }) {
                 <div className="project-header">
                     <h2>{projectData.title}</h2>
                     <h3>{projectData.subtitle}</h3>
-                    <h4>{projectData.technologies}</h4>
+                    <h4>{projectData.techStack.join(' / ')}</h4>
                 </div>
 
                 <div className="project-content">
                     <p><strong>Project-overview:</strong> {projectData.overview}</p>
                     <p><strong>Role(s):</strong> {projectData.roles}</p>
                 </div>
-
-
 
                 {/* <div className="project-images">
                     {projectData.imageUrls.map((url, index) => (
