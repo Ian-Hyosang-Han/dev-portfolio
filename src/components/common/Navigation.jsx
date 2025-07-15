@@ -5,9 +5,9 @@ import "../../styles/components/navigation.css";
 
 const Nav = ({ navOpen, setNavOpen }) => {
     const [activePanel, setActivePanel] = useState(null);
-    const [copied, setCopied] = useState(false);
-    const location = useLocation();
-    const navigate = useNavigate();
+    const [copied, setCopied]           = useState(false);
+    const location                      = useLocation();
+    const navigate                      = useNavigate();
 
     const togglePanel = (panelIndex, e) => {
         e.stopPropagation();
@@ -95,24 +95,47 @@ const Nav = ({ navOpen, setNavOpen }) => {
                     </div>
                 </div>
             </ul>
-            <button className={`accordion ${activePanel === 0 ? 'active' : ''}`} onClick={(e) => togglePanel(0, e)}>Contact<span>+</span></button>
-            <div className="nav-panel" style={{ display: activePanel === 0 ? 'block' : 'none' }}>
-                <p onClick={handleCopyEmail} style={{ cursor: "pointer" }}>
+            <button 
+                className={`accordion ${activePanel === 0 ? 'active' : ''}`} 
+                onClick={(e) => togglePanel(0, e)}
+                >Contact<span>+</span></button>
+            <div 
+                className="nav-panel" 
+                style={{ display: activePanel === 0 ? 'block' : 'none' }}>
+                <p 
+                    onClick={handleCopyEmail} 
+                    style={{ cursor: "pointer" }}>
                     Ian.han7540@gmail.com {copied && <span style={{ marginLeft: "10px", color: "#FF5F40" }}>Copied!</span>}
                 </p>
             </div>
-            <button className={`accordion ${activePanel === 1 ? 'active' : ''}`} onClick={(e) => togglePanel(1, e)}>LinkedIn<span>+</span></button>
-            <div className="nav-panel" style={{ display: activePanel === 1 ? 'block' : 'none' }}>
+            <button 
+                className={`accordion ${activePanel === 1 ? 'active' : ''}`} 
+                onClick={(e) => togglePanel(1, e)}
+                >LinkedIn<span>+</span></button>
+            <div 
+                className="nav-panel" 
+                style={{ display: activePanel === 1 ? 'block' : 'none' }}>
                 <p>
-                    <a href="https://linkedin.com/in/ian-han-hyosang" target="_blank" rel="noopener noreferrer">
+                    <a 
+                        href="https://linkedin.com/in/ian-han-hyosang" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
                         linkedin.com/in/ian-han-hyosang
                     </a>
                 </p>
             </div>
-            <button className={`accordion last-accordion ${activePanel === 2 ? 'active' : ''}`} onClick={(e) => togglePanel(2, e)}>GitHub<span>+</span></button>
-            <div className="nav-panel" style={{ display: activePanel === 2 ? 'block' : 'none' }}>
+            <button 
+                className={`accordion last-accordion ${activePanel === 2 ? 'active' : ''}`} 
+                onClick={(e) => togglePanel(2, e)}
+                >GitHub<span>+</span></button>
+            <div 
+                className="nav-panel" 
+                style={{ display: activePanel === 2 ? 'block' : 'none' }}>
                 <p>
-                    <a href="https://github.com/Ian-Hyosang-Han" target="_blank" rel="noopener noreferrer">
+                    <a 
+                        href="https://github.com/Ian-Hyosang-Han" 
+                        target="_blank" 
+                        rel="noopener noreferrer">
                         github.com/Ian-Hyosang-Han
                     </a>
                 </p>

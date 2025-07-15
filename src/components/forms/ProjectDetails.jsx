@@ -71,7 +71,9 @@ function ProjectDetails({ projectData }) {
                         >Reflection</button>
                     </div>
                     <div className="accordion-content">
-                        <div className="panel" style={{ display: activePanel === 'left' ? 'block' : 'none' }}>
+                        <div 
+                            className="panel" 
+                            style={{ display: activePanel === 'left' ? 'block' : 'none' }}>
                             {projectData.featured.map((item, index) => (
                                 <div key={index}>
                                     <p>{item.title}</p>
@@ -83,7 +85,9 @@ function ProjectDetails({ projectData }) {
                                 </div>
                             ))}
                         </div>
-                        <div className="panel" style={{ display: activePanel === 'right' ? 'block' : 'none' }}>
+                        <div 
+                            className="panel" 
+                            style={{ display: activePanel === 'right' ? 'block' : 'none' }}>
                             {projectData.reflection.map((item, index) => (
                                 <div key={index}>
                                     <p>{item.title}</p>
@@ -112,7 +116,7 @@ function ProjectDetails({ projectData }) {
                                 <img
                                     src={relatedProject.imageUrl}
                                     alt={relatedProject.title}
-                                    className="project-image"
+                                    className="projectdetail-image"
                                 />
                                 <div className="card-content">
                                     <h2>{relatedProject.title}</h2>

@@ -1,11 +1,11 @@
 const projectsData = {
-    javascriptgame: {
+    javascriptgame1: {
         title: 'Astro Escape',
         subtitle: 'JavaScript Game',
         category: 'personal',
         description: 'JavaScript Canvas game with real-time logic and collisions',
         gifUrls: '',
-        imageUrls: ['/jg-image01.webp', '/jg-image02.webp'],
+        imageUrls: ['/jg-image01.webp'],
         techStack: ['HTML', 'CSS', 'JavaScript', 'Canvas' ],
         overview: 'This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.',
         roles: 'Front-End Developer / Designer',
@@ -116,13 +116,120 @@ const projectsData = {
         ]
     },
 
+    javascriptgame2: {
+        title: 'whack-A-mole',
+        subtitle: 'JavaScript Game',
+        category: 'personal',
+        description: 'Retro-style whack-a-mole game built with JavaScript, featuring audio, animations, and time-based scoring.',
+        gifUrls: '',
+        imageUrls: ['/jg-image02.webp'],
+        techStack: ['HTML', 'CSS', 'JavaScript', 'Canvas' ],
+        overview: 'This project recreates the classic Whack-A-Mole arcade game using the Canvas API and DOM manipulation. It includes interactive mole and bomb logic, audio control, a countdown-based start sequence, time-based game loop, and real-time scoring.',
+        roles: 'Front-End Developer / Designer',
+        launchUrl: 'https://hyosanghan.com/whack-A-mole',
+        githubUrl: 'https://github.com/Ian-Hyosang-Han/JSGame-whack-A-mole',
+        featured: [
+            {
+                title: '1. Interactive Start & Music Control',
+                details: [
+                    'Players choose whether to play with music before starting the game.',
+                    'Music control is handled via `<audio>` and button listeners.'
+                ]
+            },
+            {
+                title: '2. Countdown-Based Game Start',
+                details: [
+                    'A 3-second countdown timer is displayed before gameplay begins.',
+                    'Smooth transition between UI screens using `display: none/block`.'
+                ]
+            },
+            {
+                title: '3. Mole and Bomb Random Spawning',
+                details: [
+                    'Random holes are chosen using `Math.random()`.',
+                    'Moles increase score, while bombs decrease score when clicked.'
+                ]
+            },
+            {
+                title: '4. Game Loop and Timer',
+                details: [
+                    'Game runs on a 30-second timer (`setInterval`) with visual time display.',
+                    'Mole and bomb intervals managed separately for balanced pacing.'
+                ]
+            },
+            {
+                title: '5. Real-Time Score Tracking',
+                details: [
+                    'Score is updated instantly on hitting a mole or bomb.',
+                    '`updateScore()` dynamically updates score display in UI.'
+                ]
+            },
+            {
+                title: '6. Endgame and Restart Flow',
+                details: [
+                    'When the timer hits 0, game stops and displays final score.',
+                    '"Try Again" button allows users to reset and restart instantly.'
+                ]
+            },
+            {
+                title: '7. Neon Title and Animated Graphics',
+                details: [
+                    'Uses CSS animation (`@keyframes`) to animate neon title and mole/bomb appearances.',
+                    'Visual feedback enhances retro arcade feel.'
+                ]
+            },
+            {
+                title: '8. Custom Visual Design with Illustrator & Photoshop',
+                details: [
+                    'All game assets mole character, bomb icon, hole graphic, and background were custom-designed using Adobe Illustrator and Photoshop.',
+                    'These visuals were optimized for clarity, personality, and consistency with the arcade theme.'
+                ]
+            },
+        ],
+        reflection: [
+            {
+                title: '1. Learning Experience & Challenges',
+                details: [
+                    'Building a game interface with multiple interactive components taught me to structure UI logic and game state management cleanly.',
+                    'The biggest challenge was balancing the timing of different elements (mole, bomb, timer, game over).'
+                ]
+            },
+            {
+                title: '2. What Went Well',
+                details: [
+                    'Successfully implemented randomized hole selection with proper collision/overlap prevention.',
+                    'The countdown sequence and music integration added polish to the game start.'
+                ]
+            },
+            {
+                title: '3. Key Takeaways',
+                details: [
+                    'Strengthened skills in DOM manipulation, CSS animations, and event-driven logic.',
+                    'Learned the importance of user experience when managing transitions between game states.'
+                ]
+            },
+        ],
+        relatedProjects: [
+            {
+                title: 'Movie Database',
+                imageUrl: '/md-image01.webp',
+                url: '/project/moviedatabase'
+            },
+            {
+                title: 'Capstone',
+                imageUrl: '/cp-image01.webp',
+                url: '/project/capstone'
+            }
+        ]
+    },
+
     moviedatabase: {
         title: 'movella',
         subtitle: 'movie database',
         category: 'personal',
         description: 'A sleek movie database app built with React and REST API integration',
         gifUrls: '',
-        imageUrls: ['/md-image01.webp', '/md-image02.webp'],
+        imageUrls: ['/md-image01.webp'],
         techStack: ['React', 'React Router', 'API integration(REST API)', 'SASS(SCSS)', 'Vite'],
         overview: 'MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience',
         roles: 'UX/UI designer / Developer',
@@ -191,8 +298,8 @@ const projectsData = {
         relatedProjects: [
             {
                 title: 'JavaScript Game',
-                imageUrl: '/jg-image01.webp',
-                url: '/project/javascriptgame'
+                imageUrl: '/jg-image02.webp',
+                url: '/project/javascriptgame2'
             },
             {
                 title: 'Capstone',
@@ -208,7 +315,7 @@ const projectsData = {
         category: 'team',
         description: 'Custom WordPress site for pet massage bookings with WooCommerce and advanced scheduling features',
         gifUrls: '',
-        imageUrls: ['/cp-image01.webp', '/cp-image02.webp'],
+        imageUrls: ['/cp-image01.webp'],
         techStack: ['WordPress', 'Woocommerce', 'Custom Theme', 'Gutenberg'],
         overview: 'Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design',
         roles: 'WordPress Developer',
@@ -281,7 +388,7 @@ const projectsData = {
             {
                 title: 'JavaScript Game',
                 imageUrl: '/jg-image01.webp',
-                url: '/project/javascriptgame'
+                url: '/project/javascriptgame1'
             }
         ]
     },
@@ -292,7 +399,7 @@ const projectsData = {
         category: 'personal',
         description: 'Modern portfolio built with React and Tailwind CSS, focusing on clean UI and intuitive UX',
         gifUrls: '',
-        imageUrls: ['/pf-image01.webp', '/pf-image02.webp'],
+        imageUrls: ['/pf-image01.webp'],
         techStack: ['React', 'React Router', 'Tailwind CSS', 'HTML & CSS', 'Vite' ],
         overview: 'My design philosophy is about creating something extraordinary from the ordinary. I built this portfolio with a strong focus on clean layout, mobile- first design, and intuitive user experiences. As seen in the home banner—INTUITIVE UI, SEAMLESS UX, ENGAGING INTERFACES, OPTIMIZED PERFORMANCE, and CONTINUOUS GROWTH—these principles guided every design and development decision. It features a diverse collection of projects I have built or contributed to, and reflects not only my technical skills but also my professional journey, past experiences, and personal passions. At its core, this portfolio is more than just a showcase—it is a story about where I have been, what I have created, and the kind of developer and person I aspire to become.',
         roles: 'Front-End Developer / Designer',

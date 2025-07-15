@@ -11,13 +11,13 @@ function Home() {
         <>
             {/* ✅ Meta tags */}
             <title>Ian Han | Front-End Developer Portfolio</title>
-            <meta 
-                name="description" 
-                content="Welcome to my corner of the internet! I am Ian Han — a front-end developer who builds things that look good and actually work. Check out what I have been working on!" 
+            <meta
+                name="description"
+                content="Welcome to my corner of the internet! I am Ian Han — a front-end developer who builds things that look good and actually work. Check out what I have been working on!"
             />
-            <meta 
-                name="keywords" 
-                content="Ian Han, front-end developer, web developer, portfolio, creative coding, UI developer, React projects, personal site, developer portfolio, design-focused dev" 
+            <meta
+                name="keywords"
+                content="Ian Han, front-end developer, web developer, portfolio, creative coding, UI developer, React projects, personal site, developer portfolio, design-focused dev"
             />
 
             <main id="main-content" className="home-wrapper">
@@ -27,7 +27,7 @@ function Home() {
                         <p className="developer">Developer</p>
                     </div>
                     <div className="social-icons">
-                        <a 
+                        <a
                             href="https://www.linkedin.com/in/ian-han-hyosang"
                             aria-label="Visit Ian Han's Linkedin profile"
                             target="_blank"
@@ -36,7 +36,7 @@ function Home() {
                         >
                             <FaLinkedin size={45} className='fill-white' />
                         </a>
-                        <a 
+                        <a
                             href="https://github.com/Ian-Hyosang-Han"
                             aria-label="Visit Ian Han's GitHub profile"
                             target="_blank"
@@ -49,7 +49,6 @@ function Home() {
 
                     <h1 id="greeting" className="greeting">Hi! I AM IAN, HAN</h1>
                 </section>
-
                 <TypingEffect />
                 <AboutSection />
                 <WorkSection />
