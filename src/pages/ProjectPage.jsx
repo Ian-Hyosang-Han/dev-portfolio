@@ -48,7 +48,7 @@ function ProjectPage() {
                         className='w-12 sm:w-16 md:w-18 lg:w-[100px] h-auto relative -translate-y-1 sm:-translate-y-2 md:-translate-y-2.5' />
                 </div>
 
-                <p className='text-base sm:text-lg md:text-xl lg:text-2xl mb-5'>A collection of web application projects developed using <strong>JavaScript, React, WordPress, TypeScript and Next.js</strong> - including <strong>full-stack implemnetations with backend logic and database integration.</strong></p>
+                <p className='text-base sm:text-lg md:text-xl lg:text-2xl mb-5'>A collection of web application projects developed using <strong>JavaScript, React, WordPress, TypeScript, C# and .NET Core</strong> - including <strong>full-stack implemnetations with backend logic and database integration.</strong></p>
 
                 {/* Category selection (primary filter) */}
                 <div className='text-xl md:text-2xl flex flex-col md:flex-row my-5 md:my-10 border-t-2 border-b-2 px-4'>
