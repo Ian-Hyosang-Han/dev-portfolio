@@ -214,9 +214,9 @@ const projectsData = {
     ],
     relatedProjects: [
       {
-        title: "Movie Database",
-        imageUrl: "/md-image01.webp",
-        url: "/project/moviedatabase",
+        title: "Pennywise",
+        imageUrl: "/pw-image01.webp",
+        url: "/project/pennywise",
       },
       {
         title: "Capstone",
@@ -234,7 +234,13 @@ const projectsData = {
       "A sleek movie database app built with React and REST API integration",
     gifUrls: "",
     imageUrls: ["/md-image01.webp"],
-    techStack: ["React", "React Router", "API integration(REST API)", "SASS(SCSS)", "Vite",],
+    techStack: [
+      "React",
+      "React Router",
+      "API integration(REST API)",
+      "SASS(SCSS)",
+      "Vite",
+    ],
     overview:
       "MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience",
     roles: "Front-End Developer UI/UX designer",
@@ -485,14 +491,21 @@ const projectsData = {
   },
 
   pennywise: {
-    title: "PennyWise",
+    title: "Pennywise",
     subtitle: "Expense Management Web App",
     category: "personal",
     description:
       "A simple personal expense management web application built with React, TypeScript, Vite, Tailwind CSS, and Redux Toolkit, backed by a GitHub-hosted JSON server for development and deployed on Vercel for easy testing.",
     gifUrls: "",
     imageUrls: ["/pw-image01.webp"],
-    techStack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Redux Toolkit", "React Query",],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "React Query",
+    ],
     overview:
       "PennyWise provides users with an intuitive interface to log and manage daily expenses, visualize spending patterns via animated category-based charts, and track monthly and yearly totals.",
     roles: "Front-End Developer / UI/UX Designer",
@@ -593,7 +606,135 @@ const projectsData = {
         url: "/project/javascriptgame2",
       },
       {
-        title: "Movie Database",
+        title: "FindInn",
+        imageUrl: "/fi-image01.webp",
+        url: "/project/findinn",
+      },
+    ],
+  },
+
+  findinn: {
+    title: "FindInn",
+    subtitle: "Hotel booking App",
+    category: "personal",
+    description:
+      "A full-stack hotel booking application built with React on the front-end and Node.js/Express on the back-end, featuring secure authentication, image hosting, payment processing, and email notifications.",
+    gifUrls: "",
+    imageUrls: ["/fi-image01.webp"],
+    techStack: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "Clerk",
+      "Cloudinary",
+      "Stripe",
+      "Nodemailer",
+      "Svix",
+    ],
+    overview:
+      "FindInn allows users to browse available rooms, make bookings, and receive confirmations—all through a responsive, mobile-first interface. On the back end, it exposes a RESTful API for room data, booking management, and integrates with third-party services for auth, storage, payments, and notifications.",
+    roles: "Full-Stack Developer",
+    launchUrl: "https://findinn.vercel.app/",
+    githubUrl: "https://github.com/Ian-Hyosang-Han/booking-app/tree/main",
+    featured: [
+      {
+        title: "1. Secure Authentication",
+        details: [
+          "User sign-up/sign-in flows powered by Clerk for passwordless and OAuth authentication",
+          "Role-based access control to protect booking endpoints", 
+        ],
+      },
+      {
+        title: "2. Image Upload & Hosting",
+        details: [
+          "File upload handling with Multer on the server",
+          "Cloudinary for optimized image storage, transformations, and delivery", 
+        ],
+      },
+      {
+        title: "3. RESTful Backend",
+        details: [
+          "Express.js server with well-structured routes and middleware",
+          "CORS, rate-limiting, and data validation using express-validator", 
+        ],
+      },
+      {
+        title: "4. Database Integration",
+        details: [
+          "MongoDB Atlas cluster for scalable data storage",
+          "Mongoose ODM for schema definitions and relations", 
+        ],
+      },
+      {
+        title: "5. Payment Processing",
+        details: [
+          "Stripe integration for secure credit-card transactions",
+          "Webhook handling via Svix to verify and process payment events", 
+        ],
+      },
+      {
+        title: "6. Email Notifications",
+        details: [
+          "Nodemailer with SMTP Relay (Brevo) to send booking confirmations",
+          "Custom templating for clear, branded emails", 
+        ],
+      },
+      {
+        title: "7. Responsive UI",
+        details: [
+          "React front-end styled with Tailwind CSS",
+          "Mobile-first approach ensuring smooth experience on all devices", ],
+      },
+      {
+        title: "8. Infrastructure & Deployment",
+        details: [
+          "Environment variables managed via dotenv",
+          "Deployed on a Node.js-friendly hosting platform", ],
+      },
+    ],
+    reflection: [
+      {
+        title: "1. Key Learnings & Challenges",
+        details: [
+          "Implementing secure, passwordless authentication flows with Clerk",
+          "Managing file uploads reliably with Multer and Cloudinary",
+          "Designing and consuming a RESTful API architecture to connect front-end and back-end",
+          "Modeling data schemas and queries effectively with MongoDB and Mongoose",
+          "Integrating Stripe payments and handling webhooks for reliable transaction processing", 
+        ],
+      },
+      {
+        title: "2. What Went Well",
+        details: [
+          "Seamless integration of third-party services (Clerk, Stripe, Cloudinary)",
+          "Modular code structure separating concerns across front-end and back-end",
+          "Stable and performant MongoDB connection with well-defined Mongoose schemas", ],
+      },
+      {
+        title: "3. Areas for Improvement",
+        details: [
+          "Add lazy loading for images to improve performance",
+          "Enhance form validation and error feedback on booking forms",
+          "Refine and optimize full-stack business logic and error handling across all routes", ],
+      },
+      {
+        title: "4. Future Enhancements",
+        details: [
+          "Introduce advanced search filters (location, price range, amenities)",
+          "Build an availability calendar for real-time room booking checks", ],
+      },
+    ],
+    relatedProjects: [
+      {
+        title: "Astro Escape",
+        imageUrl: "/jg-image01.webp",
+        url: "/project/javascriptgame",
+      },
+      {
+        title: "Movella",
         imageUrl: "/md-image01.webp",
         url: "/project/moviedatabase",
       },
@@ -602,3 +743,119 @@ const projectsData = {
 };
 
 export default projectsData;
+
+// : {
+//   title: "",
+//   subtitle: "",
+//   category: "",
+//   description:
+//     "",
+//   gifUrls: "",
+//   imageUrls: ["/pw-image01.webp"],
+//   techStack: ["", "", "",],
+//   overview:
+//     "",
+//   roles: " / ",
+//   launchUrl: "",
+//   githubUrl: "",
+//   featured: [
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//   ],
+//   reflection: [
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//     {
+//       title: "",
+//       details: [
+//         "",
+//         "",
+//       ],
+//     },
+//   ],
+//   relatedProjects: [
+//     {
+//       title: "",
+//       imageUrl: "",
+//       url: "",
+//     },
+//     {
+//       title: "",
+//       imageUrl: "",
+//       url: "",
+//     },
+//   ],
+// },
