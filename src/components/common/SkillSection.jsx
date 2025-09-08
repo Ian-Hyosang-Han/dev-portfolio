@@ -25,7 +25,7 @@ const SkillSection = () => {
                     <p className="mt-1 ml-2 md:text-[26px] leading-relaxed">
                         I build end-to-end web experiences using a hybrid of modern
                         front-end and back-end technologies. On the front end, I leverage
-                        <strong> HTML5, CSS3 (SASS), JavaScript (ES6+), React, Next.js,</strong> and
+                        <strong> HTML5, CSS3 (SASS), JavaScript (ES6+), React,</strong> and
                         <strong> Tailwind CSS</strong>. On the back end, I develop
                         <strong> RESTful APIs</strong> with
                         <strong> Node.js, Express</strong>, and

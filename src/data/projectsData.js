@@ -4,12 +4,11 @@ const projectsData = {
     subtitle: "JavaScript Game",
     category: "personal",
     description: "JavaScript Canvas game with real-time logic and collisions",
-    gifUrls: "",
     imageUrls: ["/jg-image01.webp"],
     techStack: ["HTML", "CSS", "JavaScript", "Canvas"],
     overview:
       "This game effectively utilizes the Canvas API to create a real-time, avoidance-based game with player movement, collision detection, randomized meteor spawning, and a time-based scoring system.",
-    roles: "Front-End Developer / UI/UX Designer",
+    roles: "Front-End Developer / UI-UX Designer",
     launchUrl: "https://hyosanghan.com/astro-escape",
     githubUrl: "https://github.com/Ian-Hyosang-Han/astro-escape",
     featured: [
@@ -123,12 +122,11 @@ const projectsData = {
     category: "personal",
     description:
       "Retro-style whack-a-mole game built with JavaScript, featuring audio, animations, and time-based scoring.",
-    gifUrls: "",
     imageUrls: ["/jg-image02.webp"],
     techStack: ["HTML", "CSS", "JavaScript", "Canvas"],
     overview:
       "This project recreates the classic Whack-A-Mole arcade game using the Canvas API and DOM manipulation. It includes interactive mole and bomb logic, audio control, a countdown-based start sequence, time-based game loop, and real-time scoring.",
-    roles: "Front-End Developer / UI/UX Designer",
+    roles: "Front-End Developer / UI-UX Designer",
     launchUrl: "https://hyosanghan.com/whack-A-mole",
     githubUrl: "https://github.com/Ian-Hyosang-Han/JSGame-whack-A-mole",
     featured: [
@@ -232,18 +230,16 @@ const projectsData = {
     category: "personal",
     description:
       "A sleek movie database app built with React and REST API integration",
-    gifUrls: "",
     imageUrls: ["/md-image01.webp"],
     techStack: [
       "React",
       "React Router",
       "API integration(REST API)",
       "SASS(SCSS)",
-      "Vite",
     ],
     overview:
       "MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience",
-    roles: "Front-End Developer UI/UX designer",
+    roles: "Front-End Developer / UI-UX designer",
     launchUrl: "https://hyosanghan.com/movella",
     githubUrl: "https://github.com/Ian-Hyosang-Han/movella-moviedatabase",
     featured: [
@@ -326,12 +322,11 @@ const projectsData = {
     category: "team",
     description:
       "Custom WordPress site for pet massage bookings with WooCommerce and advanced scheduling features",
-    gifUrls: "",
     imageUrls: ["/cp-image01.webp"],
     techStack: ["WordPress", "Woocommerce", "Custom Theme", "Gutenberg"],
     overview:
       "Paws & Relax is a fully functional WooCommerce-powered dog massage booking platform designed to provide a seamless experience for pet owners. Customers can browse services, select specialized therapists, and book appointments with real-time scheduling. The platform features a custom WordPress theme, CPTs, and custom blocks, enhancing flexibility and scalability. Automated email confirmations and reminders ensure smooth communication. Built by a team of four, this project showcases expertise in WordPress development, e-commerce functionality, and user experience design",
-    roles: "WordPress Developer",
+    roles: "WordPress Developer / UI-UX designer",
     launchUrl: "https://pawsandrelax.bcitwebdeveloper.ca/",
     githubUrl: "https://github.com/htpwebdesign/paws-relax-theme",
     featured: [
@@ -413,12 +408,11 @@ const projectsData = {
     category: "personal",
     description:
       "Modern portfolio built with React and Tailwind CSS, focusing on clean UI and intuitive UX",
-    gifUrls: "",
     imageUrls: ["/pf-image01.webp"],
     techStack: ["React", "React Router", "Tailwind CSS", "HTML & CSS", "Vite"],
     overview:
       "My design philosophy is about creating something extraordinary from the ordinary. I built this portfolio with a strong focus on clean layout, mobile- first design, and intuitive user experiences. As seen in the home banner—INTUITIVE UI, SEAMLESS UX, ENGAGING INTERFACES, OPTIMIZED PERFORMANCE, and CONTINUOUS GROWTH—these principles guided every design and development decision. It features a diverse collection of projects I have built or contributed to, and reflects not only my technical skills but also my professional journey, past experiences, and personal passions. At its core, this portfolio is more than just a showcase—it is a story about where I have been, what I have created, and the kind of developer and person I aspire to become.",
-    roles: "Front-End Developer / UI/UX Designer",
+    roles: "Front-End Developer / UI-UX Designer",
     launchUrl: "/",
     githubUrl: "https://github.com/Ian-Hyosang-Han/dev-portfolio",
     featured: [
@@ -480,7 +474,7 @@ const projectsData = {
       {
         title: "JavaScript Game",
         imageUrl: "/jg-image01.webp",
-        url: "/project/javascriptgame",
+        url: "/project/javascriptgame1",
       },
       {
         title: "Movie Database",
@@ -496,7 +490,6 @@ const projectsData = {
     category: "personal",
     description:
       "A simple personal expense management web application built with React, TypeScript, Vite, Tailwind CSS, and Redux Toolkit, backed by a GitHub-hosted JSON server for development and deployed on Vercel for easy testing.",
-    gifUrls: "",
     imageUrls: ["/pw-image01.webp"],
     techStack: [
       "React",
@@ -508,7 +501,7 @@ const projectsData = {
     ],
     overview:
       "PennyWise provides users with an intuitive interface to log and manage daily expenses, visualize spending patterns via animated category-based charts, and track monthly and yearly totals.",
-    roles: "Front-End Developer / UI/UX Designer",
+    roles: "Full-Stack Developer / UI-UX Designer",
     launchUrl: "https://pennywise-eight.vercel.app",
     githubUrl: "https://github.com/Ian-Hyosang-Han/pennywise",
     featured: [
@@ -619,7 +612,6 @@ const projectsData = {
     category: "personal",
     description:
       "A full-stack hotel booking application built with React on the front-end and Node.js/Express on the back-end, featuring secure authentication, image hosting, payment processing, and email notifications.",
-    gifUrls: "",
     imageUrls: ["/fi-image01.webp"],
     techStack: [
       "React",
@@ -644,55 +636,57 @@ const projectsData = {
         title: "1. Secure Authentication",
         details: [
           "User sign-up/sign-in flows powered by Clerk for passwordless and OAuth authentication",
-          "Role-based access control to protect booking endpoints", 
+          "Role-based access control to protect booking endpoints",
         ],
       },
       {
         title: "2. Image Upload & Hosting",
         details: [
           "File upload handling with Multer on the server",
-          "Cloudinary for optimized image storage, transformations, and delivery", 
+          "Cloudinary for optimized image storage, transformations, and delivery",
         ],
       },
       {
         title: "3. RESTful Backend",
         details: [
           "Express.js server with well-structured routes and middleware",
-          "CORS, rate-limiting, and data validation using express-validator", 
+          "CORS, rate-limiting, and data validation using express-validator",
         ],
       },
       {
         title: "4. Database Integration",
         details: [
           "MongoDB Atlas cluster for scalable data storage",
-          "Mongoose ODM for schema definitions and relations", 
+          "Mongoose ODM for schema definitions and relations",
         ],
       },
       {
         title: "5. Payment Processing",
         details: [
           "Stripe integration for secure credit-card transactions",
-          "Webhook handling via Svix to verify and process payment events", 
+          "Webhook handling via Svix to verify and process payment events",
         ],
       },
       {
         title: "6. Email Notifications",
         details: [
           "Nodemailer with SMTP Relay (Brevo) to send booking confirmations",
-          "Custom templating for clear, branded emails", 
+          "Custom templating for clear, branded emails",
         ],
       },
       {
         title: "7. Responsive UI",
         details: [
           "React front-end styled with Tailwind CSS",
-          "Mobile-first approach ensuring smooth experience on all devices", ],
+          "Mobile-first approach ensuring smooth experience on all devices",
+        ],
       },
       {
         title: "8. Infrastructure & Deployment",
         details: [
           "Environment variables managed via dotenv",
-          "Deployed on a Node.js-friendly hosting platform", ],
+          "Deployed on a Node.js-friendly hosting platform",
+        ],
       },
     ],
     reflection: [
@@ -703,7 +697,7 @@ const projectsData = {
           "Managing file uploads reliably with Multer and Cloudinary",
           "Designing and consuming a RESTful API architecture to connect front-end and back-end",
           "Modeling data schemas and queries effectively with MongoDB and Mongoose",
-          "Integrating Stripe payments and handling webhooks for reliable transaction processing", 
+          "Integrating Stripe payments and handling webhooks for reliable transaction processing",
         ],
       },
       {
@@ -711,32 +705,126 @@ const projectsData = {
         details: [
           "Seamless integration of third-party services (Clerk, Stripe, Cloudinary)",
           "Modular code structure separating concerns across front-end and back-end",
-          "Stable and performant MongoDB connection with well-defined Mongoose schemas", ],
+          "Stable and performant MongoDB connection with well-defined Mongoose schemas",
+        ],
       },
       {
         title: "3. Areas for Improvement",
         details: [
           "Add lazy loading for images to improve performance",
           "Enhance form validation and error feedback on booking forms",
-          "Refine and optimize full-stack business logic and error handling across all routes", ],
+          "Refine and optimize full-stack business logic and error handling across all routes",
+        ],
       },
       {
         title: "4. Future Enhancements",
         details: [
           "Introduce advanced search filters (location, price range, amenities)",
-          "Build an availability calendar for real-time room booking checks", ],
+          "Build an availability calendar for real-time room booking checks",
+        ],
       },
     ],
     relatedProjects: [
       {
         title: "Astro Escape",
         imageUrl: "/jg-image01.webp",
-        url: "/project/javascriptgame",
+        url: "/project/javascriptgame1",
       },
       {
         title: "Movella",
         imageUrl: "/md-image01.webp",
         url: "/project/moviedatabase",
+      },
+    ],
+  },
+
+  booking365: {
+    title: "Booking365",
+    subtitle: "Screen Golf Booking & Promo Site",
+    category: "work",
+    description:
+      "A promotional and booking-focused website for a screen golf facility, built on WordPress with a fully custom theme and Gutenberg blocks. Designed to provide customers with clear information.",
+    imageUrls: ["/bk-image01.webp"],
+    techStack: ["WordPress", "Custom Theme", "Gutenberg"],
+    overview:
+      "Booking365 is a promotional website for a screen golf business, built to highlight services and attract new customers. The site emphasizes clear information, visually consistent branding, and mobile-friendly accessibility. Developed with a custom WordPress theme and Gutenberg editor, it offers flexibility for content updates and ensures a professional online presence.",
+    roles: "WordPress Developer / UI-UX designer",
+    launchUrl: "https://booking365.ca/",
+    githubUrl: "https://github.com/Ian-Hyosang-Han/BOOKING365-CUSTOM-THEME",
+    featured: [
+      {
+        title: "1. Custom Theme Development",
+        details: [
+          "Developed a bespoke WordPress theme tailored to the brand identity of Booking365.",
+          "Ensured scalability and easy maintenance for future updates and business growth.",
+        ],
+      },
+      {
+        title: "2. Gutenberg Integration",
+        details: [
+          "Leveraged Gutenberg blocks to create reusable, modular content sections.",
+          "Enabled non-technical staff to update content easily without coding knowledge.",
+        ],
+      },
+      {
+        title: "3. Responsive & User-Friendly Design",
+        details: [
+          "Implemented a mobile-first approach to guarantee usability across all devices.",
+          "Emphasized clean layouts and intuitive UI for quick navigation.",
+        ],
+      },
+      {
+        title: "4. Performance & SEO",
+        details: [
+          "Optimized site performance through lightweight theme design.",
+          "Improved discoverability by applying SEO best practices within WordPress.",
+        ],
+      },
+    ],
+    reflection: [
+      {
+        title: "1. Key Learnings",
+        details: [
+          "Learned how to translate the business concept into a consistent design language across the entire site.",
+          "Gained experience in building a custom WordPress theme that matched the client's branding and vision.",
+          "Ensured that the initial design concept was carried through seamlessly into the final product.",
+        ],
+      },
+      {
+        title: "2. What Went Well",
+        details: [
+          "Color scheme, typography, and layout were well-matched to the business identity, creating a cohesive brand presence.",
+          "Effectively utilized plugins such as WP Migrate and WP Mail to streamline site management and communication.",
+          "Developed Gutenberg blocks that made content updates flexible and easy for non-technical users.",
+        ],
+      },
+      {
+        title: "3. Areas for Improvement",
+        details: [
+          "Could further expand the customization of Gutenberg blocks for more unique layouts.",
+          "Explore additional design refinements to enhance user engagement while maintaining simplicity.",
+          "Improve optimization with better caching and image handling for even smoother performance.",
+        ],
+      },
+      {
+        title: "4. Future Enhancements",
+        details: [
+          "Add more dynamic pages or interactive elements to make the promotional aspects more engaging.",
+          "Introduce additional plugins (e.g., multilingual support, advanced SEO tools) to broaden the site's reach.",
+          "Continue refining visual hierarchy and design details to strengthen branding and user experience.",
+        ],
+      },
+    ],
+    relatedProjects: [
+      {
+        title: "Paws & Relax",
+        imageUrl: "/cp-image01.webp",
+        url: "/project/capstone",
+      },
+      {
+        title: "Unspecialty (Portfolio)",
+        imageUrl: "/pf-image01.webp",
+        url: "/project/portfolio",
       },
     ],
   },

@@ -4,7 +4,7 @@ import Footer from "../components/common/Footer";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import ProjectPage from "../pages/ProjectPage";
-import ProjectDetailsPage from "../pages/ ProjectDetailsPage";
+import ProjectDetailsPage from "../pages/ProjectDetailsPage";
 
 function AppRouter() {
     return (
