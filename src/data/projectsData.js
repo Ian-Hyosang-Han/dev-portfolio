@@ -828,6 +828,110 @@ const projectsData = {
       },
     ],
   },
+
+  screengolfmvc: {
+    title: "Booking365 (.NET MVC)",
+    subtitle: "Screen Golf Booking App (.NET MVC, Ongoing Contribution)",
+    category: "work",
+    description:
+      "A collaborative screen golf booking platform originally built on ASP.NET MVC 5 with EF6, OWIN Identity, and Stripe. I joined this project to contribute new booking features such as summer season open/close hours, time-based pricing, and group booking functionality. While contributing, I have been actively learning and applying C#, .NET Core MVC, SQL Server, and Azure deployment practices.",
+    imageUrls: ["/dm-image01.webp"],
+    techStack: [
+      "C# / .NET Core",
+      "ASP.NET MVC 5",
+      "Entity Framework 6",
+      "OWIN + ASP.NET Identity 2",
+      "SQL Server + SSMS",
+      "Azure App Services + Azure SQL",
+      "Stripe.net",
+      "SendGrid",
+      "Twilio",
+      "SignalR 2",
+      "jQuery + jQuery UI + Validation",
+      "Bootstrap 3",
+      "FontAwesome",
+      "Visual Studio",
+      "Web.Optimization"
+    ],
+    overview:
+      "Booking365 is a professional booking platform for screen golf facilities, enabling administrators to manage tee-time slots, pricing, and notifications. It integrates EF6 for data, Identity for authentication, Stripe for payments, and SignalR for real-time updates. The backend is deployed on Azure with SQL Server databases managed via SSMS. I joined the development team to implement seasonal open/close hours, time-based dynamic pricing, and group booking features, while also learning deployment workflows using Azure and development in Visual Studio.",
+    roles: "Full-Stack Developer (Contributing Developer / Feature Development, Database & Deployment Support)",
+    launchUrl: "https://demo.booking365.ca/",
+    githubUrl: "https://github.com/bookspot365/EasyBookingOnline",
+    featured: [
+      {
+        title: "1. Seasonal & Time-Based Logic",
+        details: [
+          "Implemented summer season open/close hour configuration.",
+          "Developed dynamic pricing rules for different time slots using SQL-backed logic."
+        ]
+      },
+      {
+        title: "2. Group Booking Feature",
+        details: [
+          "Created functionality for group reservations across multiple bays.",
+          "Tested and validated to avoid booking conflicts and ensure smooth UX."
+        ]
+      },
+      {
+        title: "3. Backend & Deployment",
+        details: [
+          "Worked with Azure App Services for deployment and hosting.",
+          "Managed SQL Server databases with SSMS, writing and testing SQL queries.",
+          "Developed and debugged features in Visual Studio, integrating with EF6 and MVC patterns."
+        ]
+      }
+    ],
+    reflection: [
+      {
+        title: "1. Key Learnings",
+        details: [
+          "Hands-on experience deploying .NET applications to Azure and managing Azure SQL databases.",
+          "Learned how to use Visual Studio effectively for development, debugging, and testing.",
+          "Gained confidence in SQL query writing and schema updates using SSMS.",
+          "Applied Jira for task tracking and collaboration, working with other developers in a professional workflow.",
+          "Experienced how to align business requirements with technical implementation in a team setting."
+        ]
+      },
+      {
+        title: "2. What Went Well",
+        details: [
+          "Successfully contributed new features into an existing production codebase built by other developers.",
+          "Developed a better understanding of full-stack workflows: from MVC controllers to Azure deployment.",
+          "Improved my ability to manage and test database-driven features directly with SQL.",
+          "Adopted real-world collaboration practices with Jira, improving coordination and communication."
+        ]
+      },
+      {
+        title: "3. Areas for Improvement",
+        details: [
+          "Deepen knowledge of Azure DevOps pipelines for more automated deployments.",
+          "Enhance database optimization by refining indexes and stored procedures.",
+          "Strengthen test coverage, especially for time-based and seasonal booking logic."
+        ]
+      },
+      {
+        title: "4. Future Enhancements",
+        details: [
+          "Refactor toward ASP.NET Core + EF Core or other modern frameworks for scalability and performance.",
+          "Implement multi-location and multi-tenant features for larger-scale adoption.",
+          "Expand reporting and analytics dashboards powered by SQL queries and Azure services."
+        ]
+      }
+    ],
+    relatedProjects: [
+      {
+        title: "Astro Escape",
+        imageUrl: "/jg-image01.webp",
+        url: "/project/javascriptgame1",
+      },
+      { 
+        title: "Movella", 
+        imageUrl: "/md-image01.webp", 
+        url: "/project/moviedatabase" 
+      }
+    ]
+  }
 };
 
 export default projectsData;
@@ -838,8 +942,7 @@ export default projectsData;
 //   category: "",
 //   description:
 //     "",
-//   gifUrls: "",
-//   imageUrls: ["/pw-image01.webp"],
+//   imageUrls: ["/"],
 //   techStack: ["", "", "",],
 //   overview:
 //     "",

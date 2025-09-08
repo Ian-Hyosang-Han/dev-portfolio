@@ -9,7 +9,7 @@ function ProjectPage() {
     const [selectedTech, setSelectedTech]         = useState('all');
 
     const categories = ['personal', 'team', 'work'];
-    const techStack  = ['JavaScript', 'React', 'TypeScript', 'WordPress'];
+    const techStack  = ['JavaScript', 'React', 'TypeScript', 'WordPress', 'C# / .NET Core'];
 
     // Filter projects by selected category
     const categoryFiltered = Object.entries(projectsData).filter(
