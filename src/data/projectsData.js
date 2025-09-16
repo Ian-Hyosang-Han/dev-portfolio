@@ -851,11 +851,12 @@ const projectsData = {
       "Bootstrap 3",
       "FontAwesome",
       "Visual Studio",
-      "Web.Optimization"
+      "Web.Optimization",
     ],
     overview:
       "Booking365 is a professional booking platform for screen golf facilities, enabling administrators to manage tee-time slots, pricing, and notifications. It integrates EF6 for data, Identity for authentication, Stripe for payments, and SignalR for real-time updates. The backend is deployed on Azure with SQL Server databases managed via SSMS. I joined the development team to implement seasonal open/close hours, time-based dynamic pricing, and group booking features, while also learning deployment workflows using Azure and development in Visual Studio.",
-    roles: "Full-Stack Developer (Contributing Developer / Feature Development, Database & Deployment Support)",
+    roles:
+      "Full-Stack Developer (Contributing Developer / Feature Development, Database & Deployment Support)",
     launchUrl: "https://demo.booking365.ca/",
     githubUrl: "https://github.com/bookspot365/EasyBookingOnline",
     featured: [
@@ -863,24 +864,24 @@ const projectsData = {
         title: "1. Seasonal & Time-Based Logic",
         details: [
           "Implemented summer season open/close hour configuration.",
-          "Developed dynamic pricing rules for different time slots using SQL-backed logic."
-        ]
+          "Developed dynamic pricing rules for different time slots using SQL-backed logic.",
+        ],
       },
       {
         title: "2. Group Booking Feature",
         details: [
           "Created functionality for group reservations across multiple bays.",
-          "Tested and validated to avoid booking conflicts and ensure smooth UX."
-        ]
+          "Tested and validated to avoid booking conflicts and ensure smooth UX.",
+        ],
       },
       {
         title: "3. Backend & Deployment",
         details: [
           "Worked with Azure App Services for deployment and hosting.",
           "Managed SQL Server databases with SSMS, writing and testing SQL queries.",
-          "Developed and debugged features in Visual Studio, integrating with EF6 and MVC patterns."
-        ]
-      }
+          "Developed and debugged features in Visual Studio, integrating with EF6 and MVC patterns.",
+        ],
+      },
     ],
     reflection: [
       {
@@ -890,8 +891,8 @@ const projectsData = {
           "Learned how to use Visual Studio effectively for development, debugging, and testing.",
           "Gained confidence in SQL query writing and schema updates using SSMS.",
           "Applied Jira for task tracking and collaboration, working with other developers in a professional workflow.",
-          "Experienced how to align business requirements with technical implementation in a team setting."
-        ]
+          "Experienced how to align business requirements with technical implementation in a team setting.",
+        ],
       },
       {
         title: "2. What Went Well",
@@ -899,25 +900,25 @@ const projectsData = {
           "Successfully contributed new features into an existing production codebase built by other developers.",
           "Developed a better understanding of full-stack workflows: from MVC controllers to Azure deployment.",
           "Improved my ability to manage and test database-driven features directly with SQL.",
-          "Adopted real-world collaboration practices with Jira, improving coordination and communication."
-        ]
+          "Adopted real-world collaboration practices with Jira, improving coordination and communication.",
+        ],
       },
       {
         title: "3. Areas for Improvement",
         details: [
           "Deepen knowledge of Azure DevOps pipelines for more automated deployments.",
           "Enhance database optimization by refining indexes and stored procedures.",
-          "Strengthen test coverage, especially for time-based and seasonal booking logic."
-        ]
+          "Strengthen test coverage, especially for time-based and seasonal booking logic.",
+        ],
       },
       {
         title: "4. Future Enhancements",
         details: [
           "Refactor toward ASP.NET Core + EF Core or other modern frameworks for scalability and performance.",
           "Implement multi-location and multi-tenant features for larger-scale adoption.",
-          "Expand reporting and analytics dashboards powered by SQL queries and Azure services."
-        ]
-      }
+          "Expand reporting and analytics dashboards powered by SQL queries and Azure services.",
+        ],
+      },
     ],
     relatedProjects: [
       {
@@ -925,13 +926,153 @@ const projectsData = {
         imageUrl: "/jg-image01.webp",
         url: "/project/javascriptgame1",
       },
-      { 
-        title: "Movella", 
-        imageUrl: "/md-image01.webp", 
-        url: "/project/moviedatabase" 
-      }
-    ]
-  }
+      {
+        title: "Movella",
+        imageUrl: "/md-image01.webp",
+        url: "/project/moviedatabase",
+      },
+    ],
+  },
+
+  makemyflavour: {
+    title: "make my flavour",
+    subtitle: "Online Food Ordering Web App",
+    category: "personal",
+    description:
+      "A full-stack online food ordering platform built with React on the front end and Node.js/Express on the back end. It features secure JWT-based authentication, category filters for menus, an admin panel to manage custom menu items with image uploads, a shopping cart with Stripe payments, and full MongoDB integration. Deployed on Render.",
+    imageUrls: ["/mmf-image01.webp"],
+    techStack: [
+      // Frontend
+      "React",
+      "React Router",
+      "Axios",
+      "Vite",
+      // Backend
+      "Node.js",
+      "Express",
+      // Database
+      "MongoDB",
+      "Mongoose",
+      // Auth & Security
+      "JWT",
+      "bcrypt",
+      // File Handling
+      "Multer",
+      // Payments
+      "Stripe",
+      // Deployment
+      "Render",
+    ],
+    overview:
+      "make my flavour lets users browse a menu, filter by category, add items to a cart, authenticate securely, and pay using Stripe. An admin panel allows creating and customizing menu items (including images) and managing availability and pricing. The backend exposes a clean REST API, with MongoDB models powering products, users, carts, and orders. The app is optimized for a smooth, responsive experience and deployed on Render for reliable hosting.",
+    roles: "Full-Stack Developer",
+    launchUrl: "https://food-del-frontend-ojip.onrender.com/",
+    githubUrl: "https://github.com/Ian-Hyosang-Han/food-del-app",
+    featured: [
+      {
+        title: "1. Secure Authentication",
+        details: [
+          "JWT + bcrypt-based sign-up/login for secure, stateless authentication",
+          "Protected routes and role-based access control (user/admin)",
+        ],
+      },
+      {
+        title: "2. Menu Browsing & Category Filters",
+        details: [
+          "Category-based filtering for quick menu exploration",
+          "API query design supporting future extensions like sorting",
+        ],
+      },
+      {
+        title: "3. Admin Panel for Custom Menu",
+        details: [
+          "Dedicated admin panel for creating, editing, and deleting menu items",
+          "Multer-based image upload with support for external storage expansion",
+        ],
+      },
+      {
+        title: "4. Cart & Payments",
+        details: [
+          "Shopping cart and checkout flow fully implemented",
+          "Stripe integration for secure credit card transactions",
+        ],
+      },
+      {
+        title: "5. RESTful Backend",
+        details: [
+          "Express 5 server with modular routes and middleware",
+          "CORS configuration, input validation (validator), and error handling",
+        ],
+      },
+      {
+        title: "6. Database Integration",
+        details: [
+          "MongoDB + Mongoose for schema definitions (Users, MenuItems, Carts, Orders)",
+          "Optimized queries with indexing and relations",
+        ],
+      },
+      {
+        title: "7. Frontend Architecture",
+        details: [
+          "React + React Router for SPA navigation",
+          "Axios with interceptors for scalable API integration",
+        ],
+      },
+      {
+        title: "8. Infrastructure & Deployment",
+        details: [
+          "dotenv for managing environment variables (API keys, DB URI, JWT secret)",
+          "Deployed to Render with Node.js-friendly hosting",
+        ],
+      },
+    ],
+    reflection: [
+      {
+        title: "1. Key Learnings & Challenges",
+        details: [
+          "Managing JWT token lifecycle, refresh strategy, and secure headers",
+          "Stabilizing Multer-based image uploads with file validation",
+          "Designing Stripe payment flows and handling errors gracefully",
+          "Modeling schemas effectively with Mongoose including validation and indexing",
+        ],
+      },
+      {
+        title: "2. What Went Well",
+        details: [
+          "Modularized front-end/back-end with clear REST interfaces",
+          "Role-based access control separated admin functionality cleanly",
+          "Smooth deployment and iteration cycles with Render",
+        ],
+      },
+      {
+        title: "3. Areas for Improvement",
+        details: [
+          "Improve UX for client-side validation and error feedback",
+          "Refine reporting and business logic consistency across all routes",
+        ],
+      },
+      {
+        title: "4. Future Enhancements",
+        details: [
+          "Add coupons/promotions and delivery options with pickup scheduling",
+          "Introduce real-time order tracking (e.g., SSE or WebSockets)",
+          "Expand admin dashboard with sales, popular items, and inventory insights",
+        ],
+      },
+    ],
+    relatedProjects: [
+      {
+        title: "FindInn",
+        imageUrl: "/fi-image01.webp",
+        url: "/project/findinn",
+      },
+      {
+        title: "Pennywise",
+        imageUrl: "/pw-image01.webp",
+        url: "/project/pennywise",
+      },
+    ],
+  },
 };
 
 export default projectsData;
