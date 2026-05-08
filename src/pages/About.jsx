@@ -26,6 +26,7 @@ function About() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row justify-between">
+
                     <MilestoneTimeline />
 
                     <article className="about-content pb-5 text-base md:text-xl flex-1 lg:text-[1.3rem] xl:text-[1.6rem] xl:pb-10">
@@ -45,7 +46,6 @@ function About() {
                         </div>
                     </article>
                 </div>
-
                 <hr className="w-[95vw] h-1 bg-white mx-auto" />
             </main>
         </>

@@ -34,25 +34,34 @@ const TypingEffect = () => {
     return (
         <div className="typing-section">
             <div className="typing-container">
+
                 {/* Group 1: INTUITIVE UI and SEAMLESS UX */}
                 <div className="typing-group-one">
                     <div className="typing-effect01">
                         <div className="typing-text01">
-                            <div className="typing-effect-first" ref={(el) => (typingRefs.current[0] = el)}></div>
+                            <div 
+                                className="typing-effect-first" 
+                                ref={(el) => (typingRefs.current[0] = el)}></div>
                         </div>
                         <div className="typing-text02">
-                            <div className="typing-effect-second" ref={(el) => (typingRefs.current[1] = el)}></div>
+                            <div 
+                                className="typing-effect-second" 
+                                ref={(el) => (typingRefs.current[1] = el)}></div>
                         </div>
                     </div>
                     <div className="notebook-image">
-                        <img src="/main_notebook.webp" alt="notebook" />
+                        <img 
+                            src="/main_notebook.webp" 
+                            alt="notebook" />
                     </div>
                 </div>
 
                 {/* Group 2: ENGAGING INTERFACES */}
                 <div className="typing-effect02">
                     <div className="typing-text03">
-                        <div className="typing-effect-third" ref={(el) => (typingRefs.current[2] = el)}></div>
+                        <div 
+                            className="typing-effect-third" 
+                            ref={(el) => (typingRefs.current[2] = el)}></div>
                     </div>
                 </div>
 
@@ -60,10 +69,16 @@ const TypingEffect = () => {
                 <div className="typing-group-two">
                     <div className="typing-effect03">
                         <div className="book-image">
-                            <img src="/about_book.webp" alt="book" />
+                            <img 
+                                src="/about_book.webp" 
+                                alt="book" />
                             <div className="typing-text04">
-                                <div className="typing-effect-fourth" ref={(el) => (typingRefs.current[3] = el)}></div>
-                                <div className="typing-effect-fifth" ref={(el) => (typingRefs.current[4] = el)}></div>
+                                <div 
+                                    className="typing-effect-fourth" 
+                                    ref={(el) => (typingRefs.current[3] = el)}></div>
+                                <div 
+                                    className="typing-effect-fifth" 
+                                    ref={(el) => (typingRefs.current[4] = el)}></div>
                             </div>
                         </div>
                     </div>

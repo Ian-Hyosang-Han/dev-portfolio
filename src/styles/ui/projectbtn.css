@@ -5,9 +5,8 @@
 .custom-btn span {
     font-family: var(--heading-font);
     font-size: 2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
-    text-transform: uppercase;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }

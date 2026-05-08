@@ -1,8 +1,10 @@
+/* updated to Tailwind CSS on Mon, July 21, 2025 */
+
 /* ========================================
 ============== SKILLS-SECTION =============
 ======================================== */
 
-.skill-section {
+/* .skill-section {
     display: inline-block;
     position: relative;
     width: 100%;
@@ -75,13 +77,13 @@
 .skill-inner-wide p {
     margin-top: 0.5rem;
     margin-left: 0.5rem;
-}
+} */
 
 /* ==================================================
 ================= MEDIA-QUERY-SECTION ===============
 =====================  1024px  ==================== */
 
-@media (min-width: 64em) {
+/* @media (min-width: 64em) {
     .skill-inner-wide h2 {
         font-size: 3rem;
         margin-left: 0.625rem;
@@ -109,4 +111,4 @@
     .angle-bottom {
         background-image: url(/angle_bottom.png);
     }
-}
+} */

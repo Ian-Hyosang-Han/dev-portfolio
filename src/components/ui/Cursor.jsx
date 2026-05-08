@@ -3,9 +3,9 @@ import React, { useEffect, useRef } from "react";
 import "../../styles/ui/cursor.css";
 
 const Cursor = () => {
-  const coords = useRef({ x: 0, y: 0 });
+  const coords     = useRef({ x: 0, y: 0 });
   const circlesRef = useRef([]);
-  const cursorRef = useRef(null);
+  const cursorRef  = useRef(null);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -31,8 +31,8 @@ const Cursor = () => {
       }
 
       circlesRef.current.forEach((circle, index) => {
-        circle.style.left = x - 12 + "px";
-        circle.style.top = y - 12 + "px";
+        circle.style.left  = x - 12 + "px";
+        circle.style.top   = y - 12 + "px";
         circle.style.scale = (circlesRef.current.length - index) / circlesRef.current.length;
 
         circle.x = x;

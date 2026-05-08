@@ -21,7 +21,7 @@ function ProjectDetails({ projectData }) {
                 <div className="project-header">
                     <h2>{projectData.title}</h2>
                     <h3>{projectData.subtitle}</h3>
-                    <h4>{projectData.technologies}</h4>
+                    <h4>{projectData.techStack.join(' / ')}</h4>
                 </div>
 
                 <div className="project-content">
@@ -29,27 +29,27 @@ function ProjectDetails({ projectData }) {
                     <p><strong>Role(s):</strong> {projectData.roles}</p>
                 </div>
 
-                <div className="external-links">
-                    <div className="link-to">
-                        <LaunchButton url={projectData.launchUrl} />
-                        <a href={projectData.githubUrl}
-                            target="_blank"
-                            rel="noreferrer">
-                            <FaGithubSquare size={45} className='fill-white' />
-                        </a>
-                    </div>
-                </div>
-
-                <div className="project-images">
+                {/* <div className="project-images">
                     {projectData.imageUrls.map((url, index) => (
                         <img key={index} src={url} alt={`${projectData.title}-image-${index}`} className="project-header-image" />
                     ))}
-                </div>
+                </div> */}
 
-            </div>
-            <div className="accordion-container">
                 <div className="accordion-box">
                     <h2>Inside of the project</h2>
+                    <div className="external-links">
+                        <div className="link-to">
+                            <LaunchButton url={projectData.launchUrl} />
+                            <a href={projectData.githubUrl}
+                                target="_blank"
+                                rel="noreferrer">
+                                <FaGithubSquare size={45} className='fill-white' />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="accordion-container">
                     <div className="accordion-buttons">
                         <button
                             className={`accordion-button ${activePanel === 'left' ? 'active' : ''}`}
@@ -71,7 +71,9 @@ function ProjectDetails({ projectData }) {
                         >Reflection</button>
                     </div>
                     <div className="accordion-content">
-                        <div className="panel" style={{ display: activePanel === 'left' ? 'block' : 'none' }}>
+                        <div 
+                            className="panel" 
+                            style={{ display: activePanel === 'left' ? 'block' : 'none' }}>
                             {projectData.featured.map((item, index) => (
                                 <div key={index}>
                                     <p>{item.title}</p>
@@ -83,7 +85,9 @@ function ProjectDetails({ projectData }) {
                                 </div>
                             ))}
                         </div>
-                        <div className="panel" style={{ display: activePanel === 'right' ? 'block' : 'none' }}>
+                        <div 
+                            className="panel" 
+                            style={{ display: activePanel === 'right' ? 'block' : 'none' }}>
                             {projectData.reflection.map((item, index) => (
                                 <div key={index}>
                                     <p>{item.title}</p>
@@ -112,7 +116,7 @@ function ProjectDetails({ projectData }) {
                                 <img
                                     src={relatedProject.imageUrl}
                                     alt={relatedProject.title}
-                                    className="project-image"
+                                    className="projectdetail-image"
                                 />
                                 <div className="card-content">
                                     <h2>{relatedProject.title}</h2>
@@ -122,8 +126,8 @@ function ProjectDetails({ projectData }) {
                         ))}
                     </div>
                 </section>
-                <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
             </div>
+            <hr className="w-[95vw] h-1 bg-white mx-auto"></hr>
         </div>
     );
 }

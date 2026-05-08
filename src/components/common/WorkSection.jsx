@@ -10,32 +10,32 @@ const WorkSection = () => {
             <div className="work work01">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="astro escape" url="/project/javascriptgame" />
-                    <p>space, survival — in JavaScript</p>
+                    <ProjectButton label="JavaScript" url="/project" />
+                    <p>Dynamic web experiences with vanilla JS</p>
                 </div>
             </div>
 
             <div className="work work02">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="movella" url="/project/moviedatabase" />
-                    <p>blockbusters meet react hooks</p>
+                    <ProjectButton label="React" url="/project" />
+                    <p>React to the Max: UIs, APIs & Full-Stack</p>
                 </div>
             </div>
 
             <div className="work work03">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="capstone" url="/project/capstone" />
-                    <p>a paw-sitive ending</p>
+                    <ProjectButton label="WordPress" url="/project" />
+                    <p>Custom themes, Plugin and Effortless content</p>
                 </div>
             </div>
 
             <div className="work work04">
                 <div className="work-cover"></div>
                 <div className="work-text">
-                    <ProjectButton label="Unspecialty" url="/project/portfolio" />
-                    <p>from code to craft</p>
+                    <ProjectButton label="Other Tech" url="/project" />
+                    <p>Various Programming Languages</p>
                 </div>
             </div>
 
