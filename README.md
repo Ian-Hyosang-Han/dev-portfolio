@@ -4,10 +4,6 @@ This is version 1 of my personal portfolio website. It was created to introduce 
 
 This version represents an earlier stage of my front-end development journey. It helped me explore component-based structure, responsive layouts, interactive UI details, project pages, and visual storytelling before moving on to newer portfolio iterations.
 
-## 🔗 Live Site
-
-[dev-portfolio-pi-gray.vercel.app](https://dev-portfolio-pi-gray.vercel.app/)
-
 ## 🚀 Overview
 
 - Portfolio Version: Version 1
@@ -49,35 +45,6 @@ Tools & Design <br/>
 
 Deployment <br/>
 <img alt="Vercel" src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
-
-## 🗂️ Project Structure
-
-portfolio/
-  public/
-    project images
-    favicon files
-    site.webmanifest
-
-  src/
-    components/
-      common/
-      forms/
-      ui/
-    data/
-      projectsData.js
-    pages/
-      About.jsx
-      Home.jsx
-      ProjectPage.jsx
-      ProjectDetailsPage.jsx
-    router/
-      AppRouter.jsx
-    styles/
-      components/
-      pages/
-      ui/
-    index.css
-    main.jsx
 
 ## 📖 Usage
 
