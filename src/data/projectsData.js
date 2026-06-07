@@ -240,8 +240,8 @@ const projectsData = {
     overview:
       "MOVELLA is a movie database application built with React and React Router. It allows users to browse movies, view details, and manage a favorites list. The app is designed with a responsive layout and smooth navigation for an engaging user experience",
     roles: "Front-End Developer / UI-UX designer",
-    launchUrl: "https://hyosanghan.com/movella",
-    githubUrl: "https://github.com/Ian-Hyosang-Han/movella-moviedatabase",
+    launchUrl: "https://movella.vercel.app/",
+    githubUrl: "https://github.com/Ian-Hyosang-Han/movella",
     featured: [
       {
         title: "1. Fetching Movie Categories",

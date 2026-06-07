@@ -47,7 +47,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 4.3rem;
+    width: 4.8rem;
     height: 0.125rem;
     background-color: var(--home-bg-color);
 }
@@ -71,7 +71,7 @@
     }
 
     .role .front-end::before {
-        width: 7rem;
+        width: 8rem;
     }
 
     #greeting {
@@ -111,6 +111,6 @@
     }
 
     .role .front-end::before {
-        width: 11rem;
+        width: 12.7rem;
     }
 }

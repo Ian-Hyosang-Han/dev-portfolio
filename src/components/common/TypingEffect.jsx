@@ -2,14 +2,15 @@ import React, { useEffect, useRef } from 'react';
 // Importing CSS style
 import '../../styles/components/typingeffect.css';
 
+const phrases = [
+    'INTUITIVE UI',
+    'SEAMLESS UX',
+    'ENGAGING INTERFACES',
+    'OPTIMIZED PERFORMANCE',
+    'CONTINUOUS GROWTH'
+];
+
 const TypingEffect = () => {
-    const phrases = [
-        'INTUITIVE UI',
-        'SEAMLESS UX',
-        'ENGAGING INTERFACES',
-        'OPTIMIZED PERFORMANCE',
-        'CONTINUOUS GROWTH'
-    ];
 
     const typingRefs = useRef([]);
 
@@ -29,7 +30,7 @@ const TypingEffect = () => {
             };
             type();
         });
-    }, [phrases]);
+    }, []);
 
     return (
         <div className="typing-section">
@@ -39,19 +40,19 @@ const TypingEffect = () => {
                 <div className="typing-group-one">
                     <div className="typing-effect01">
                         <div className="typing-text01">
-                            <div 
-                                className="typing-effect-first" 
+                            <div
+                                className="typing-effect-first"
                                 ref={(el) => (typingRefs.current[0] = el)}></div>
                         </div>
                         <div className="typing-text02">
-                            <div 
-                                className="typing-effect-second" 
+                            <div
+                                className="typing-effect-second"
                                 ref={(el) => (typingRefs.current[1] = el)}></div>
                         </div>
                     </div>
                     <div className="notebook-image">
-                        <img 
-                            src="/main_notebook.webp" 
+                        <img
+                            src="/main_notebook.webp"
                             alt="notebook" />
                     </div>
                 </div>
@@ -59,8 +60,8 @@ const TypingEffect = () => {
                 {/* Group 2: ENGAGING INTERFACES */}
                 <div className="typing-effect02">
                     <div className="typing-text03">
-                        <div 
-                            className="typing-effect-third" 
+                        <div
+                            className="typing-effect-third"
                             ref={(el) => (typingRefs.current[2] = el)}></div>
                     </div>
                 </div>
@@ -69,15 +70,15 @@ const TypingEffect = () => {
                 <div className="typing-group-two">
                     <div className="typing-effect03">
                         <div className="book-image">
-                            <img 
-                                src="/about_book.webp" 
+                            <img
+                                src="/about_book.webp"
                                 alt="book" />
                             <div className="typing-text04">
-                                <div 
-                                    className="typing-effect-fourth" 
+                                <div
+                                    className="typing-effect-fourth"
                                     ref={(el) => (typingRefs.current[3] = el)}></div>
-                                <div 
-                                    className="typing-effect-fifth" 
+                                <div
+                                    className="typing-effect-fifth"
                                     ref={(el) => (typingRefs.current[4] = el)}></div>
                             </div>
                         </div>

@@ -23,8 +23,8 @@ function Home() {
             <main id="main-content" className="home-wrapper">
                 <section className="intro-section">
                     <div className="role">
-                        <p className="front-end">Front-End</p>
-                        <p className="developer">Developer</p>
+                        <p className="front-end tracking-wide">FULL-STACK</p>
+                        <p className="developer tracking-wider">Developer</p>
                     </div>
                     <div className="social-icons">
                         <a
@@ -46,8 +46,8 @@ function Home() {
                             <FaGithubSquare size={45} className='fill-white' />
                         </a>
                     </div>
-
-                    <h1 id="greeting" className="greeting">Hi! I AM IAN, HAN</h1>
+                    <br />
+                    {/* <h1 id="greeting" className="greeting">Hi! I AM IAN, HAN</h1> */}
                 </section>
                 <TypingEffect />
                 <AboutSection />

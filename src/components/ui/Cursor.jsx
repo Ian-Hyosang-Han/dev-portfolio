@@ -15,7 +15,7 @@ const Cursor = () => {
 
     window.addEventListener("mousemove", handleMouseMove);
 
-    circlesRef.current.forEach((circle, index) => {
+    circlesRef.current.forEach((circle) => {
       circle.x = 0;
       circle.y = 0;
       circle.style.backgroundColor = "white";

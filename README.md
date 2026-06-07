@@ -1,64 +1,115 @@
-
 # Ian's Portfolio
 
-Welcome! This is my personal portfolio site showcasing selected web development projects, UI/UX designs, and creative work — built with clean code, interactive animations, and purposeful storytelling.
+This is version 1 of my personal portfolio website. It was created to introduce who I am as a developer, present my early project work, and practice building a responsive portfolio experience with React, JavaScript, Tailwind CSS, and custom CSS.
 
----
+This version represents an earlier stage of my front-end development journey. It helped me explore component-based structure, responsive layouts, interactive UI details, project pages, and visual storytelling before moving on to newer portfolio iterations.
 
 ## 🔗 Live Site
 
-🌐 [hyosanghan.com](https://hyosanghan.com)
+[dev-portfolio-pi-gray.vercel.app](https://dev-portfolio-pi-gray.vercel.app/)
 
----
+## 🚀 Overview
 
-## Featured Projects
+- Portfolio Version: Version 1
+- Purpose: Personal developer portfolio
+- Focus: Front-end development, responsive UI, project presentation, and interactive visual details
+- Status: Previous Portfolio Version
 
-### 🚀 [Astro Escape](https://hyosanghan.com/astro-escape)
-A real-time JavaScript game built with the Canvas API. The player controls a spaceship to dodge meteors with dynamic collisions, randomized behavior, and a time-based scoring system.  
-**Tech:** HTML, CSS, JavaScript
-**Roles:** UX/UI Designer, Developer
+## ✨ Features
 
-### 🎬 [Movella](https://hyosanghan.com/movella)
-A React-based movie database using The Movie Database (TMDB) API. Search, view details, and watch trailers with a smooth UI.
-**Tech:** React, SASS, TMDB API
-**Roles:** Frontend Developer, Data Fetching Logic, UX/UI Designer
+- Responsive Portfolio Layout: Built to work across desktop, tablet, and mobile screens.
+- Project Pages: Includes project listing and detail pages for selected work.
+- Interactive Navigation: Custom navigation with mobile menu interaction.
+- Animated Cursor: Custom cursor effect for a more expressive desktop experience.
+- Typing Animation: Animated text section used to highlight design and development values.
+- About Section: Personal introduction and developer background.
+- Skills Section: Highlights technical skills, design tools, and development experience.
+- Contact Information: Provides links to website, email, GitHub, and LinkedIn.
 
-### 🐶 [Paws & Relax](https://pawsandrelax.bcitwebdeveloper.ca/)
-Team capstone project for a dog massage booking service. Built using WordPress + WooCommerce with custom booking logic, CPTs, and Stripe integration.  
-**Tech:** WordPress, WooCommerce, ACF, Stripe
-**Roles:** WordPress Developer
+## 🛠️ Tech Stack
 
----
+Frontend <br/>
+<img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" />
+<img alt="JavaScript" src="https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+<img alt="Vite" src="https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white" />
+<img alt="HTML5" src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+<img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+<img alt="Sass" src="https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white" />
+<img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" /><br/>
 
-## Technologies Used
-<img alt="React" src="https://img.shields.io/badge/-React-45b8d8?style=flat-square&logo=react&logoColor=white" /><img alt="CSS3" src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" /><img alt="Tailwind CSS" src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white" /><img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" /><img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" /><img alt="Responsive Web Design" src="https://img.shields.io/badge/-Responsive%20Web%20Design-4AB197?style=flat-square" />
+Routing & UI <br/>
+<img alt="React Router" src="https://img.shields.io/badge/-React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white" />
+<img alt="React Icons" src="https://img.shields.io/badge/-React_Icons-45b8d8?style=flat-square&logo=react&logoColor=white" /><br/>
 
----
+Tools & Design <br/>
+<img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+<img alt="GitHub" src="https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github&logoColor=white" />
+<img alt="Figma" src="https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
+<img alt="Adobe XD" src="https://img.shields.io/badge/-Adobe_XD-FF61F6?style=flat-square&logo=adobexd&logoColor=white" /><br/>
 
-## What I Value
+Deployment <br/>
+<img alt="Vercel" src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
 
-- **Creativity meets functionality**: Clean, minimal layouts with intuitive UX.
-- **Curiosity-driven learning**: Always building, refining, and iterating.
-- **Persistence with personality**: I believe in getting things done, and having fun doing it.
+## 🗂️ Project Structure
 
----
+portfolio/
+  public/
+    project images
+    favicon files
+    site.webmanifest
 
-## Contact
+  src/
+    components/
+      common/
+      forms/
+      ui/
+    data/
+      projectsData.js
+    pages/
+      About.jsx
+      Home.jsx
+      ProjectPage.jsx
+      ProjectDetailsPage.jsx
+    router/
+      AppRouter.jsx
+    styles/
+      components/
+      pages/
+      ui/
+    index.css
+    main.jsx
 
-Feel free to reach out or connect with me:
+## 📖 Usage
 
-- ian.han7540@gmail.com
-- [hyosanghan.com](https://hyosanghan.com)
-- [LinkedIn](https://www.linkedin.com/in/ian-han-hyosang/)
+- Home: View the main introduction, animated text, about preview, work section, and skills section.
+- About: Learn more about my background, milestones, and development journey.
+- Projects: Browse selected project categories and view detailed project pages.
+- Project Details: Review each project's overview, technologies, features, role, reflection, and related projects.
+- Navigation: Use the responsive navigation menu across different screen sizes.
 
----
+## 🌐 Deployment
 
-## Personal note
-- This portfolio project wasn’t always easy — there were moments I felt stuck, frustrated, and uncertain.
-But with the support of peers, thoughtful advice from friends, and even the help of AI tools, I was able to push through and complete it.
-I took this opportunity not just to showcase my projects, but to challenge myself to grow.
-I intentionally used Tailwind CSS in sections like the About page to explore its utility and improve my styling speed and scalability.
-Along the way, I developed a stronger sense of structure in CSS, embraced component-based thinking in React, and gained confidence in applying design systems.
-This project is more than a collection of work — it's a snapshot of the progress I've made, and a foundation I’m excited to keep building on. I’m genuinely excited and full of anticipation for the projects I’ll take on in the future.
+<img alt="Vercel" src="https://img.shields.io/badge/-Vercel-000000?style=flat-square&logo=vercel&logoColor=white" />
 
-> “Unspecialty” — My design philosophy is about creating something extraordinary from the ordinary.
+## 🔗 Live Site
+
+[dev-portfolio-pi-gray.vercel.app](https://dev-portfolio-pi-gray.vercel.app/)
+
+## ✅ Project Status
+
+- Version: Portfolio V1
+- Build: Passed
+- Deployment: Vercel
+- Status: Previous portfolio version / archived reference
+
+## 🧠 What I Learned
+
+- Built a portfolio site using React, Vite, React Router, and component-based architecture.
+- Practiced responsive layouts with CSS, Sass, and Tailwind CSS.
+- Created custom UI interactions such as animated typing text, mobile navigation, and cursor effects.
+- Organized project data and detail pages through reusable components.
+- Improved visual storytelling by combining project content, imagery, and interaction design.
+
+## 📝 Note
+
+This repository represents version 1 of my portfolio. It remains as an earlier portfolio version and learning milestone, while newer portfolio work may include updated project data, refined design systems, stronger performance decisions, and a more modern development workflow.
